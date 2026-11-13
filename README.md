@@ -4,6 +4,9 @@
 
 # Exactwork
 
+[![Follow Ihtisham on GitHub](https://img.shields.io/badge/Follow-Ihtisham%20on%20GitHub-181717?logo=github&logoColor=white)](https://github.com/theihtishaam)
+
+
 Agent Skills for **Claude Code · Codex · OpenCode · DeepSeek Harness**
 
 **Give your agent a clear way to work.**
