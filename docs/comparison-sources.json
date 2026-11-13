@@ -1,0 +1,96 @@
+{
+  "reviewed": "2026-11-13",
+  "kind": "documented scope comparison; not performance ranking",
+  "projects": [
+    {
+      "key": "exactwork",
+      "name": "Exactwork",
+      "focus": "Focused tasks and evidence",
+      "detail": "Six procedures; traceable excerpts; local learning with rollback.",
+      "fit": "Choose a compact procedure for a task, then inspect its evidence and results.",
+      "repo": "theihtishaam/exactwork-skills",
+      "sha": "4ae7fc0b16a955935b9d54d4b23c80f5efd3b282"
+    },
+    {
+      "key": "ponytail",
+      "name": "Ponytail",
+      "focus": "Coding workflow and runtime",
+      "detail": "Coding instructions with host integrations and review workflows.",
+      "fit": "Choose its coding workflow and host-specific runtime when those integrations fit.",
+      "repo": "DietrichGebert/ponytail",
+      "sha": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+    },
+    {
+      "key": "superpowers",
+      "name": "Superpowers",
+      "focus": "Software development method",
+      "detail": "Design, implementation plans, test-driven work and reviews.",
+      "fit": "Choose a coordinated development method with design approval and review steps.",
+      "repo": "obra/superpowers",
+      "sha": "22f0b463e7a5e579904dd6211a520321035526f7"
+    },
+    {
+      "key": "gsd",
+      "name": "GSD Core",
+      "focus": "Context and spec-driven work",
+      "detail": "Meta-prompting and context engineering across coding agents.",
+      "fit": "Explore its development and context workflow for longer coding projects.",
+      "repo": "open-gsd/gsd-core",
+      "sha": "0f49a38f1415e7d073b8bddb05d18c01c63d6b05"
+    },
+    {
+      "key": "bmad",
+      "name": "BMad Method",
+      "focus": "Agile delivery workflow",
+      "detail": "Clarify, plan, build, verify and adjust; modular tooling.",
+      "fit": "Choose its broader delivery process and planning artifacts. The reviewed main branch describes v7 preview and a separate v6.12 stable route.",
+      "repo": "bmad-code-org/BMAD-METHOD",
+      "sha": "e435a22574fe55722841086e5566420178b98df3"
+    },
+    {
+      "key": "spec-kit",
+      "name": "Spec Kit",
+      "focus": "Specifications and processes",
+      "detail": "Reusable templates, workflows, integrations and extensions.",
+      "fit": "Choose configurable processes for specification, bug fixing or idea assessment.",
+      "repo": "github/spec-kit",
+      "sha": "2ee2b1e8005905db05f5717300a469b3068b908f"
+    },
+    {
+      "key": "openspec",
+      "name": "OpenSpec",
+      "focus": "Change proposals and specs",
+      "detail": "Propose, implement and archive changes with requirements.",
+      "fit": "Choose a change-centered specification workflow that retains design and task artifacts.",
+      "repo": "Fission-AI/OpenSpec",
+      "sha": "d12c2817776779e06891d68230773b3bb673b106"
+    },
+    {
+      "key": "ecc",
+      "name": "ECC",
+      "focus": "Agent configuration ecosystem",
+      "detail": "Skills, rules, hooks, memory and continuous-learning features.",
+      "fit": "Choose a broader configurable toolkit; its minimal path can omit runtime hooks.",
+      "repo": "affaan-m/ECC",
+      "sha": "d2ef2680594f9a17526a6e1a2e18b3d242c5d17b"
+    },
+    {
+      "key": "anthropic",
+      "name": "Anthropic Skills",
+      "focus": "Specialized task skills",
+      "detail": "Document, creative, technical and business skill examples.",
+      "fit": "Choose domain-specific instructions and implementations for the artifact you need.",
+      "repo": "anthropics/skills",
+      "sha": "2c5958ecac7cee2b583967a2c4981d0f4a75c579"
+    },
+    {
+      "key": "vercel",
+      "name": "Vercel Agent Skills",
+      "focus": "Web and platform expertise",
+      "detail": "React, web interface, writing and Vercel optimization guidance.",
+      "fit": "Choose specialist guidance for web applications, interfaces and the Vercel platform.",
+      "repo": "vercel-labs/agent-skills",
+      "sha": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
+    }
+  ]
+}

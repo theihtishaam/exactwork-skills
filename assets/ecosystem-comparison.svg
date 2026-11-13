@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1500" viewBox="0 0 1440 1500" role="img" aria-labelledby="title desc">
+<title id="title">Ten projects compared by documented scope</title><desc id="desc">Exactwork, Ponytail, Superpowers, GSD Core, BMad Method, Spec Kit, OpenSpec, ECC, Anthropic Skills and Vercel Agent Skills. Source-backed descriptions of focus, not a ranked intelligence or performance comparison. Only Ponytail core was included in matched performance trials.</desc>
+<rect width="1440" height="1500" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">TEN PROJECTS / DIFFERENT WAYS TO HELP AN AGENT</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Find the approach that fits your work.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">A guide to documented scope, not a leaderboard. Sources are pinned in the comparison guide.</text>
+<rect x="64" y="218" width="1312" height="97" rx="18" fill="#153239"/>
+<text x="90" y="259" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Exactwork</text>
+<text x="455" y="254" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Focused tasks and evidence</text>
+<text x="455" y="291" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Six procedures; traceable excerpts; local learning with rollback.</text>
+<rect x="64" y="329" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="370" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Ponytail</text>
+<text x="455" y="365" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Coding workflow and runtime</text>
+<text x="455" y="402" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Coding instructions with host integrations and review workflows.</text>
+<rect x="64" y="440" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="481" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Superpowers</text>
+<text x="455" y="476" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Software development method</text>
+<text x="455" y="513" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Design, implementation plans, test-driven work and reviews.</text>
+<rect x="64" y="551" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="592" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">GSD Core</text>
+<text x="455" y="587" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Context and spec-driven work</text>
+<text x="455" y="624" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Meta-prompting and context engineering across coding agents.</text>
+<rect x="64" y="662" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="703" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">BMad Method</text>
+<text x="455" y="698" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Agile delivery workflow</text>
+<text x="455" y="735" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Clarify, plan, build, verify and adjust; modular tooling.</text>
+<rect x="64" y="773" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="814" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Spec Kit</text>
+<text x="455" y="809" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Specifications and processes</text>
+<text x="455" y="846" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Reusable templates, workflows, integrations and extensions.</text>
+<rect x="64" y="884" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="925" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">OpenSpec</text>
+<text x="455" y="920" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Change proposals and specs</text>
+<text x="455" y="957" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Propose, implement and archive changes with requirements.</text>
+<rect x="64" y="995" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="1036" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">ECC</text>
+<text x="455" y="1031" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Agent configuration ecosystem</text>
+<text x="455" y="1068" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Skills, rules, hooks, memory and continuous-learning features.</text>
+<rect x="64" y="1106" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="1147" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Anthropic Skills</text>
+<text x="455" y="1142" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Specialized task skills</text>
+<text x="455" y="1179" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Document, creative, technical and business skill examples.</text>
+<rect x="64" y="1217" width="1312" height="97" rx="18" fill="#102235"/>
+<text x="90" y="1258" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Vercel Agent Skills</text>
+<text x="455" y="1253" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Web and platform expertise</text>
+<text x="455" y="1290" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">React, web interface, writing and Vercel optimization guidance.</text>
+<text x="64" y="1381" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Exactwork: small procedures, traceable context and checked project learning.</text>
+<text x="64" y="1426" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Only Ponytail core has matched trial data here. Other projects have no measured ranking.</text>
+<text x="64" y="1470" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Reviewed 2026-11-13. Source links and version notes: docs/ecosystem-comparison.md.</text>
+</svg>

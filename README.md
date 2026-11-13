@@ -193,6 +193,16 @@ The compact version used **13.8% fewer aggregate tokens than no skill** and **7.
 
 The exact inherited model was not exposed, cache state was uncontrolled, and concurrent wall times do not establish agent speed or dollar savings. **111 software checks passed; four were skipped** for unavailable symbolic-link privileges. These checks are separate from model-performance results. [Full benchmark](docs/benchmark-v0.2.md) · [Verification](docs/verification.md) · [Result table](evals/v0.2/final-results.csv).
 
+## Compare with other skill projects
+
+![Source-backed comparison of Exactwork with Ponytail, Superpowers, GSD Core, BMad Method, Spec Kit, OpenSpec, ECC, Anthropic Skills and Vercel Agent Skills. This compares documented scope, not performance rankings.](assets/ecosystem-comparison.svg)
+
+Exactwork is a useful fit when you want **short task procedures, traceable excerpts, and checked local learning with rollback**. Broader development frameworks and specialist libraries solve different problems and can complement that approach. The [ten-project comparison guide](docs/ecosystem-comparison.md) links to pinned sources, explains each project's focus, and separates inspected features from measured results.
+
+![Matched task-correctness comparison: no skill, Exactwork 0.1, Ponytail core and Exactwork 0.2 each passed five of five. No accuracy lead is established; the other eight external projects have not been evaluated in matched trials.](assets/quality-comparison.svg)
+
+Only Ponytail core has matched performance measurements here. The other projects are compared through documentation. General intelligence and named-model quality improvements have not been measured. Unknown results are left unknown.
+
 ## How it compares with Ponytail
 
 ![Ponytail and Exactwork design comparison with a limited five-run coding subset, explicit scheduling limits, and no general performance ranking.](assets/comparison.svg)

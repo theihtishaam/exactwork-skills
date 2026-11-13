@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="970" viewBox="0 0 1440 970" role="img" aria-labelledby="title desc">
+<title id="title">Task correctness in the matched comparison</title><desc id="desc">All four tested conditions achieved5of5 public-task passes on a three-unique-task coding subset. No accuracy lead was measured. Other eight external projects and named-model intelligence gains were not evaluated. Empty measurements are not zero scores.</desc>
+<rect width="1440" height="970" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">WORK QUALITY / OBSERVED TASK CORRECTNESS</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Task correctness across four conditions.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Matched coding subset: five runs per condition, three unique synthetic tasks.</text>
+<text x="64" y="256" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">No skill</text>
+<rect x="350" y="225" width="760.0" height="40" rx="5" fill="#A6B8C9"/>
+<text x="1165" y="255" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">5/5 · 100%</text>
+<text x="64" y="347" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Exactwork 0.1</text>
+<rect x="350" y="316" width="760.0" height="40" rx="5" fill="#A6B8C9"/>
+<text x="1165" y="346" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">5/5 · 100%</text>
+<text x="64" y="438" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Ponytail core</text>
+<rect x="350" y="407" width="760.0" height="40" rx="5" fill="#F5B56C"/>
+<text x="1165" y="437" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">5/5 · 100%</text>
+<text x="64" y="529" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Exactwork 0.2</text>
+<rect x="350" y="498" width="760.0" height="40" rx="5" fill="#56DCDD"/>
+<text x="1165" y="528" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">5/5 · 100%</text>
+<text x="340.0" y="623" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">0%</text>
+<text x="530.0" y="623" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">25%</text>
+<text x="720.0" y="623" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">50%</text>
+<text x="910.0" y="623" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">75%</text>
+<text x="1100.0" y="623" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">100%</text>
+<rect x="64" y="669" width="1312" height="100" rx="18" fill="#153239"/>
+<text x="90" y="712" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Equal pass counts. No accuracy lead established.</text>
+<text x="90" y="750" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Lower token usage on this subset is an efficiency observation, not an intelligence score.</text>
+<text x="64" y="819" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Other eight external projects: no matched quality measurements in this release.</text>
+<text x="64" y="863" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Ponytail ran later; core instructions only. Cache and exact inherited model were uncontrolled.</text>
+<text x="64" y="907" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Small sample: do not infer general quality or superiority across models and tools.</text>
+<text x="64" y="950" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Source: evals/v0.2/final-results.json / summary.matched_coding_subset.</text>
+</svg>

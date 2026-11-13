@@ -91,3 +91,8 @@ Bottom subtle separated strip with text: "Claude Code / Codex / OpenCode / DeepS
 And small but readable footnote: "Optional helpers for source-linked excerpts and project learning with rollback."
 Communicate the flow with geometric document, magnifier, tool and check icons. Sophisticated and practical, not a neon sci-fi poster. All text accurately spelled, generous padding, readable contrast, no overlap. Do not imply the product is an autonomous service or claim guaranteed accuracy or savings. No additional text.
 ```
+
+
+## Broader project and quality comparison (2026-11-13)
+
+`ecosystem-comparison.svg` summarizes documented scope for ten projects from the pinned sources in `docs/comparison-sources.json`. It is not a feature-exhaustiveness audit or performance ranking. Exactwork is visually highlighted as the subject of the repository. `quality-comparison.svg` uses the unchanged matched-subset results: each tested condition passed 5/5. The remaining eight external projects have no matched measurements in this release, and no model intelligence scores are supplied. Both SVG figures are code-authored and their rendered previews were visually inspected.
