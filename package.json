@@ -1,0 +1,52 @@
+{
+  "name": "@theihtisham/exactwork-skills",
+  "version": "0.2.1",
+  "description": "Portable agent skills with a local installer for Claude Code, Codex, OpenCode, DeepSeek Harness and other supported tools.",
+  "type": "module",
+  "bin": {
+    "exactwork-skills": "bin/exactwork-skills.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "skills/*/SKILL.md",
+    "skills/*/LICENSE",
+    "skills/*/scripts/*.py",
+    "skills/*/references/*.md",
+    "LICENSE",
+    "VERSION",
+    "docs/npm-installation.md"
+  ],
+  "scripts": {
+    "test": "node --test npm-tests/install.test.mjs"
+  },
+  "license": "MIT",
+  "author": "theihtishaam",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theihtishaam/exactwork-skills.git"
+  },
+  "homepage": "https://github.com/theihtishaam/exactwork-skills#readme",
+  "bugs": {
+    "url": "https://github.com/theihtishaam/exactwork-skills/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "opencode",
+    "deepseek-harness",
+    "agentic-ai",
+    "context-engineering",
+    "token-efficiency",
+    "self-improvement",
+    "developer-tools"
+  ]
+}

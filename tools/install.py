@@ -194,7 +194,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--client", required=True, choices=CLIENT_ROOTS)
     selection = parser.add_mutually_exclusive_group()
     selection.add_argument("--skill", action="append", choices=SKILLS, help="Repeat to select several; default: exactwork")
-    selection.add_argument("--all", action="store_true", help="Install all four skills")
+    selection.add_argument("--all", action="store_true", help="Install all six skills")
     parser.add_argument("--apply", action="store_true", help="Copy files; without this flag, preview only")
     args = parser.parse_args(argv)
     bundle = absolute(Path(__file__)).parent.parent

@@ -8,6 +8,9 @@ Agent Skills for **Claude Code · Codex · OpenCode · DeepSeek Harness**
 
 **Give your agent a clear way to work.**
 
+<a href="https://www.npmjs.com/package/@theihtisham/exactwork-skills"><img src="https://img.shields.io/npm/v/%40theihtisham%2Fexactwork-skills" alt="npm package version" /></a>
+<a href="https://www.npmjs.com/package/@theihtisham/exactwork-skills"><img src="https://img.shields.io/npm/dm/%40theihtisham%2Fexactwork-skills" alt="npm downloads per month, not unique users" /></a>
+
 [MIT license](LICENSE) · Python 3.10+ for optional tools · Six independent skills · Reproducible evaluations
 
 [Start here](#start-here) · [Skills](#choose-a-skill) · [Self-learning](#learn-a-project-procedure) · [Results](#measured-improvements) · [Compatibility](#use-it-with-your-agent) · [Research](docs/research.md)
@@ -43,19 +46,28 @@ The core entry instructions are **29.4% smaller** in the recorded tokenizer. Thi
 
 ## Start here
 
-With Node.js **22.20+**, run this from your project directory and choose your skills and agent:
+With Node.js **20+**, one command installs all six skills for detected supported tools:
 
 ```sh
-npx skills add theihtishaam/exactwork-skills
+npx --yes @theihtisham/exactwork-skills install --detected
 ```
 
-To select just the core for Codex:
+The npm package includes the skill files and installer; no GitHub clone is needed. Installation is at user scope by default. Detection checks known tool directories and executable names, not configuration contents. Reload your agent afterward and check its skill list.
 
 ```sh
-npx skills add theihtishaam/exactwork-skills --skill exactwork -a codex
+# Preview destinations without writing.
+npx @theihtisham/exactwork-skills install --detected --dry-run
+
+# Select a client and an existing project.
+npx @theihtisham/exactwork-skills install --agent codex --project ./my-project
+
+# Verify installed files.
+npx @theihtisham/exactwork-skills verify --detected
 ```
 
-This uses the existing [Skills CLI](https://github.com/vercel-labs/skills), which reads this GitHub repository directly. Exactwork does not need a separate npm package. The Python route below supports previewing changes and the documented client destinations, including DeepSeek Harness.
+The installer preserves conflicting files. Python **3.10+** is needed only for the optional Python helpers. [npm installation, supported targets, and limitations](docs/npm-installation.md).
+
+You can also use the third-party Skills CLI with Node.js 22.20+: `npx skills add theihtishaam/exactwork-skills`. The Python route below supports previewing project installation without npm.
 
 ### Install with the bundled Python tool
 

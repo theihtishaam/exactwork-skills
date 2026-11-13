@@ -6,3 +6,6 @@ Thumbs.db
 work/
 evals/local-runs/
 .exactwork/
+node_modules/
+*.tgz
+.npm-stage/
