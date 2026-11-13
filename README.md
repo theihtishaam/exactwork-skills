@@ -199,7 +199,9 @@ The exact inherited model was not exposed, cache state was uncontrolled, and con
 
 Exactwork is a useful fit when you want **short task procedures, traceable excerpts, and checked local learning with rollback**. Broader development frameworks and specialist libraries solve different problems and can complement that approach. The [ten-project comparison guide](docs/ecosystem-comparison.md) links to pinned sources, explains each project's focus, and separates inspected features from measured results.
 
-![Matched task-correctness comparison: no skill, Exactwork 0.1, Ponytail core and Exactwork 0.2 each passed five of five. No accuracy lead is established; the other eight external projects have not been evaluated in matched trials.](assets/quality-comparison.svg)
+![Equal sampled pass counts with different token totals: Exactwork 0.2 used 444,117 tokens, Ponytail core 493,995, Exactwork 0.1 541,987, and no skill 612,815. Each passed five of five sampled checks; these are not perfect-reliability scores.](assets/quality-comparison.svg)
+
+**Why consider Exactwork?** On this small coding subset, compact Exactwork completed the same five sampled checks with **10.1% fewer reported tokens than Ponytail core**. The chart orders conditions by observed token usage, lowest first. Passing five sampled checks does not mean an agent is perfectly reliable.
 
 Only Ponytail core has matched performance measurements here. The other projects are compared through documentation. General intelligence and named-model quality improvements have not been measured. Unknown results are left unknown.
 

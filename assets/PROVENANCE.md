@@ -96,3 +96,8 @@ Communicate the flow with geometric document, magnifier, tool and check icons. S
 ## Broader project and quality comparison (2026-11-13)
 
 `ecosystem-comparison.svg` summarizes documented scope for ten projects from the pinned sources in `docs/comparison-sources.json`. It is not a feature-exhaustiveness audit or performance ranking. Exactwork is visually highlighted as the subject of the repository. `quality-comparison.svg` uses the unchanged matched-subset results: each tested condition passed 5/5. The remaining eight external projects have no matched measurements in this release, and no model intelligence scores are supplied. Both SVG figures are code-authored and their rendered previews were visually inspected.
+
+
+## Clarifying sampled pass counts (2026-11-13)
+
+`quality-comparison.svg` now shows the measured token totals in ascending order with explicit "5 of 5" sampled-pass counts. The earlier percentage bars could be mistaken for a universal reliability score. Exactwork 0.2 is first because it used the fewest tokens on this specific subset, not because a general intelligence or quality lead was established. All totals and outcomes remain unchanged. The updated editable figure was rendered and visually inspected.
