@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-labelledby="title desc">
+<title id="title">Project learning with evidence and rollback</title><desc id="desc">An explicit correction or verified failure leads to a scoped candidate. Freeze criteria and independent cases before drafting. Candidate correctness and scope must all pass, with a quality gain or comparable actual token reduction. Failed candidates leave the current procedure unchanged. Eligible authorized updates are versioned in the project; rollback checks current bytes. No model training or background learner.</desc>
+<rect width="1440" height="1040" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">PROJECT LEARNING / A CHECKED UPDATE LOOP</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Keep improvements. Reject regressions.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">The agent evaluates behavior. The helper validates supplied records, hashes, and versions.</text>
+<rect x="64" y="216" width="418" height="183" rx="18" fill="#102235"/>
+<text x="88" y="252" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">01</text>
+<text x="88" y="295" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Start from evidence</text>
+<text x="88" y="339" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Verified failure or explicit correction</text>
+<text x="88" y="368" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Name the scope and exclusions.</text>
+<path d="M487 308 L505 308" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M495 302 L505 308" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M495 314 L505 308" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<rect x="511" y="216" width="418" height="183" rx="18" fill="#102235"/>
+<text x="535" y="252" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">02</text>
+<text x="535" y="295" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Freeze the evaluation</text>
+<text x="535" y="339" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Baseline, criteria, setup, independent cases</text>
+<text x="535" y="368" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Protect holdouts before drafting.</text>
+<path d="M934 308 L952 308" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M942 302 L952 308" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M942 314 L952 308" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<rect x="958" y="216" width="418" height="183" rx="18" fill="#102235"/>
+<text x="982" y="252" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">03</text>
+<text x="982" y="295" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Propose one change</text>
+<text x="982" y="339" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">A small project procedure update</text>
+<text x="982" y="368" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Keep it relevant to the original failure.</text>
+<path d="M1167 399 L1167 430" stroke="#56DCDD" stroke-width="2" fill="none"/>
+<path d="M1167 430 L720 430" stroke="#56DCDD" stroke-width="2" fill="none"/>
+<path d="M720 430 L720 456" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M714 446 L720 456" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M726 446 L720 456" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<rect x="277" y="466" width="886" height="188" rx="18" fill="#153239"/>
+<text x="307" y="509" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">THE PROMOTION GATE</text>
+<text x="307" y="552" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Every candidate correctness and scope check passes</text>
+<text x="307" y="596" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Plus a quality gain OR lower comparable actual input + output tokens.</text>
+<text x="307" y="630" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">All declared paired trials present; source and artifact hashes match.</text>
+<path d="M460 654 L460 685" stroke="#56DCDD" stroke-width="2" fill="none"/>
+<path d="M460 685 L308 685" stroke="#F5B56C" stroke-width="3" fill="none"/>
+<path d="M318 679 L308 685" stroke="#F5B56C" stroke-width="3" fill="none"/>
+<path d="M318 691 L308 685" stroke="#F5B56C" stroke-width="3" fill="none"/>
+<path d="M980 654 L980 685" stroke="#56DCDD" stroke-width="2" fill="none"/>
+<path d="M980 685 L1132 685" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M1122 679 L1132 685" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M1122 691 L1132 685" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<rect x="64" y="706" width="625" height="170" rx="18" fill="#102235"/>
+<rect x="713" y="706" width="663" height="170" rx="18" fill="#153239"/>
+<text x="88" y="748" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">FAIL / KEEP THE CURRENT PROCEDURE</text>
+<text x="88" y="791" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Retain the failure and revise the hypothesis.</text>
+<text x="88" y="833" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Do not trade correctness for a smaller token total.</text>
+<text x="737" y="748" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">PASS / VERSION THE AUTHORIZED UPDATE</text>
+<text x="737" y="791" fill="#F3F7FC" font-family="Consolas, monospace" font-size="25" font-weight="700">.exactwork/procedure.md</text>
+<text x="737" y="833" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">Exact backup + checked rollback preserve later user edits.</text>
+<text x="64" y="930" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Supplied grades must be trustworthy: hashes and labels cannot prove that a grader is honest.</text>
+<text x="64" y="980" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Project-local instructions. No model-weight training, silent global memory, or background daemon.</text>
+</svg>

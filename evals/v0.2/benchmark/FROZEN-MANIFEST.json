@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "frozen_date": "2026-11-12",
+  "design_stage": "before candidate v0.2 authored",
+  "dev": [
+    "d01",
+    "d02",
+    "d03",
+    "d04"
+  ],
+  "holdout": [
+    "h01",
+    "h02"
+  ],
+  "primary_metric": "Complete task success: all required behavior checks plus no scope violation. No weighted opaque composite.",
+  "secondary_metrics": [
+    "Diagnostic cause coverage",
+    "False-positive findings",
+    "Observed tool input/output footprint if measured",
+    "Total provider tokens only when actually available"
+  ],
+  "trial_policy": "Root study plan: 1 run per arm on 4 development cases; one revision before final freeze; 3 repetitions x 3 arms x 2 untouched holdouts. Optional Ponytail coding subset reported separately. Fresh context and fixture each run; balanced arm order. Small synthetic study, not universal efficacy.",
+  "arms": [
+    "no skill",
+    "Exactwork 0.1",
+    "frozen Exactwork candidate",
+    "Ponytail only on compatible coding cases"
+  ],
+  "scope_policy": "Trial agents may read only their copied fixture and explicitly supplied skill resources. Never give evaluator files, reference answers, other arm outputs, development discussion or future holdouts.",
+  "freeze_policy": "Do not disclose holdout prompt or files to candidate author until candidate SHA256 is fixed. Do not tune after holdout; classify any new tuning as development and require fresh holdouts.",
+  "case_skill_routes": {
+    "d01": "log context helper if evaluating helper; otherwise core",
+    "d02": "core",
+    "d03": "research",
+    "d04": "core",
+    "h01": "log context helper if evaluating helper; otherwise core",
+    "h02": "review"
+  },
+  "files": {
+    "cases/d01/input/run-contract.md": "916cb1a3dcf9cf35bebed0f88533bce1d29d9e10301d06e3252c2e3457b4065b",
+    "cases/d01/input/run.log": "bd9afa082b7dd10db823f61933a7e881ab046414bdca8097a0506327062fc5e3",
+    "cases/d01/prompt.txt": "651811a850feae537982de1069b06c53ffe5cbb9e3a8cc3b0408a1cdf1cb5fa1",
+    "cases/d02/input/CONTRACT.md": "49f7fa86847ddeff599ff2c7338b6c8c359f6c0f71cb844c7b763d9823cbcf18",
+    "cases/d02/input/example.json": "7367d21d387e686b6a063e23b17887ba73c127110d7506eb7e5275a1273a682a",
+    "cases/d02/input/report.py": "5c21c14df284828de6f6047eca5b46bbfab2e0c95359a7a37b091a282ee19d13",
+    "cases/d02/input/test_report.py": "d79556c13a73351a27ffaf7013ad9b7b7f2ce1079f1ff55ece3dc142a0a893bc",
+    "cases/d02/prompt.txt": "889d2cd3031590917425c6895b3ee105b4f538d72d6e683d6d995e82f93a24f2",
+    "cases/d03/input/packet.md": "f791a5ecdd33b0234a1d4675f8a700bfc75dbdb10434390c965b1e2ae5b2181d",
+    "cases/d03/prompt.txt": "bf9f1a7c92b47a5becf38f064d95f95e7be8ff97ee7babcdd5a5764b45b7683f",
+    "cases/d04/input/README.md": "a0b13a8ca043d7ab141ab9c8b1a1ba36f174d4affd4ab54696ab798e43868131",
+    "cases/d04/input/ui-labels.json": "ecaff0c0c647417781ad8745fd96d047a035dbd4d36c0097d52edbf26652500c",
+    "cases/d04/prompt.txt": "21e32a217294706dd181f8c321283f30db8d647ab74344ac880cb2744b7a3dfb",
+    "cases/h01/input/run-contract.md": "5bfd257715997a415f7b7f997b65fc8f7fb54e5eac7f6a44aa2605b298ad6bdd",
+    "cases/h01/input/run.log": "0bca344fd2776925c87c26c1830b88019eb117c1350dcc195929d76562abe337",
+    "cases/h01/prompt.txt": "65eab117f29ec4515b86d04cded340ec3cd29f2d6cea50a6387c986f2e011133",
+    "cases/h02/input/CONTRACT.md": "50b90dc176931976f084a8510704f137fbf66b15ecda0046a1ad58bf16a3034f",
+    "cases/h02/input/task_queue.py": "d337d7102b3356453e85b397f0290b3babb64c8e8732f17961e83277b9abfe21",
+    "cases/h02/input/test_queue.py": "66b7771267b21a11c97d1c5518f436615831f8d3da8b09c7945c1693b6bffb52",
+    "cases/h02/prompt.txt": "adcac72027d27d4ee751f2052e8db9bf25bd46853f56c922f82cba65da105fc8"
+  },
+  "evaluator_files": {
+    "evaluator/grade.py": "80bf4f514ecc9ba45fe4ba4903317bd2b44125faee4ae297e16535254cae79c9",
+    "evaluator/private_expected.json": "fb7bbd6010886889995c6144e3ab30ed9c6d6f7ad5315fbfbc032b3cbd8d32a8",
+    "evaluator/SEMANTIC-RUBRIC.md": "0943100bb818a599d125408d946b192ca412031be9bfb503db107f49d520280a",
+    "evaluator/validate_fixture_design.py": "8aad93e5b904f0ae75be8698a4cb6e015938c4285d94f81232b4cba0a571d982"
+  },
+  "preparation_tool_sha256": "7763184ce73fd4f9d5b2008acf46f85c3ae2eb78628f1cda87f6fa88d1f3f998"
+}

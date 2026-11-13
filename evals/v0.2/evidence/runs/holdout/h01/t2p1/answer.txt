@@ -1,0 +1,1 @@
+Created and validated [answer.json](<STUDY_ROOT>\runs\holdout\h01\t2p1\answer.json) with three distinct failures. Job state is `unknown` because the capture is incomplete and lacks a final summary.

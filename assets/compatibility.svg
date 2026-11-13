@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000" role="img" aria-labelledby="title desc">
+<title id="title">Portable skills with client-specific discovery</title><desc id="desc">The common unit is skill-name/SKILL.md with name and description metadata. Documented project paths: Codex agents skills, Claude claude skills, OpenCode opencode skills, DeepSeek Harness dsh skills; Gemini,Copilot,Cursor,Cline also have documented destinations. Format/path support is not certification of native activation; model study used Codex CLI explicit instructions.</desc>
+<rect width="1440" height="1000" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">PORTABLE FORMAT / CLIENT-SPECIFIC DISCOVERY</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">One skill format. Choose your client path.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Copy the whole skill folder. Discovery and invocation depend on the host application.</text>
+<rect x="64" y="212" width="1312" height="116" rx="18" fill="#153239"/>
+<text x="89" y="256" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">THE SHARED UNIT</text>
+<text x="89" y="302" fill="#F3F7FC" font-family="Consolas, monospace" font-size="28" font-weight="700">exactwork/SKILL.md</text>
+<text x="560" y="255" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Standard name + description metadata</text>
+<text x="560" y="297" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Optional bundled scripts, references, and license</text>
+<rect x="64" y="362" width="644" height="154" rx="18" fill="#102235"/>
+<text x="88" y="405" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Codex</text>
+<text x="88" y="446" fill="#56DCDD" font-family="Consolas, monospace" font-size="25" font-weight="400">.agents/skills/</text>
+<text x="88" y="486" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">$exactwork</text>
+<rect x="732" y="362" width="644" height="154" rx="18" fill="#102235"/>
+<text x="756" y="405" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Claude Code</text>
+<text x="756" y="446" fill="#56DCDD" font-family="Consolas, monospace" font-size="25" font-weight="400">.claude/skills/</text>
+<text x="756" y="486" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">/exactwork</text>
+<rect x="64" y="540" width="644" height="154" rx="18" fill="#102235"/>
+<text x="88" y="583" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">OpenCode</text>
+<text x="88" y="624" fill="#56DCDD" font-family="Consolas, monospace" font-size="25" font-weight="400">.opencode/skills/</text>
+<text x="88" y="664" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">@exactwork  (current V2 docs)</text>
+<rect x="732" y="540" width="644" height="154" rx="18" fill="#102235"/>
+<text x="756" y="583" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">DeepSeek Harness</text>
+<text x="756" y="624" fill="#56DCDD" font-family="Consolas, monospace" font-size="25" font-weight="400">.dsh/skills/</text>
+<text x="756" y="664" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">/exactwork</text>
+<text x="64" y="759" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">ALSO DOCUMENTED</text>
+<text x="64" y="807" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Gemini CLI  ·  GitHub Copilot  ·  Cursor  ·  Cline  ·  Shared .agents/skills</text>
+<text x="64" y="873" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Paths are documented, not a certification of native activation in every client.</text>
+<text x="64" y="918" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">The behavioral study used explicit instructions through Codex CLI. See docs/compatibility.md.</text>
+<text x="64" y="960" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">DeepSeek model access uses its host’s skill system; “Harness” means the Harness application.</text>
+</svg>

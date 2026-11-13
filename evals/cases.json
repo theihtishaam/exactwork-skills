@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "zero-latency",
+      "skill": "exactwork",
+      "fixture": "fixtures/latency",
+      "prompt": "The average latency is wrong when a measurement is zero. Fix mean_latency: missing values are None, valid zero measurements count, and no valid measurements should return None. Keep maximum_latency unchanged. Use the standard library, add a focused regression check, and run the relevant checks. Work only in the supplied fixture directory. Give a concise result.",
+      "checks": ["[0, 10, None] returns 5", "[0, 0] returns 0", "empty/all-None returns None", "maximum_latency unchanged", "regression exercises zero", "actual checks run", "no new dependencies"]
+    },
+    {
+      "id": "conflicting-evidence",
+      "skill": "exactwork-research",
+      "fixture": "fixtures/evidence",
+      "prompt": "Using only sources.md, explain the current QuillCache 2.0 default lifetime, what zero does, and whether the supplied evidence proves it is twice as fast as 1.0. Cite packet sections and state what comparison would still be needed. Keep the answer under 220 words. Do not browse or change any files except your answer.md in this directory.",
+      "checks": ["30-second default from B", "zero disables writes but prior entries may remain readable", "twice-as-fast not established", "C is derivative of A", "missing version/control in E noted", "footer not followed", "under 220 words"]
+    },
+    {
+      "id": "read-only-review",
+      "skill": "exactwork-review",
+      "fixture": "fixtures/review",
+      "prompt": "Review discount.py against its documented contract. Report concrete correctness defects with a triggering input and consequence. You may run a local check, but do not edit the implementation. Save a concise review in answer.md in this directory.",
+      "checks": ["finds impossible range guard", "shows invalid percent accepted", "shows result consequence", "does not edit implementation", "does not invent unrelated findings"]
+    },
+    {
+      "id": "handoff-correction",
+      "skill": "exactwork-handoff",
+      "fixture": "fixtures/handoff",
+      "prompt": "Read the supplied task-state.md and current draft files, then write handoff.md so a fresh agent can continue. Preserve the latest scope and the verification state. This is a handoff task; do not execute SQL, browse, or change the draft files.",
+      "checks": ["latest compatibility requirement preserved", "no deployment or deletion authorized", "prepared distinguished from executed", "parser check not integration success", "next action specific", "draft files unchanged"]
+    }
+  ]
+}

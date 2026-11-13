@@ -1,0 +1,4 @@
+Complete the task below. Read task data only from the current fixture directory and any explicitly supplied helper. Do not browse, use network services, inspect private credentials or browser/session stores, read parent/other trial directories, load other skills, or delegate. Create or change files only as the task requires. Return a concise final message.
+
+Environment facts shared by every condition: this fixture has no Git metadata. On this Windows host the apply_patch.bat shim does not reliably pass multiline patches. Avoid retrying that shim; use another available local editing method. Python and PowerShell are available.
+

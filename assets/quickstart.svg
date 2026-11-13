@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="940" viewBox="0 0 1440 940" role="img" aria-labelledby="title desc">
+<title id="title">Install Exactwork in a project</title><desc id="desc">Clone or download the repository, open its directory, preview then apply installation into an existing project, start a fresh client session and invoke the skill. Two commands are shown for Codex; choose a different client as needed. Python3.10plus is needed for the installer and optional helpers.</desc>
+<rect width="1440" height="940" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">QUICKSTART / FROM REPOSITORY TO TASK</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Install one skill. Put it to work.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Use an existing project. The default installation contains only the execution core.</text>
+<rect x="64" y="214" width="1312" height="116" rx="18" fill="#102235"/>
+<text x="88" y="256" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">01  GET THE REPOSITORY</text>
+<text x="88" y="301" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="400">Clone or download Exactwork, then open a terminal in its repository folder.</text>
+<rect x="64" y="357" width="1312" height="248" rx="18" fill="#153239"/>
+<text x="88" y="401" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">02  PREVIEW THE DESTINATION, THEN APPLY</text>
+<text x="88" y="452" fill="#F3F7FC" font-family="Consolas, monospace" font-size="22" font-weight="400">python tools/install.py --project &quot;/path/to/project&quot; --client codex</text>
+<text x="88" y="501" fill="#F3F7FC" font-family="Consolas, monospace" font-size="22" font-weight="400">python tools/install.py --project &quot;/path/to/project&quot; --client codex --apply</text>
+<text x="88" y="562" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Use your actual project path; replace codex with your chosen client.</text>
+<rect x="64" y="632" width="1312" height="173" rx="18" fill="#102235"/>
+<text x="88" y="676" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">03  START A FRESH SESSION AND INVOKE</text>
+<text x="88" y="728" fill="#F3F7FC" font-family="Consolas, monospace" font-size="24" font-weight="400">$exactwork Fix this export bug and verify the affected behavior.</text>
+<text x="88" y="774" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Example shown for Codex. Claude Code and Harness use /exactwork.</text>
+<text x="64" y="867" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Python 3.10+ for the installer and optional helpers; no Exactwork API key or service.</text>
+<text x="64" y="910" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Add companions selectively. The installer preserves conflicting existing files.</text>
+</svg>

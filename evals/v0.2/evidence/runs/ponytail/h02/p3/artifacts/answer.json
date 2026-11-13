@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "file": "task_queue.py",
+      "line": 9,
+      "trigger": "Create TaskQueue(1), put('oldest'), then put('extra').",
+      "observed": "The second put raises OverflowError, but 'extra' remains queued; len(q) is 2 and two subsequent gets return 'oldest' and 'extra'.",
+      "expected": "The second put raises OverflowError without changing the queue; len(q) remains 1 and only 'oldest' can be retrieved.",
+      "explanation": "put appends before checking capacity and does not undo the append when the queue is full, violating the required no-change behavior for a full put."
+    },
+    {
+      "file": "task_queue.py",
+      "line": 2,
+      "trigger": "Create a = TaskQueue(2) and b = TaskQueue(2), then call a.put('shared').",
+      "observed": "len(b) becomes 1 and b.get() returns 'shared' even though nothing was put into b.",
+      "expected": "b remains empty because separate TaskQueue instances must be independent.",
+      "explanation": "The mutable default items list is created once and reused by every instance constructed without an explicit items argument."
+    }
+  ]
+}

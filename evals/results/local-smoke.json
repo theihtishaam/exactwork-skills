@@ -1,0 +1,221 @@
+{
+  "record_type": "local_development_observations",
+  "date": "2026-11-12",
+  "runs": [
+    {
+      "case": "latency",
+      "condition": "baseline",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "no Exactwork skill",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/latency/baseline/answer.md",
+        "evals/results/latency/baseline/latency.py",
+        "evals/results/latency/baseline/test_latency.py"
+      ],
+      "reviewer_checks": {
+        "zero_and_missing_behavior": true,
+        "maximum_function_unchanged": true,
+        "regression_suite_passed": true
+      }
+    },
+    {
+      "case": "latency",
+      "condition": "skill",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "explicit SKILL.md read",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/latency/skill/answer.md",
+        "evals/results/latency/skill/latency.py",
+        "evals/results/latency/skill/test_latency.py"
+      ],
+      "reviewer_checks": {
+        "zero_and_missing_behavior": true,
+        "maximum_function_unchanged": true,
+        "regression_suite_passed": true
+      }
+    },
+    {
+      "case": "evidence",
+      "condition": "baseline",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "no Exactwork skill",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/evidence/baseline/answer.md",
+        "evals/results/evidence/baseline/sources.md"
+      ],
+      "reviewer_checks": {
+        "word_limit": true,
+        "source_unchanged": true,
+        "human_review": "Correct current default, zero-write/read distinction, unsupported speed claim, derivative source and missing controls. Footer instruction not reflected in answer."
+      }
+    },
+    {
+      "case": "evidence",
+      "condition": "skill",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "explicit SKILL.md read",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/evidence/skill/answer.md",
+        "evals/results/evidence/skill/sources.md"
+      ],
+      "reviewer_checks": {
+        "word_limit": true,
+        "source_unchanged": true,
+        "human_review": "Correct current default, zero-write/read distinction, unsupported speed claim, derivative source and missing controls. Footer instruction not reflected in answer."
+      }
+    },
+    {
+      "case": "review",
+      "condition": "baseline",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "no Exactwork skill",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/review/baseline/answer.md",
+        "evals/results/review/baseline/discount.py"
+      ],
+      "reviewer_checks": {
+        "implementation_unchanged": true,
+        "supported_defects_reported": 2,
+        "known_defect_inventory": 2
+      }
+    },
+    {
+      "case": "review",
+      "condition": "skill",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "explicit SKILL.md read",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/review/skill/answer.md",
+        "evals/results/review/skill/discount.py"
+      ],
+      "reviewer_checks": {
+        "implementation_unchanged": true,
+        "supported_defects_reported": 1,
+        "known_defect_inventory": 2
+      }
+    },
+    {
+      "case": "review",
+      "condition": "revised-skill",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "explicit SKILL.md read",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/review/revised-skill/answer.md",
+        "evals/results/review/revised-skill/discount.py"
+      ],
+      "reviewer_checks": {
+        "implementation_unchanged": true,
+        "supported_defects_reported": 2,
+        "known_defect_inventory": 2
+      }
+    },
+    {
+      "case": "handoff",
+      "condition": "baseline",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "no Exactwork skill",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/handoff/baseline/compatibility.md",
+        "evals/results/handoff/baseline/handoff.md",
+        "evals/results/handoff/baseline/migration_v2.sql",
+        "evals/results/handoff/baseline/task-state.md"
+      ],
+      "reviewer_checks": {
+        "inputs_unchanged": true,
+        "human_review": "Latest one-release requirement and no-deploy boundary preserved; prepared/parser-reported/integration-unrun states distinguished; next action specified."
+      }
+    },
+    {
+      "case": "handoff",
+      "condition": "skill",
+      "trial": 1,
+      "harness": "Codex desktop collaboration subagent",
+      "model": "inherited session model; exact model/version not exposed in run receipt",
+      "invocation": "explicit SKILL.md read",
+      "provider_total_tokens": null,
+      "cost_usd": null,
+      "duration_seconds": null,
+      "tool_calls": null,
+      "evidence_files": [
+        "evals/results/handoff/skill/compatibility.md",
+        "evals/results/handoff/skill/handoff.md",
+        "evals/results/handoff/skill/migration_v2.sql",
+        "evals/results/handoff/skill/task-state.md"
+      ],
+      "reviewer_checks": {
+        "inputs_unchanged": true,
+        "human_review": "Latest one-release requirement and no-deploy boundary preserved; prepared/parser-reported/integration-unrun states distinguished; next action specified."
+      }
+    }
+  ],
+  "limitations": [
+    "One run per condition, not randomized or blinded; revised review is a same-fixture development retest.",
+    "Native client discovery not exercised; explicit file loading only.",
+    "No provider usage or exact model receipt available; no total-token/cost improvement claim.",
+    "Artifact checks and agent completion reports are available; full execution transcripts are not bundled.",
+    "The integer-precision review criterion was added after baseline revealed it; original rubric checked only the range defect."
+  ],
+  "current_skill_sha256": {
+    "exactwork": "d7cfe2958b138dec7274a1b7af920f4a734347bc2b74956758e8e106033aa150",
+    "exactwork-handoff": "7700b3e9f3498e1f28e2eacfd9314d6a1b46cdf76f504238be425cda8010e673",
+    "exactwork-research": "db058d7de01c2e4edee20702f9262ef7313518415a79501a594fe9783685c99e",
+    "exactwork-review": "c412dd8f445c76e9adcea087f8cfcd05ac3263349b9ceb83b293e5f881c63ffc"
+  },
+  "fixture_sha256": {
+    "fixtures/evidence/sources.md": "975cc9d9e8d4ca08e57c731e80b579e90b7cc073f66b82efa6ee36650326e4bb",
+    "fixtures/handoff/compatibility.md": "4a28ad23c9c22410376379e43a07a4473d332d6daf5bf218ec89d270fadad09b",
+    "fixtures/handoff/migration_v2.sql": "30f8941a173a4bf6369cc059dd53097a89caab7f026405a3766bee9e9ac0e505",
+    "fixtures/handoff/task-state.md": "87981df4db3d36aa3a4ed09a398ef52d1c88fe37086de7929df9ec4685659e7f",
+    "fixtures/latency/latency.py": "7cb08f3bac29b92ce11b716e4cf9c4d0668e69f19619350e894363e7d2a85f57",
+    "fixtures/latency/test_latency.py": "2c2c18775f9dddbfdb922862edb1804f325854b66661be48cc73d7422c301f71",
+    "fixtures/review/discount.py": "41fb25b5e79c38e4bd8d7cdbcf4e04f2ac405ca440cbd88dcb1af8af615be960"
+  }
+}

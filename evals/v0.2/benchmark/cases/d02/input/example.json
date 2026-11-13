@@ -1,0 +1,23 @@
+[
+  {
+    "id": "a",
+    "currency": "USD",
+    "direction": "credit",
+    "amount": "0.29",
+    "status": "posted"
+  },
+  {
+    "id": "a",
+    "currency": "EUR",
+    "direction": "credit",
+    "amount": "3.00",
+    "status": "posted"
+  },
+  {
+    "id": "b",
+    "currency": "USD",
+    "direction": "debit",
+    "amount": "0.29",
+    "status": "posted"
+  }
+]

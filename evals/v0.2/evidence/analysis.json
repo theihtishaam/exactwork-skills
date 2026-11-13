@@ -1,0 +1,2432 @@
+{
+  "schema_version": 1,
+  "expected_runs": 35,
+  "scheduled_runs": 35,
+  "exported_runs": 35,
+  "phases": {
+    "dev": {
+      "expected": 12,
+      "scheduled": 12,
+      "exported": 12
+    },
+    "holdout": {
+      "expected": 18,
+      "scheduled": 18,
+      "exported": 18
+    },
+    "ponytail": {
+      "expected": 5,
+      "scheduled": 5,
+      "exported": 5
+    }
+  },
+  "inputs": {
+    "dev-schedule.json": {
+      "original_sha256": "92c8142c14d8b586288909372bba92e7c751ed549afa3588c247499da003ddf9",
+      "public_sha256": "ffa8044fa17b6ecf840b10264a210bbf619e5dce97d4082bdef73cd7709fd266"
+    },
+    "holdout-schedule.json": {
+      "original_sha256": "234176f166c76e38d43b29e0458745715a34c6b086ccacb9df5c753c3d65d38f",
+      "public_sha256": "806b386afc6f116c83b44ec6c79c892e80f028e006b0ec3812e457414a01a090"
+    },
+    "ponytail-schedule.json": {
+      "original_sha256": "fa8838aa98babe835998e9c0e4de21e3d38ec945eb2085bd770f23f436fb6bb5",
+      "public_sha256": "50e946c415634ce929551004c2f236cd3596a14386677cfff31cbcf7bebe26c9"
+    },
+    "candidate-freeze.json": {
+      "original_sha256": "5a2829b8b9d7b965cda9d8329960bbe6524ce03129ce97029e0124d88389bedb",
+      "public_sha256": "5a2829b8b9d7b965cda9d8329960bbe6524ce03129ce97029e0124d88389bedb"
+    },
+    "study-plan.md": {
+      "original_sha256": "3524283437c119270a946f4b2fb1c0f9e25aeac3730c6cdda4fc450a42d200ea",
+      "public_sha256": "3524283437c119270a946f4b2fb1c0f9e25aeac3730c6cdda4fc450a42d200ea"
+    }
+  },
+  "complete": true,
+  "total_semantics": "Latest fresh-process cumulative input_tokens + output_tokens; cache and reasoning details are subsets, never added again.",
+  "privacy": "Observable completed-item allowlist; no reasoning items, raw stderr, thread/turn/session IDs, or known personal absolute paths. Original hashes are separate from sanitized-file hashes.",
+  "limits": [
+    "Exact default model unknown",
+    "Inherited instruction/skill catalog not proved absent",
+    "Concurrent wall times are not speed evidence",
+    "Scored schedules only; calibration infrastructure observations are not quality losses",
+    "Deterministic grades do not replace required semantic review",
+    "No pricing or paid cost inferred"
+  ],
+  "runs": [
+    {
+      "case": "d02",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "m01",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 36,
+      "checks_total": 36,
+      "semantic_review_required": false,
+      "usage": {
+        "input_tokens": 120602,
+        "cached_input_tokens": 110976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2795,
+        "reasoning_output_tokens": 322
+      },
+      "total_tokens": 123397,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 2899,
+      "wall_seconds": 87.953,
+      "prompt_sha256_original": "16f4e4a2ee27692e724c898f9c4c0e36258cc341288d75bf90c78921a6384d53",
+      "skill_sha256_original": "d7cfe2958b138dec7274a1b7af920f4a734347bc2b74956758e8e106033aa150",
+      "fixture_manifest_sha256_original": "095c91649002364cf7962f17ee3fce70ee638da4b28c8ee7bd2f132a07d13ac2",
+      "source_hashes": {
+        "record.json": "c77b6be1a4b641ff4b9a2b29e400b6c40c46f71c1a951bc98debee70fdfbc723",
+        "study-result.json": "3c9a6bdd6c20699e62ba84a20cbd373eab9f3ca6ab105d45172907637d41d35b",
+        "grade.json": "ee06da45d13c22b0899d6353f03fb3ea1bf9259ccbbd187f2f24e018c3375442",
+        "stdout.jsonl": "2a3ed2e24fef41eff27601f50c6c61269572044d6329ea79a7e38332b5caf936",
+        "prompt.txt": "16f4e4a2ee27692e724c898f9c4c0e36258cc341288d75bf90c78921a6384d53"
+      },
+      "public_files": {
+        "trace.jsonl": "2c2b0080147afef448754db5a3e3e10ad65beba4ba5e0931c646aee330083480",
+        "record.json": "177ff49d7b38b0609fba87df6c4ff5b99b3063d87b14cc891d75f911e9db332a",
+        "grade.json": "4b9c2674f27e28d5700d83674fc56878faa286e482e7b64bed92c050986f75e0",
+        "answer.txt": "1819953af5f1e679894bc2f0461ee75ba9ce11a85e6b0312c65d2c53a64a8815",
+        "artifacts/answer.md": "8e767e376dc0af0df77285639a907f2449d9544747cc054a5f92dff13364f3df",
+        "artifacts/report.py": "fd2d45ad8775d83ca0891b47e1070df246d4b2b52e40daf948e66da2f6d2fa39",
+        "artifacts/test_report.py": "1236e333fbbac7664a9eae9d955cdb615f5eab64c17bd71a6640da9f090495b7"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 4,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.md",
+          "status": "new",
+          "original_sha256": "8e767e376dc0af0df77285639a907f2449d9544747cc054a5f92dff13364f3df",
+          "bytes": 292,
+          "public_sha256": "8e767e376dc0af0df77285639a907f2449d9544747cc054a5f92dff13364f3df"
+        },
+        {
+          "path": "report.py",
+          "status": "changed",
+          "original_sha256": "fd2d45ad8775d83ca0891b47e1070df246d4b2b52e40daf948e66da2f6d2fa39",
+          "bytes": 1417,
+          "public_sha256": "fd2d45ad8775d83ca0891b47e1070df246d4b2b52e40daf948e66da2f6d2fa39"
+        },
+        {
+          "path": "test_report.py",
+          "status": "changed",
+          "original_sha256": "1236e333fbbac7664a9eae9d955cdb615f5eab64c17bd71a6640da9f090495b7",
+          "bytes": 1862,
+          "public_sha256": "1236e333fbbac7664a9eae9d955cdb615f5eab64c17bd71a6640da9f090495b7"
+        },
+        {
+          "path": "__pycache__/report.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "8d7b1e8b359ddcc387bff0e47675aa92c4cbaf7fb3c7e85976361b3f6abe0645",
+          "bytes": 2058,
+          "export_status": "binary_not_exported"
+        },
+        {
+          "path": "__pycache__/test_report.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "d8dfef557c98e6eb2857c87f419c73a09fc5f18fb7c8b7b26737dbf9060e361b",
+          "bytes": 3569,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/dev/d02/m01"
+    },
+    {
+      "case": "d03",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "m02",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": false,
+      "checks_passed": 12,
+      "checks_total": 13,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 74186,
+        "cached_input_tokens": 65792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 889,
+        "reasoning_output_tokens": 96
+      },
+      "total_tokens": 75075,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 2,
+      "tool_output_chars": 1929,
+      "wall_seconds": 28.234,
+      "prompt_sha256_original": "9c9b0e9969110db2aefe9677212966b6e152f515cf29191624bfd41e543049d2",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "5ea544ed1031a301259f8fa6c979c5aef6b7a9e1647f8d89db86e2a89bfc0481",
+      "source_hashes": {
+        "record.json": "d05e1262996b9911ae22f1017f2bb861d516045b62ed87a7360b61d7198c42b6",
+        "study-result.json": "be701322e58a81bc6d0c6b4e000057cdf303274fd7ec8bbe3abdf683bbd270ef",
+        "grade.json": "749fb109a10b243cb66b96591f871932ad4a52bab91c3f4ddf9a5afc4f2c83e3",
+        "stdout.jsonl": "c5870fe14d084b67ce056d734d98c82912b829886a5d6a20909bcf9cee5e5e65",
+        "prompt.txt": "9c9b0e9969110db2aefe9677212966b6e152f515cf29191624bfd41e543049d2"
+      },
+      "public_files": {
+        "trace.jsonl": "b0840430e71f513c1d7279813b41a389e773aeaf0f9cd2fea67abfbae26158bd",
+        "record.json": "3bdb49111ba4e5b19986eedb2ca247e3c8ead5178020534d06067ff2f9351c5c",
+        "grade.json": "91997581137a2c6df45157f50595d1790309131758781a0a84c893f25c99acca",
+        "answer.txt": "831bddf763f8d4ee25dcb2fa31b91a080ebc9a9f87a7a030baf31ead4c1a8752",
+        "artifacts/answer.json": "6ee50075cf3153d141b01364297149148667238b49ba8c5a29b76219368b35a1"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 3,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "6ee50075cf3153d141b01364297149148667238b49ba8c5a29b76219368b35a1",
+          "bytes": 746,
+          "public_sha256": "6ee50075cf3153d141b01364297149148667238b49ba8c5a29b76219368b35a1"
+        }
+      ],
+      "evidence_path": "runs/dev/d03/m02"
+    },
+    {
+      "case": "d04",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "m03",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 3,
+      "checks_total": 3,
+      "semantic_review_required": false,
+      "usage": {
+        "input_tokens": 34688,
+        "cached_input_tokens": 21248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 569,
+        "reasoning_output_tokens": 85
+      },
+      "total_tokens": 35257,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 1,
+      "tool_output_chars": 68,
+      "wall_seconds": 27.437,
+      "prompt_sha256_original": "f4c16948484cebed261de9c21335c3eaa51db45a5dec9b9f4dd853feedc301a8",
+      "skill_sha256_original": "a221bb2f3acf414b1445720ba7299dba40792a8396fecd5433ce6742984a7741",
+      "fixture_manifest_sha256_original": "c1948cdf871e5a2e3532eb1a9ad4f0d8179f530485e1481c6a75f890581219cd",
+      "source_hashes": {
+        "record.json": "dbed1d8fe80ae1554d28371721ac8a57bd0b2fa00d0c23bc6ae27ac6f3382e63",
+        "study-result.json": "536e755b3be9b046fe4813235d1e258bb807902c723a1ba1ec82f45eb345b56e",
+        "grade.json": "a4429cdf0a604e9d57007cae6aa54d45b09acbf6f286fe69b9a5ace418a81d3a",
+        "stdout.jsonl": "870c2b996744872201786a3ab9feb442f3d401b335f6ffc5b8b7dc1cbe97d598",
+        "prompt.txt": "f4c16948484cebed261de9c21335c3eaa51db45a5dec9b9f4dd853feedc301a8"
+      },
+      "public_files": {
+        "trace.jsonl": "08e12f01754f9c0caa9897ec397420c711aa0d3970d4c4432719e9a1d786b415",
+        "record.json": "2c59a45158917bf723e4da0b2bb7dc310e3e564a342f12a9a69aae0eef2778b4",
+        "grade.json": "a35029dd88d03c07c4d6cad3d13faeb190bbec7a6c1545ecd682c03af20d4ac0",
+        "answer.txt": "c4bd547f17a53fe534e455e780743a241eaf0bbbe6f011afe890c3d6e59f3767",
+        "artifacts/ui-labels.json": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 1,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "ui-labels.json",
+          "status": "changed",
+          "original_sha256": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1",
+          "bytes": 143,
+          "public_sha256": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1"
+        }
+      ],
+      "evidence_path": "runs/dev/d04/m03"
+    },
+    {
+      "case": "d01",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "m04",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": false,
+      "checks_passed": 19,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 112470,
+        "cached_input_tokens": 90880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 916,
+        "reasoning_output_tokens": 47
+      },
+      "total_tokens": 113386,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 3,
+      "tool_output_chars": 1052198,
+      "wall_seconds": 31.578,
+      "prompt_sha256_original": "bbe229d6fa8041002c2212c3da59e0cca5095e104777f5c56e8273bc73f9c5a1",
+      "skill_sha256_original": "d7cfe2958b138dec7274a1b7af920f4a734347bc2b74956758e8e106033aa150",
+      "fixture_manifest_sha256_original": "99a641217baeceb86740b39e08062e785f9b607aec7888e64e1e4bcc63475e98",
+      "source_hashes": {
+        "record.json": "aee45132dca21e196311c8337d644d25deb286fbee781f64b84f578ee16da159",
+        "study-result.json": "b1620612ae059872e29fc26e9d4586b7a92f42231ad78b0773800c5f05940ae0",
+        "grade.json": "42d84a3e1d3921bf7e86fbdfd8233bfda878e622620a2f48300e1c0115254eb6",
+        "stdout.jsonl": "bac12dcc1bc4d9d611e6b30ba643f8ffa4d9b297a47df93b4b9b11eb863db126",
+        "prompt.txt": "bbe229d6fa8041002c2212c3da59e0cca5095e104777f5c56e8273bc73f9c5a1"
+      },
+      "public_files": {
+        "trace.jsonl": "4a72e04731f11024bd5629866fc4aafeeb34e45b18944dfc14cb62266af2910d",
+        "record.json": "3febe63942b9404d66c0a6289ce5e2dec6a26ccedf893e2d7a0b0e47babf2990",
+        "grade.json": "49a4568e71901b6231d717e5afc9aeed45f14b88a2b437af0d47bdfa26e9272e",
+        "answer.txt": "ca18d3d918e1257ffe70164d70ce1870688fe412c67b9638b9050dd83dc3353c",
+        "artifacts/answer.json": "527323b44b00fc0bc955b9459a13c8baf85616c57ff930dcd2175a1f566710ed"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 3,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "527323b44b00fc0bc955b9459a13c8baf85616c57ff930dcd2175a1f566710ed",
+          "bytes": 1316,
+          "public_sha256": "527323b44b00fc0bc955b9459a13c8baf85616c57ff930dcd2175a1f566710ed"
+        }
+      ],
+      "evidence_path": "runs/dev/d01/m04"
+    },
+    {
+      "case": "d02",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "m05",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 36,
+      "checks_total": 36,
+      "semantic_review_required": false,
+      "usage": {
+        "input_tokens": 94872,
+        "cached_input_tokens": 86784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3305,
+        "reasoning_output_tokens": 599
+      },
+      "total_tokens": 98177,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 3043,
+      "wall_seconds": 75.453,
+      "prompt_sha256_original": "7f7da2805bd643cad5ff0a997f841605c4a311fa8a905347b0c8bdb660d7c38e",
+      "skill_sha256_original": "a221bb2f3acf414b1445720ba7299dba40792a8396fecd5433ce6742984a7741",
+      "fixture_manifest_sha256_original": "095c91649002364cf7962f17ee3fce70ee638da4b28c8ee7bd2f132a07d13ac2",
+      "source_hashes": {
+        "record.json": "71811fefc4a186de1120ebb055e6f809cda2100e76c3a726bc3218147691c139",
+        "study-result.json": "aded0199dce9438778d710ab86838dbb0807d80dd62038af608a48156df5a58f",
+        "grade.json": "ff412889eb429672af032d5aeddf73b532f1e9d25bd1930c4c7067b408b416c7",
+        "stdout.jsonl": "ad19a8df44f70f8c422529e64d30f09583859a8a7e3eaa9c70849898195c0069",
+        "prompt.txt": "7f7da2805bd643cad5ff0a997f841605c4a311fa8a905347b0c8bdb660d7c38e"
+      },
+      "public_files": {
+        "trace.jsonl": "ece4675d888dd30edc330cd303842fd1ddb8910cfc824beee6b5b8aba6854049",
+        "record.json": "30490d02e4abfc1cd21a1d27f6850cbf4321a27182cb39f6e61b8cf1de4d3c51",
+        "grade.json": "2725a1d4f26abb2a7273ae927251d0a6419f96846bd2c75f03a8d4ae8135c519",
+        "answer.txt": "739c23d4423fa1f1d09bbabaefce4dedb2045f2d35f4156840df9d8616b8a570",
+        "artifacts/answer.md": "8eba390b643610de780cc214146f465fc7512798cba3da0a1b4e5613f97608e4",
+        "artifacts/report.py": "2bcf392d951f8948ef1929f5e9f0893e6c62425a10010a18c128c7a8945ea125",
+        "artifacts/test_report.py": "52c79cad0c8a4890a20ea6ee6023445c81307a1a3f60ad9851fa7a33cd685c36"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 4,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.md",
+          "status": "new",
+          "original_sha256": "8eba390b643610de780cc214146f465fc7512798cba3da0a1b4e5613f97608e4",
+          "bytes": 329,
+          "public_sha256": "8eba390b643610de780cc214146f465fc7512798cba3da0a1b4e5613f97608e4"
+        },
+        {
+          "path": "report.py",
+          "status": "changed",
+          "original_sha256": "2bcf392d951f8948ef1929f5e9f0893e6c62425a10010a18c128c7a8945ea125",
+          "bytes": 1599,
+          "public_sha256": "2bcf392d951f8948ef1929f5e9f0893e6c62425a10010a18c128c7a8945ea125"
+        },
+        {
+          "path": "test_report.py",
+          "status": "changed",
+          "original_sha256": "52c79cad0c8a4890a20ea6ee6023445c81307a1a3f60ad9851fa7a33cd685c36",
+          "bytes": 1157,
+          "public_sha256": "52c79cad0c8a4890a20ea6ee6023445c81307a1a3f60ad9851fa7a33cd685c36"
+        },
+        {
+          "path": "__pycache__/report.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "f4de753999e598cab2433ef011f6acf724ea68a87546727531d4fb2afc6eb4b8",
+          "bytes": 2356,
+          "export_status": "binary_not_exported"
+        },
+        {
+          "path": "__pycache__/test_report.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "c4709999758867f738221a1d5cfb3e8a443b13a24707767f98acc4f97a72a6ab",
+          "bytes": 2055,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/dev/d02/m05"
+    },
+    {
+      "case": "d03",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "m06",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": false,
+      "checks_passed": 12,
+      "checks_total": 13,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 71675,
+        "cached_input_tokens": 63872,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 896,
+        "reasoning_output_tokens": 112
+      },
+      "total_tokens": 72571,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 2,
+      "tool_output_chars": 1999,
+      "wall_seconds": 28.094,
+      "prompt_sha256_original": "fa0255c0d4f9f50dd44b5ff567b574d661bb7bf54ceb175a4bc0696b41c3790b",
+      "skill_sha256_original": "db058d7de01c2e4edee20702f9262ef7313518415a79501a594fe9783685c99e",
+      "fixture_manifest_sha256_original": "5ea544ed1031a301259f8fa6c979c5aef6b7a9e1647f8d89db86e2a89bfc0481",
+      "source_hashes": {
+        "record.json": "7ee08fc800204369106c05217623ab5ad6b7670f5a42ec08fa1e350e994e7a13",
+        "study-result.json": "9c119c6d79fb76f807d1a05865a9d210ceda177114f6c7ea5633e6f6a8a86379",
+        "grade.json": "749fb109a10b243cb66b96591f871932ad4a52bab91c3f4ddf9a5afc4f2c83e3",
+        "stdout.jsonl": "147a12502611721029fa25a3fe057e061b64dde867501a349334597c68b9ee5d",
+        "prompt.txt": "fa0255c0d4f9f50dd44b5ff567b574d661bb7bf54ceb175a4bc0696b41c3790b"
+      },
+      "public_files": {
+        "trace.jsonl": "2c35f85934b5d02bf6c00c7073f14db8193344f92a63c9f29cfb3133bc7e4cb9",
+        "record.json": "bafc1c9646b85a9517c8c6364a186675389f4889dd990bc641d7ed8c1494bfdd",
+        "grade.json": "91997581137a2c6df45157f50595d1790309131758781a0a84c893f25c99acca",
+        "answer.txt": "3ab2afffcf7b2e2b3983b748a0f6bf7665ed52f0b720fc330ea28e0e4caf966a",
+        "artifacts/answer.json": "a653eb7b919b1425954c897d15e02f82a1816a92f5bbf41a848a8265ad46b917"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 3,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "a653eb7b919b1425954c897d15e02f82a1816a92f5bbf41a848a8265ad46b917",
+          "bytes": 734,
+          "public_sha256": "a653eb7b919b1425954c897d15e02f82a1816a92f5bbf41a848a8265ad46b917"
+        }
+      ],
+      "evidence_path": "runs/dev/d03/m06"
+    },
+    {
+      "case": "d04",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "m07",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 3,
+      "checks_total": 3,
+      "semantic_review_required": false,
+      "usage": {
+        "input_tokens": 33787,
+        "cached_input_tokens": 27520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 373,
+        "reasoning_output_tokens": 62
+      },
+      "total_tokens": 34160,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 1,
+      "tool_output_chars": 53,
+      "wall_seconds": 14.672,
+      "prompt_sha256_original": "40e3101e7c1404af9c83a4139d13e9e7a08873af810873e1c6f9818a09ac0864",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "c1948cdf871e5a2e3532eb1a9ad4f0d8179f530485e1481c6a75f890581219cd",
+      "source_hashes": {
+        "record.json": "56aeb8b25f4c3c7eb708995bcc1ff5133c124d10c83f0e448b0e8f3df4d8b83e",
+        "study-result.json": "209df38c36c22bd7c6140c915439410d429f38de68df275ca3cfade517c98b01",
+        "grade.json": "a4429cdf0a604e9d57007cae6aa54d45b09acbf6f286fe69b9a5ace418a81d3a",
+        "stdout.jsonl": "562eae43c01fbe7d16ec2f224d683e9068a33b78b7db51959e4b35d4d7e765c2",
+        "prompt.txt": "40e3101e7c1404af9c83a4139d13e9e7a08873af810873e1c6f9818a09ac0864"
+      },
+      "public_files": {
+        "trace.jsonl": "7e0cfc0f9710822a1dce723aa3cb688a7303c5eeebd80fbc1c017ebc2f992b6e",
+        "record.json": "517c9418ae1cfcda1852fd4f084f77d98fa01c7b866135413f464ac5f20a167c",
+        "grade.json": "a35029dd88d03c07c4d6cad3d13faeb190bbec7a6c1545ecd682c03af20d4ac0",
+        "answer.txt": "e94b5ee1fb3f1ad9d56cf205b07aac2f17de2a017492f20430244939ca9fecaf",
+        "artifacts/ui-labels.json": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 1,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "ui-labels.json",
+          "status": "changed",
+          "original_sha256": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1",
+          "bytes": 143,
+          "public_sha256": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1"
+        }
+      ],
+      "evidence_path": "runs/dev/d04/m07"
+    },
+    {
+      "case": "d01",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "m08",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 179590,
+        "cached_input_tokens": 156160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1482,
+        "reasoning_output_tokens": 241
+      },
+      "total_tokens": 181072,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 5,
+      "tool_output_chars": 1056376,
+      "wall_seconds": 46.406,
+      "prompt_sha256_original": "78fdcaf7553c46a55cf70b78c311e9abb0db0d7c184dd5e5b3bc2f0cef5408ac",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "99a641217baeceb86740b39e08062e785f9b607aec7888e64e1e4bcc63475e98",
+      "source_hashes": {
+        "record.json": "8e505a8482ef4c7af9bb451ab4d3432ed850f2ea3b21a2dda549c1348d5a7dd0",
+        "study-result.json": "47a3cceda8fa7287b7c08314fca1ec564ffa653a4b1173742ae254125c749da8",
+        "grade.json": "b318c2a1b6f6463edd2f7d96ce7bb63a8b1d7bf6483eb00e3daeed31ff2637a9",
+        "stdout.jsonl": "0d10f76e46cba6c87ae989dc2c05d1775fb0a141aea9028f9209a562e988be95",
+        "prompt.txt": "78fdcaf7553c46a55cf70b78c311e9abb0db0d7c184dd5e5b3bc2f0cef5408ac"
+      },
+      "public_files": {
+        "trace.jsonl": "1faec287ed5b89b7bd357a2040111b39f58dbc1875078b359631143c2dc011dd",
+        "record.json": "769c682c5fa7ce0790d246edad393e578dafb48d1f1e40331c650ec1ae994810",
+        "grade.json": "0870dea471fa34bce3da9491885cb5722f17a589804cc42f132a8e3af346b225",
+        "answer.txt": "6703a621bb6b4f6ab9284166f62636011d9206531d59aeec5bb165fbe934f7c1",
+        "artifacts/answer.json": "ba72ce317b70ccba16e3b29123839ee24751cd89d64c44ab3dbc4a17f18613d3"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "ba72ce317b70ccba16e3b29123839ee24751cd89d64c44ab3dbc4a17f18613d3",
+          "bytes": 1412,
+          "public_sha256": "ba72ce317b70ccba16e3b29123839ee24751cd89d64c44ab3dbc4a17f18613d3"
+        }
+      ],
+      "evidence_path": "runs/dev/d01/m08"
+    },
+    {
+      "case": "d02",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "m09",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 36,
+      "checks_total": 36,
+      "semantic_review_required": false,
+      "usage": {
+        "input_tokens": 131736,
+        "cached_input_tokens": 123136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3125,
+        "reasoning_output_tokens": 771
+      },
+      "total_tokens": 134861,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 5,
+      "tool_output_chars": 4731,
+      "wall_seconds": 72.25,
+      "prompt_sha256_original": "dc838b29e684cc464bb0fdda52d7090be98d2ebd26ba7d9840c220b68fa59307",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "095c91649002364cf7962f17ee3fce70ee638da4b28c8ee7bd2f132a07d13ac2",
+      "source_hashes": {
+        "record.json": "7ddd45a28fcc10cb4f85719d4404df690da7f716c7b107212d9a16e3fd2730c2",
+        "study-result.json": "b4debc72d8fd3ee21a7da4a29448071a0a09cbbc686494558651a8ee0b1aaa31",
+        "grade.json": "19474fbe4723e0235cc90c38553f2e053660f252619dc776615b3173bb19a1ea",
+        "stdout.jsonl": "a8c40537ce2f0137c14da29999a93c40ad09e7ec9b1c63977f2faacee1c553ed",
+        "prompt.txt": "dc838b29e684cc464bb0fdda52d7090be98d2ebd26ba7d9840c220b68fa59307"
+      },
+      "public_files": {
+        "trace.jsonl": "33fc6111667c6854f9f5cb5182165850ab3d8e7df5aa8843794fea216bc3b55a",
+        "record.json": "dc21b80b3f1490e6762d2e5d296527028e921d5050093dbed84aba2917d8f212",
+        "grade.json": "5d67717d1f221d22010113f0193668856d8df3654d33d1236b95e90eef533621",
+        "answer.txt": "7c734e0f536b50c2199cbb6ddf3db76b53a1d2cd2897b46fc1c1ea96d025ab9a",
+        "artifacts/answer.md": "c34c0887dc04f64aa55f1a61184f955e26ebe35f34c300263690a08b7de9144c",
+        "artifacts/report.py": "01ce8d21d86354abcbd45cd783b6a3f1f9afdb6f3c632aa5427e5d5f05db540c",
+        "artifacts/test_report.py": "e4e6cc5b43d76126fc1878ec8e66dbdc05c6c4e05b4039ebf88a049bb7cd16df"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.md",
+          "status": "new",
+          "original_sha256": "c34c0887dc04f64aa55f1a61184f955e26ebe35f34c300263690a08b7de9144c",
+          "bytes": 281,
+          "public_sha256": "c34c0887dc04f64aa55f1a61184f955e26ebe35f34c300263690a08b7de9144c"
+        },
+        {
+          "path": "report.py",
+          "status": "changed",
+          "original_sha256": "01ce8d21d86354abcbd45cd783b6a3f1f9afdb6f3c632aa5427e5d5f05db540c",
+          "bytes": 1608,
+          "public_sha256": "01ce8d21d86354abcbd45cd783b6a3f1f9afdb6f3c632aa5427e5d5f05db540c"
+        },
+        {
+          "path": "test_report.py",
+          "status": "changed",
+          "original_sha256": "e4e6cc5b43d76126fc1878ec8e66dbdc05c6c4e05b4039ebf88a049bb7cd16df",
+          "bytes": 993,
+          "public_sha256": "e4e6cc5b43d76126fc1878ec8e66dbdc05c6c4e05b4039ebf88a049bb7cd16df"
+        },
+        {
+          "path": "__pycache__/report.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "fcec162da1f7b0e5d731e44132d9a5d0ce2223a1cf29ccbe03ec30da1affc081",
+          "bytes": 2429,
+          "export_status": "binary_not_exported"
+        },
+        {
+          "path": "__pycache__/test_report.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "e0a034d32f0ccdaca76f5a0fa6787ceb7752c40a51b6b5dafbe308c97b4a0b55",
+          "bytes": 2173,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/dev/d02/m09"
+    },
+    {
+      "case": "d03",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "m10",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": false,
+      "checks_passed": 12,
+      "checks_total": 13,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 56144,
+        "cached_input_tokens": 47744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 628,
+        "reasoning_output_tokens": 105
+      },
+      "total_tokens": 56772,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 2,
+      "tool_output_chars": 2002,
+      "wall_seconds": 23.484,
+      "prompt_sha256_original": "daef11adc546ace8faef65f664dbfef3acc1973657780afbb0a4930f44c2afa1",
+      "skill_sha256_original": "5d398635591c4c56dbfa32cf9fd480017fc1fbf4647b21658b085cd767a65162",
+      "fixture_manifest_sha256_original": "5ea544ed1031a301259f8fa6c979c5aef6b7a9e1647f8d89db86e2a89bfc0481",
+      "source_hashes": {
+        "record.json": "66f27a3e18b881840387ec428480ebcd3d08f53487b3c7208579a2c2af739a27",
+        "study-result.json": "36c223cf791432a5e0529056fdfca6d242bef2c47fb6b1123bb2138514de92f4",
+        "grade.json": "749fb109a10b243cb66b96591f871932ad4a52bab91c3f4ddf9a5afc4f2c83e3",
+        "stdout.jsonl": "376d560f30cf85516c447f9ef5621c1502f15705c3c0e15f3ea4ccb6a47410ed",
+        "prompt.txt": "daef11adc546ace8faef65f664dbfef3acc1973657780afbb0a4930f44c2afa1"
+      },
+      "public_files": {
+        "trace.jsonl": "6b1ef46b126e7e52c7fb59dfd35c4f351fa994d8ab0d4e6eb3373cac0871c408",
+        "record.json": "578a2415daf7ac99fb04dde0e3d269b9bc4d7a0f57b5ed861845fe573308e1af",
+        "grade.json": "91997581137a2c6df45157f50595d1790309131758781a0a84c893f25c99acca",
+        "answer.txt": "e957b492e4191a729b226f42433b01656423830506b448393bf1c8ebe563f51e",
+        "artifacts/answer.json": "d09a4aada8677bed6ab6f32a5246ef8a63b33922c308c2d8517d2ac72264cfd5"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 2,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "d09a4aada8677bed6ab6f32a5246ef8a63b33922c308c2d8517d2ac72264cfd5",
+          "bytes": 819,
+          "public_sha256": "d09a4aada8677bed6ab6f32a5246ef8a63b33922c308c2d8517d2ac72264cfd5"
+        }
+      ],
+      "evidence_path": "runs/dev/d03/m10"
+    },
+    {
+      "case": "d04",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "m11",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 3,
+      "checks_total": 3,
+      "semantic_review_required": false,
+      "usage": {
+        "input_tokens": 35097,
+        "cached_input_tokens": 28288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 565,
+        "reasoning_output_tokens": 23
+      },
+      "total_tokens": 35662,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 1,
+      "tool_output_chars": 49,
+      "wall_seconds": 18.11,
+      "prompt_sha256_original": "450b563a30f89495f260f29855388e6cbc7aad83ab038acbf7abc1ebda8d4e21",
+      "skill_sha256_original": "d7cfe2958b138dec7274a1b7af920f4a734347bc2b74956758e8e106033aa150",
+      "fixture_manifest_sha256_original": "c1948cdf871e5a2e3532eb1a9ad4f0d8179f530485e1481c6a75f890581219cd",
+      "source_hashes": {
+        "record.json": "132cc4019f6955ab26f828fe22aff3488e995b4d6e3f05313c72f0610d4f8441",
+        "study-result.json": "d168d04b363451fc73428490857f938515ae9e6f29b44e41bd95fabdb775b3e5",
+        "grade.json": "a4429cdf0a604e9d57007cae6aa54d45b09acbf6f286fe69b9a5ace418a81d3a",
+        "stdout.jsonl": "fb91611373e324dea35286f81f22842d6fae4a5a19edb4c09abc9593e6bac47d",
+        "prompt.txt": "450b563a30f89495f260f29855388e6cbc7aad83ab038acbf7abc1ebda8d4e21"
+      },
+      "public_files": {
+        "trace.jsonl": "6f9945aa28c2c27ff52eab2a0f66bc4f437445330dda3547b3a648a071b7814b",
+        "record.json": "afc7d63be4329b612bdaddd3d762e45a40e127796d1269767eba49ae6932fb85",
+        "grade.json": "a35029dd88d03c07c4d6cad3d13faeb190bbec7a6c1545ecd682c03af20d4ac0",
+        "answer.txt": "7e982dd6f4c035f818977361c44153ed77d44c5382c04cc314041b3c525db9bf",
+        "artifacts/ui-labels.json": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 1,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "ui-labels.json",
+          "status": "changed",
+          "original_sha256": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1",
+          "bytes": 143,
+          "public_sha256": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1"
+        }
+      ],
+      "evidence_path": "runs/dev/d04/m11"
+    },
+    {
+      "case": "d01",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "m12",
+      "phase": "dev",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 156379,
+        "cached_input_tokens": 145920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1940,
+        "reasoning_output_tokens": 325
+      },
+      "total_tokens": 158319,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 6,
+      "tool_output_chars": 7015,
+      "wall_seconds": 53.625,
+      "prompt_sha256_original": "1412433769831069c7f61ad461302a48c134d58f80e5d90f932b27d432e436b2",
+      "skill_sha256_original": "20feecfb9943d27f07638392762e8fd2b3c6b56ee93b073a426c6df288048dff",
+      "fixture_manifest_sha256_original": "99a641217baeceb86740b39e08062e785f9b607aec7888e64e1e4bcc63475e98",
+      "source_hashes": {
+        "record.json": "435ad440579dafec9ecb2c42a5e6f50037b59bf60675f57f85c844836c8af7b4",
+        "study-result.json": "a314830dd755e22bb44ffe667c82579b67ea6c20a470ef204bb604ff1a4f98d3",
+        "grade.json": "7ed941a61f313d773623e9ed7a80bc8846a926d2ee70d0053ad295f6e7906517",
+        "stdout.jsonl": "0ebbb67a5675ed797c8b88cbe8984c856fdef8d91cf16300c2c9fb5596232be9",
+        "prompt.txt": "1412433769831069c7f61ad461302a48c134d58f80e5d90f932b27d432e436b2"
+      },
+      "public_files": {
+        "trace.jsonl": "9078867ab1b2af2c2de918cf43132a0cf3b48d94fc1593a378740d19f976d897",
+        "record.json": "56aa50e30fff21053a801fd491516685181262c7f18b32db3d0a9d5e403f6575",
+        "grade.json": "fbf2973609b74ffcabf332dd5f971108a0dccb4d63aad43657ed5d4d3c4889f7",
+        "answer.txt": "7ae68390f4f4aadfbd3a13899cea2a48a1e3662dac6cb477be143108ee66a27b",
+        "artifacts/answer.json": "f5bab33a035dc54c7202afd8164b1adb0d9ca557a594ecad06954b263dd736d1"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 7,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "f5bab33a035dc54c7202afd8164b1adb0d9ca557a594ecad06954b263dd736d1",
+          "bytes": 1389,
+          "public_sha256": "f5bab33a035dc54c7202afd8164b1adb0d9ca557a594ecad06954b263dd736d1"
+        }
+      ],
+      "evidence_path": "runs/dev/d01/m12"
+    },
+    {
+      "case": "h01",
+      "condition": "v02",
+      "trial": 2,
+      "run_id": "t2p2",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": false,
+      "checks_passed": 19,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 145450,
+        "cached_input_tokens": 122880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2294,
+        "reasoning_output_tokens": 392
+      },
+      "total_tokens": 147744,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 5,
+      "tool_output_chars": 6730,
+      "wall_seconds": 116.313,
+      "prompt_sha256_original": "48f3b46dadb0edfce397ea603f6dee287129858b4920d846960ce7ede134ae19",
+      "skill_sha256_original": "20feecfb9943d27f07638392762e8fd2b3c6b56ee93b073a426c6df288048dff",
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "b66deba22446dd5966892eafb6625fa487f900f0124b5244a94f09abd928f498",
+        "study-result.json": "db3a84dccc89e60d3f01562e11af9a654c3857fd46dcb2bb449756d3b5afee8a",
+        "grade.json": "0137fbdff90a40cb1fcae38f45986dff45584352705d8cf798645c6ebe8d6b05",
+        "stdout.jsonl": "a956fc09771e9747fadcf0f28597e52f6f37f0cb09232fcf319ab653e97006f9",
+        "prompt.txt": "48f3b46dadb0edfce397ea603f6dee287129858b4920d846960ce7ede134ae19"
+      },
+      "public_files": {
+        "trace.jsonl": "e8ef95baf942a29da7c142faabd1bea47d5336bb930cd7f668fda7de955ea77e",
+        "record.json": "eb092403e95d1107ce0f37c203aa2de77a7de2fbed0c47cf313f3556a6e55c22",
+        "grade.json": "111fa76b961470e4abf661ee06cb3a512f6ff2040fb65967179fa8242a5ee456",
+        "answer.txt": "0905af26a139c2df7077b81e838353517f250aacf325f76f1080d490412b6f62",
+        "artifacts/answer.json": "a6cbe08a9913b7d62587a97c1b5f660e27d39f47fc9cb4e306c0e04372a853dd"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 6,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "a6cbe08a9913b7d62587a97c1b5f660e27d39f47fc9cb4e306c0e04372a853dd",
+          "bytes": 1408,
+          "public_sha256": "a6cbe08a9913b7d62587a97c1b5f660e27d39f47fc9cb4e306c0e04372a853dd"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t2p2"
+    },
+    {
+      "case": "h02",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "t1p2",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 109831,
+        "cached_input_tokens": 94592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1607,
+        "reasoning_output_tokens": 191
+      },
+      "total_tokens": 111438,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 3259,
+      "wall_seconds": 55.031,
+      "prompt_sha256_original": "256e30fd95f74337bf988d3a84e119fae4159baccaaebd44112cecf24dff2407",
+      "skill_sha256_original": "c412dd8f445c76e9adcea087f8cfcd05ac3263349b9ceb83b293e5f881c63ffc",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "4398975f8e7c0122baf45acaad8f113bd95a932106578e4b2fa740716760d28a",
+        "study-result.json": "b94b2a9067d31fac028b6a9c5d3e8d687b78756a04f0b62e360e7e167c96ab1b",
+        "grade.json": "6386a8bdd06c0c9f46dab6d22829604554787084b70fdb0ee6d0cd671661610e",
+        "stdout.jsonl": "4ff11cb650c95b68b72ad3fcec3da780bc75a8b6e32ac71d9b83e7dce5ad6366",
+        "prompt.txt": "256e30fd95f74337bf988d3a84e119fae4159baccaaebd44112cecf24dff2407"
+      },
+      "public_files": {
+        "trace.jsonl": "e8d68c34071962ae1cac6606dbd574f4c1af36cd11142606b0f35309fb88cf1d",
+        "record.json": "6836806aa8920c7cdf7ce931e9bbabf5a9776f3d760796b9897f67870f2959bb",
+        "grade.json": "f85644aa2055fce5dc4ac2fc8a8513e65e32212ce3c14106f2bb0c4b91d90997",
+        "answer.txt": "eeec19ccac820c13c439369a72f6c7904e9ec2f4d40abf156f1ccf76166f1355",
+        "artifacts/answer.json": "cbc13b90261f42780552f78a37cc89ee5dea1cdc4f81f5ac43ff7f077795dbbc"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "cbc13b90261f42780552f78a37cc89ee5dea1cdc4f81f5ac43ff7f077795dbbc",
+          "bytes": 1162,
+          "public_sha256": "cbc13b90261f42780552f78a37cc89ee5dea1cdc4f81f5ac43ff7f077795dbbc"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "407e0f9946e5c1c8aff74051b15bf52925c4a4876af5db2411bef1cdae1581aa",
+          "bytes": 1609,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t1p2"
+    },
+    {
+      "case": "h01",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "t1p1",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 112338,
+        "cached_input_tokens": 90752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1420,
+        "reasoning_output_tokens": 171
+      },
+      "total_tokens": 113758,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 3,
+      "tool_output_chars": 1053707,
+      "wall_seconds": 41.421,
+      "prompt_sha256_original": "932768e14bc5077ece52a333846e6647242a625408cfdf6a16d4faddf3193551",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "daea6abe3ae0fcd321722a28ea1dc060288dffd9014e31a35d75574d13ccf828",
+        "study-result.json": "3a8b8840fe7352af038b6ddda53b9ac7ffc046d463e33e929deeb72aef31615e",
+        "grade.json": "9f135002b9324e3980568f436b711a1c142b869195e0510ca37bef0545f5c4c4",
+        "stdout.jsonl": "78bbbaeda3447fb73d55d7369956f9862868d1a9ba9dc391d46a385fdf901c36",
+        "prompt.txt": "932768e14bc5077ece52a333846e6647242a625408cfdf6a16d4faddf3193551"
+      },
+      "public_files": {
+        "trace.jsonl": "2c222f038f6da352a6b2a6348f4ebf59a8786881f80cbc3320f433927e7836ec",
+        "record.json": "b2738a9a6e418068bde94bfbe937a2a8034414f2f24d26a2cd2df5d026346dd5",
+        "grade.json": "ee205b261d4704cd56176be2bfd17235b6f5f4ee3b0ba1c802f5047c240bafae",
+        "answer.txt": "166a6bdb7be62e3d7835398f18985ace53c81e65c62a9a7bb230653ab752ed4e",
+        "artifacts/answer.json": "2973b612c91b8790450da06996e5fbc51763619c7d756385a52d8d6f1d541e26"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 3,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "2973b612c91b8790450da06996e5fbc51763619c7d756385a52d8d6f1d541e26",
+          "bytes": 1374,
+          "public_sha256": "2973b612c91b8790450da06996e5fbc51763619c7d756385a52d8d6f1d541e26"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t1p1"
+    },
+    {
+      "case": "h02",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "t1p3",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 89836,
+        "cached_input_tokens": 81536,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1213,
+        "reasoning_output_tokens": 161
+      },
+      "total_tokens": 91049,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 3376,
+      "wall_seconds": 35.453,
+      "prompt_sha256_original": "3b472ab44f4b57c96bab3a6650b0d303cca8a19dfe6ac2dcae49fc41a3cf96de",
+      "skill_sha256_original": "f28822b182a56c114399f51e311d4b71275385cf9d2d9422c56cf45db6fadea1",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "f85389cd8f260a9603931349cc5da047861183abfbc17b8fb0617fb7f4ef509f",
+        "study-result.json": "46e86b7f7e8cfd1f95136b58e135658b3d1984be6ac8511d85ca7485f87a3726",
+        "grade.json": "f3473034ffa00e074ced452d6999af32446862e241772b5d09f775d8ab55f461",
+        "stdout.jsonl": "7df6db07474c983ff8ae5db606f7382e5197ea009ca490065ee27105ea87c897",
+        "prompt.txt": "3b472ab44f4b57c96bab3a6650b0d303cca8a19dfe6ac2dcae49fc41a3cf96de"
+      },
+      "public_files": {
+        "trace.jsonl": "ad8071697b8328434d8835a48e1ab79a777ef3ce2df025942513898745438648",
+        "record.json": "26c048ad2bb801beb9f94234b3dd02c7e9b1ec2a6bad638d96fbef2f4fc22b43",
+        "grade.json": "8941ee919f2b7e3c23be9181fcdcb563797b45b891cc76b81d38edfb013ef0ff",
+        "answer.txt": "8a38a120bb67b8ebc741375c4335b700857fb6f68e6673ca11dcca0d8c531137",
+        "artifacts/answer.json": "fe36fca6e92985482c1770b04937c8e6ba2a0e325768be5a72aacbd3642dfcfe"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 4,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "fe36fca6e92985482c1770b04937c8e6ba2a0e325768be5a72aacbd3642dfcfe",
+          "bytes": 1205,
+          "public_sha256": "fe36fca6e92985482c1770b04937c8e6ba2a0e325768be5a72aacbd3642dfcfe"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "1df806982da5557dc27a17a3e096769c707c060b5bee89a9c03b6bc2a1fc2ba7",
+          "bytes": 1609,
+          "export_status": "binary_not_exported"
+        },
+        {
+          "path": "__pycache__/test_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "1a49cac2cedfc64ea0b736a4d80a35ed14d37f7554d25aff2d062f07d83b4984",
+          "bytes": 1195,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t1p3"
+    },
+    {
+      "case": "h01",
+      "condition": "none",
+      "trial": 2,
+      "run_id": "t2p3",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 145738,
+        "cached_input_tokens": 123776,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2017,
+        "reasoning_output_tokens": 312
+      },
+      "total_tokens": 147755,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 3,
+      "tool_output_chars": 1053740,
+      "wall_seconds": 53.422,
+      "prompt_sha256_original": "932768e14bc5077ece52a333846e6647242a625408cfdf6a16d4faddf3193551",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "71060618782ed4180e0390e8e35e3adbd12b4ab33556a0983306be972f4593f9",
+        "study-result.json": "fd2a088ea72ce202005ac2f6e6d402ffb44999ca1a01a037e89d12f892f28b99",
+        "grade.json": "9f135002b9324e3980568f436b711a1c142b869195e0510ca37bef0545f5c4c4",
+        "stdout.jsonl": "cd89f55423d059f34460a8a8b4cc20ce501891d2a2cd996a7ffd2f73a9cd93f8",
+        "prompt.txt": "932768e14bc5077ece52a333846e6647242a625408cfdf6a16d4faddf3193551"
+      },
+      "public_files": {
+        "trace.jsonl": "12703ea0baf8c99cc4a5b4b2e2d86d5c045e8ca43795de580eeb126d3d19164a",
+        "record.json": "7c50a2151fadb364c5fcf65359d532742caf44994edb6928adfed5d265fa9d36",
+        "grade.json": "ee205b261d4704cd56176be2bfd17235b6f5f4ee3b0ba1c802f5047c240bafae",
+        "answer.txt": "39cc26a68041539f47e685e9d312a2eab1a559c5781e05e83dcb8df0d57d525c",
+        "artifacts/answer.json": "23dc6aa7a6cd82e24efe1b16760abfc192d27e7079933824539f089904d031a7"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 4,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "23dc6aa7a6cd82e24efe1b16760abfc192d27e7079933824539f089904d031a7",
+          "bytes": 1441,
+          "public_sha256": "23dc6aa7a6cd82e24efe1b16760abfc192d27e7079933824539f089904d031a7"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t2p3"
+    },
+    {
+      "case": "h02",
+      "condition": "v02",
+      "trial": 2,
+      "run_id": "t2p2",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 108716,
+        "cached_input_tokens": 92544,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1523,
+        "reasoning_output_tokens": 369
+      },
+      "total_tokens": 110239,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 5,
+      "tool_output_chars": 2056,
+      "wall_seconds": 45.0,
+      "prompt_sha256_original": "3b472ab44f4b57c96bab3a6650b0d303cca8a19dfe6ac2dcae49fc41a3cf96de",
+      "skill_sha256_original": "f28822b182a56c114399f51e311d4b71275385cf9d2d9422c56cf45db6fadea1",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "c127c378629932d1482b891a2399be502d142e9e4c905b5f1f01d461c443637c",
+        "study-result.json": "9fd08f2582fc8016d92736a6fb1c25587f6595ce618f89e13e2ac8fc69fc16da",
+        "grade.json": "6386a8bdd06c0c9f46dab6d22829604554787084b70fdb0ee6d0cd671661610e",
+        "stdout.jsonl": "2521b6a54b69390f86867991f172bb62be9e635609224b5913e9eefbe5c2b3ea",
+        "prompt.txt": "3b472ab44f4b57c96bab3a6650b0d303cca8a19dfe6ac2dcae49fc41a3cf96de"
+      },
+      "public_files": {
+        "trace.jsonl": "12e3e4e5459a8661f849ba8f35d6f25827c13a564af646a7e86244c714ecb284",
+        "record.json": "2b6cd2672d8b3987485d620b80f834ac3b9728411a99c0266c485106adcc376a",
+        "grade.json": "f85644aa2055fce5dc4ac2fc8a8513e65e32212ce3c14106f2bb0c4b91d90997",
+        "answer.txt": "ae35ea39b2fed03e1efc2c0e64ca06d989b0dd975c5d7b21d562f551f6585f0d",
+        "artifacts/answer.json": "f03eb8bae4750b1b15b27fcb7f23458afc9ecc97791b65970175f3a6e96d27e0"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "f03eb8bae4750b1b15b27fcb7f23458afc9ecc97791b65970175f3a6e96d27e0",
+          "bytes": 1226,
+          "public_sha256": "f03eb8bae4750b1b15b27fcb7f23458afc9ecc97791b65970175f3a6e96d27e0"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "d2a8e1e1f8cac694d445471c0741f5ca67af529fca96a28009da964f1d770ad7",
+          "bytes": 1609,
+          "export_status": "binary_not_exported"
+        },
+        {
+          "path": "__pycache__/test_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "6a82ee617835d47a9b2a540a57c7913d2e58779762bf63a0850d2213884ac692",
+          "bytes": 1195,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t2p2"
+    },
+    {
+      "case": "h01",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "t1p3",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 124355,
+        "cached_input_tokens": 113152,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1926,
+        "reasoning_output_tokens": 179
+      },
+      "total_tokens": 126281,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 7143,
+      "wall_seconds": 51.86,
+      "prompt_sha256_original": "48f3b46dadb0edfce397ea603f6dee287129858b4920d846960ce7ede134ae19",
+      "skill_sha256_original": "20feecfb9943d27f07638392762e8fd2b3c6b56ee93b073a426c6df288048dff",
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "a2721ddc2c7b1d64104e50c5d8e58622847dd2e36f1625b3acbb95c555533e8e",
+        "study-result.json": "fb9131f6d1e7e75726557efaf8597e62c742611eaf8f688add164df0d2bea298",
+        "grade.json": "ba0b1e2b7b3497ad495ac8b7b9881133968a1e2aa15cded2015b0ba478a34a97",
+        "stdout.jsonl": "619c21b9d778cfaa1d097846ec0c638cf9878e3466214af5625e0031b2dd4927",
+        "prompt.txt": "48f3b46dadb0edfce397ea603f6dee287129858b4920d846960ce7ede134ae19"
+      },
+      "public_files": {
+        "trace.jsonl": "2b4fde93398b1f6b91fde4857a2c47e3857915f09cb54a4c02e4902f41a1508f",
+        "record.json": "ef73fe6d2bc532b7bfce11ad9c8a7532d3bb4aaaf6772d0e43ebcd81f6a8e4f5",
+        "grade.json": "1e98532b02c76cdda80c782ba247a447922ae88e908ff952a512930f142d1c0b",
+        "answer.txt": "94f5882bee0076db25cf5e2a431869f766f6a6d909add8492dc869b4c46a8ec3",
+        "artifacts/answer.json": "fcccf2bd7bf1465050837e5d33c4f8d121fde653a1f69ea6d4cf7e2e991bc4e3"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "fcccf2bd7bf1465050837e5d33c4f8d121fde653a1f69ea6d4cf7e2e991bc4e3",
+          "bytes": 1429,
+          "public_sha256": "fcccf2bd7bf1465050837e5d33c4f8d121fde653a1f69ea6d4cf7e2e991bc4e3"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t1p3"
+    },
+    {
+      "case": "h01",
+      "condition": "v01",
+      "trial": 3,
+      "run_id": "t3p3",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 111715,
+        "cached_input_tokens": 90368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1159,
+        "reasoning_output_tokens": 169
+      },
+      "total_tokens": 112874,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 3,
+      "tool_output_chars": 1051564,
+      "wall_seconds": 36.344,
+      "prompt_sha256_original": "340737a5886068efe8a1198f998c5c07c4e22bcc9e60a65deac1e9eee4290be9",
+      "skill_sha256_original": "d7cfe2958b138dec7274a1b7af920f4a734347bc2b74956758e8e106033aa150",
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "c697ba39ea921f101ac34cf0fe125d73cef60fe4bd1116bb0cd6f5070a202c48",
+        "study-result.json": "5b2bbc65e004a7059e53f9ee226065c59771d14485447108c927699b549d6bac",
+        "grade.json": "9f135002b9324e3980568f436b711a1c142b869195e0510ca37bef0545f5c4c4",
+        "stdout.jsonl": "cb693fac36942d3bb4cabc954686ab3e12bfe50ce19101313e0840d83989110d",
+        "prompt.txt": "340737a5886068efe8a1198f998c5c07c4e22bcc9e60a65deac1e9eee4290be9"
+      },
+      "public_files": {
+        "trace.jsonl": "5290b1592a06cea6e749facecab91d1db216fcc83e9ae27fe0666a06ba052de7",
+        "record.json": "5c24dd96199b13288afbf10be225d1ac3eb87ced7ee314c5692107ffa7e85962",
+        "grade.json": "ee205b261d4704cd56176be2bfd17235b6f5f4ee3b0ba1c802f5047c240bafae",
+        "answer.txt": "d43293b27e479218d3f6004e3944ae710a52742fc07b3cf47beef89f6aa26501",
+        "artifacts/answer.json": "f063ac9acd6100cd1f07fac8880a6f1c0aaebeb2922674dca64db567eb964fd7"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 3,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "f063ac9acd6100cd1f07fac8880a6f1c0aaebeb2922674dca64db567eb964fd7",
+          "bytes": 1479,
+          "public_sha256": "f063ac9acd6100cd1f07fac8880a6f1c0aaebeb2922674dca64db567eb964fd7"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t3p3"
+    },
+    {
+      "case": "h01",
+      "condition": "v02",
+      "trial": 3,
+      "run_id": "t3p1",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 117681,
+        "cached_input_tokens": 107904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2325,
+        "reasoning_output_tokens": 431
+      },
+      "total_tokens": 120006,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 5618,
+      "wall_seconds": 56.907,
+      "prompt_sha256_original": "48f3b46dadb0edfce397ea603f6dee287129858b4920d846960ce7ede134ae19",
+      "skill_sha256_original": "20feecfb9943d27f07638392762e8fd2b3c6b56ee93b073a426c6df288048dff",
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "d0a845907c2943a9fc343dd43e1ba758d98136090510fa048bd680d117c123f2",
+        "study-result.json": "34435314e5203999bac97631d0228c753f4572dacb1df9180c1214abda8bf17a",
+        "grade.json": "9f135002b9324e3980568f436b711a1c142b869195e0510ca37bef0545f5c4c4",
+        "stdout.jsonl": "8d6577da6c1756d4fa3f7691c9a39f8955f57500f83b7cb777b53576e7d5f8ae",
+        "prompt.txt": "48f3b46dadb0edfce397ea603f6dee287129858b4920d846960ce7ede134ae19"
+      },
+      "public_files": {
+        "trace.jsonl": "bb712cf36d5d20dbf049b5ba72d8026e81b65a3555e61aab7459f8ce2e521f4a",
+        "record.json": "4d9888c7015e2ae5602b3b97c4c757fe1af5e32f3bb3b7c35db8a43864cc268b",
+        "grade.json": "ee205b261d4704cd56176be2bfd17235b6f5f4ee3b0ba1c802f5047c240bafae",
+        "answer.txt": "1ac331683b381c4456f0c62a97a35e7c2769483ee54602340c5f09d0b643ce3d",
+        "artifacts/answer.json": "eddd43f1a828f9f286e12302817aa300870d81abbd2210aac390a67e3c2ae10f"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "eddd43f1a828f9f286e12302817aa300870d81abbd2210aac390a67e3c2ae10f",
+          "bytes": 1472,
+          "public_sha256": "eddd43f1a828f9f286e12302817aa300870d81abbd2210aac390a67e3c2ae10f"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t3p1"
+    },
+    {
+      "case": "h01",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "t1p2",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 147636,
+        "cached_input_tokens": 124544,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1877,
+        "reasoning_output_tokens": 421
+      },
+      "total_tokens": 149513,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 1056207,
+      "wall_seconds": 48.031,
+      "prompt_sha256_original": "340737a5886068efe8a1198f998c5c07c4e22bcc9e60a65deac1e9eee4290be9",
+      "skill_sha256_original": "d7cfe2958b138dec7274a1b7af920f4a734347bc2b74956758e8e106033aa150",
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "4787e77a926c844352d63b2a82c7d480d37f6608af40a949017b7bf19bb21ef4",
+        "study-result.json": "8b25a4088381b5d7cb30f72d837ce52b44f14b3f3402a7c8ba0e83a4455efb1d",
+        "grade.json": "9f135002b9324e3980568f436b711a1c142b869195e0510ca37bef0545f5c4c4",
+        "stdout.jsonl": "19aa735a797ed8f081181f5d685f35537f26a9a418df065690de23aedece1e45",
+        "prompt.txt": "340737a5886068efe8a1198f998c5c07c4e22bcc9e60a65deac1e9eee4290be9"
+      },
+      "public_files": {
+        "trace.jsonl": "14c91397b9111cde539953c68902203fb1af99de0c4fa2b99179ae329f7958b3",
+        "record.json": "d83b53d97d230e1b09ff0dbc7f495fd96fe30e1b40122eb3066fc91610692167",
+        "grade.json": "ee205b261d4704cd56176be2bfd17235b6f5f4ee3b0ba1c802f5047c240bafae",
+        "answer.txt": "0537d56ec7491806fd064f4c5144ca3f8f831bd133b423e3f9ba7bfdeaf4d9c1",
+        "artifacts/answer.json": "430e8ee5309472a02f0cd87cf1ed7fd57ec033aaf2e7d91cae89a1c66714f206"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 4,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "430e8ee5309472a02f0cd87cf1ed7fd57ec033aaf2e7d91cae89a1c66714f206",
+          "bytes": 1626,
+          "public_sha256": "430e8ee5309472a02f0cd87cf1ed7fd57ec033aaf2e7d91cae89a1c66714f206"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t1p2"
+    },
+    {
+      "case": "h02",
+      "condition": "v01",
+      "trial": 2,
+      "run_id": "t2p1",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 158030,
+        "cached_input_tokens": 137728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2227,
+        "reasoning_output_tokens": 338
+      },
+      "total_tokens": 160257,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 6,
+      "tool_output_chars": 2979,
+      "wall_seconds": 67.093,
+      "prompt_sha256_original": "256e30fd95f74337bf988d3a84e119fae4159baccaaebd44112cecf24dff2407",
+      "skill_sha256_original": "c412dd8f445c76e9adcea087f8cfcd05ac3263349b9ceb83b293e5f881c63ffc",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "719c801bdc43ad384a41cfa76063de54395d6874116f78c47f37b55a5d3be19d",
+        "study-result.json": "50b0c59d9dd689ddf3799421b013360e4f095555d99df308c6187060b8aae72b",
+        "grade.json": "5969f5c8307b976d9ed4932985e31f68d6f25ca2f91f0ae15997723544a966f6",
+        "stdout.jsonl": "134a8779e5c14489f4057599c2cccc1ddcc88a88ac67ac00fef515fe784d3be1",
+        "prompt.txt": "256e30fd95f74337bf988d3a84e119fae4159baccaaebd44112cecf24dff2407"
+      },
+      "public_files": {
+        "trace.jsonl": "c37bf69f72f66406d6956533c1fb62cd72b52289e23515cb4477fee5f3949f53",
+        "record.json": "0d57b1f457cdfc42d811c5eba4c825cc27a90b4bdbaef22b368a00fc98e00e7a",
+        "grade.json": "8e863b4f36d409d6a560158acb10218c8d363a58fc4fe7d5c0a9276aaae482e0",
+        "answer.txt": "cfe85b0afb9808a19547a24ae622c32b67741fa54e1976787ab35ea080dbc8cb",
+        "artifacts/answer.json": "e1bc6558dd5231d49d25e7b08897da3a3dc6424f6b428c9cfe5fb7ba4f7470ec"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 7,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "e1bc6558dd5231d49d25e7b08897da3a3dc6424f6b428c9cfe5fb7ba4f7470ec",
+          "bytes": 1260,
+          "public_sha256": "e1bc6558dd5231d49d25e7b08897da3a3dc6424f6b428c9cfe5fb7ba4f7470ec"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t2p1"
+    },
+    {
+      "case": "h02",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "t1p1",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 144968,
+        "cached_input_tokens": 128000,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1646,
+        "reasoning_output_tokens": 310
+      },
+      "total_tokens": 146614,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 7,
+      "tool_output_chars": 2567,
+      "wall_seconds": 45.718,
+      "prompt_sha256_original": "6da1bb90534fac6a6c2adabdbbbca4529248d2b8b68201d6684854c2c681a1a8",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "69a0cc9cfdec18d9b4bb7933a634398cf3565fc833096db10de1a08b0b086242",
+        "study-result.json": "81846b3b785885900ad56a3b48f0ec0f22f4dcb3d27923ed47f04e5e439955d5",
+        "grade.json": "6386a8bdd06c0c9f46dab6d22829604554787084b70fdb0ee6d0cd671661610e",
+        "stdout.jsonl": "16d2b885201d6e834dd06526c9c45f3d3e82d56a151355262811558d278b65d7",
+        "prompt.txt": "6da1bb90534fac6a6c2adabdbbbca4529248d2b8b68201d6684854c2c681a1a8"
+      },
+      "public_files": {
+        "trace.jsonl": "b5a8f67d26e916870cfecdf79ee8adb5726a9cf629b47c26810fe3ecf59625e5",
+        "record.json": "2ef139a1f34e392a22e19c02194d3febfb4b76fac49f7cb0fdeef3ad9f1c1eb5",
+        "grade.json": "f85644aa2055fce5dc4ac2fc8a8513e65e32212ce3c14106f2bb0c4b91d90997",
+        "answer.txt": "4670bce178a055b430ba23260670c204194de62fa1ff9999996785f2d481d075",
+        "artifacts/answer.json": "f73f44f1e16fe0cfcc63b368b67d5f88f88d2a825b3a3223ea8f226b0af4a471"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 7,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "f73f44f1e16fe0cfcc63b368b67d5f88f88d2a825b3a3223ea8f226b0af4a471",
+          "bytes": 1040,
+          "public_sha256": "f73f44f1e16fe0cfcc63b368b67d5f88f88d2a825b3a3223ea8f226b0af4a471"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t1p1"
+    },
+    {
+      "case": "h02",
+      "condition": "none",
+      "trial": 2,
+      "run_id": "t2p3",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 88096,
+        "cached_input_tokens": 80256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1101,
+        "reasoning_output_tokens": 140
+      },
+      "total_tokens": 89197,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 3186,
+      "wall_seconds": 36.25,
+      "prompt_sha256_original": "6da1bb90534fac6a6c2adabdbbbca4529248d2b8b68201d6684854c2c681a1a8",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "762b91be9ba9b9626c34180a8873c5bf0aa9877b55ec629367ec0c8a60772b3a",
+        "study-result.json": "44acf275bcc9996a67bfb2368221a0d2d17b2a2c9cacf5fe48ef4c3c13fde287",
+        "grade.json": "032cb0e28efb373e54d7b8060f8e8dad487a8007ecae077bdae94d32d77cf785",
+        "stdout.jsonl": "103c97a72bc43451ec79db95445ff15f73e00d9ad33bd115823a8f45eec745f5",
+        "prompt.txt": "6da1bb90534fac6a6c2adabdbbbca4529248d2b8b68201d6684854c2c681a1a8"
+      },
+      "public_files": {
+        "trace.jsonl": "63b258582cafc4830bee24c7fee3dce93f96f32b0bc8b533b38e07be08992095",
+        "record.json": "555624e3173c073a860eb40d45e87767062cf96a3cabda3a12aa85c771b6de3a",
+        "grade.json": "89c6a276c5a6c6671e78a70162cf57f3f6ec8626c18649ab415c70452f302f09",
+        "answer.txt": "e3266fe59efcdb0f66a472931ce7de1dc59073c4c71ea1275b3359bdba0d9a15",
+        "artifacts/answer.json": "a315c81ba6850dc91f135b1f7866d80d2ac8e5dd834940f34ed2530cf12de945"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 4,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "a315c81ba6850dc91f135b1f7866d80d2ac8e5dd834940f34ed2530cf12de945",
+          "bytes": 1109,
+          "public_sha256": "a315c81ba6850dc91f135b1f7866d80d2ac8e5dd834940f34ed2530cf12de945"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "09fadd020adef19810a36800494055710118145e7ec1ca0cf0b99619c6eb4be7",
+          "bytes": 1609,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t2p3"
+    },
+    {
+      "case": "h01",
+      "condition": "none",
+      "trial": 3,
+      "run_id": "t3p2",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 110517,
+        "cached_input_tokens": 89472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1298,
+        "reasoning_output_tokens": 154
+      },
+      "total_tokens": 111815,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 3,
+      "tool_output_chars": 1052627,
+      "wall_seconds": 37.219,
+      "prompt_sha256_original": "932768e14bc5077ece52a333846e6647242a625408cfdf6a16d4faddf3193551",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "597704af3066e96cdb7f565f6781aa05fb311481c5470db629c52e3b1c71b724",
+        "study-result.json": "0d4711eeb3a02548681a0357d604bf12bbd2887122b63e7a6fd9236ad5740942",
+        "grade.json": "9f135002b9324e3980568f436b711a1c142b869195e0510ca37bef0545f5c4c4",
+        "stdout.jsonl": "0d3c571707a18ff2ac44759f2ac55cbb0ef874f4208dac7d5dd7d2387bb9dc16",
+        "prompt.txt": "932768e14bc5077ece52a333846e6647242a625408cfdf6a16d4faddf3193551"
+      },
+      "public_files": {
+        "trace.jsonl": "4324fc4204cb509ef0e5c8fbe836ea50daf32fd20e5d23eb1a3a5e4c65e5ef78",
+        "record.json": "efd11ad2eae74a55b40f6f15f3929a48092a7d5ff05dde2dc4ef77631668d458",
+        "grade.json": "ee205b261d4704cd56176be2bfd17235b6f5f4ee3b0ba1c802f5047c240bafae",
+        "answer.txt": "35d248a8740b33ebe0e3e99afa3eb173a13bf2b3015429413d945df4ccfc15e7",
+        "artifacts/answer.json": "c89762feb3024e92b0d3060a9498b40b6db361a3eb04bc22deb1beee75061161"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 3,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "c89762feb3024e92b0d3060a9498b40b6db361a3eb04bc22deb1beee75061161",
+          "bytes": 1464,
+          "public_sha256": "c89762feb3024e92b0d3060a9498b40b6db361a3eb04bc22deb1beee75061161"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t3p2"
+    },
+    {
+      "case": "h02",
+      "condition": "v02",
+      "trial": 3,
+      "run_id": "t3p1",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 108130,
+        "cached_input_tokens": 100096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1265,
+        "reasoning_output_tokens": 181
+      },
+      "total_tokens": 109395,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 5,
+      "tool_output_chars": 1917,
+      "wall_seconds": 37.25,
+      "prompt_sha256_original": "3b472ab44f4b57c96bab3a6650b0d303cca8a19dfe6ac2dcae49fc41a3cf96de",
+      "skill_sha256_original": "f28822b182a56c114399f51e311d4b71275385cf9d2d9422c56cf45db6fadea1",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "25bfc283d1a10612879eb39a4d6179a1088bf6e4873b11f3a3d439733d3658f7",
+        "study-result.json": "adf341acb8f083189f91f7bb8d1aa77f9f3f87cdbfeacb450e57c289181293ca",
+        "grade.json": "1f6871d1923708378fbcb8a113762e783841aea037c28f231c24285c2974cf30",
+        "stdout.jsonl": "d0c17a0d86e168c7b681a13532a29eda3e2cd85568d6762965ed8ec6c94d53b4",
+        "prompt.txt": "3b472ab44f4b57c96bab3a6650b0d303cca8a19dfe6ac2dcae49fc41a3cf96de"
+      },
+      "public_files": {
+        "trace.jsonl": "c5bde335b51355c2479b90ec7f580d3a4db562e8eb1384fe58e773ede789e9b2",
+        "record.json": "a5fd439ae43059e59e1ea847676789f2bf94d1eb2bedf6cd9b75e7840a4c9010",
+        "grade.json": "abc8193f98ee59c14c3ded34031ccebee6279d824bc05f96c0593f8b2f2483f2",
+        "answer.txt": "9b0cce306cadfc6eff0be243ef734ab0c767a3ed866d951255e23439f75d89af",
+        "artifacts/answer.json": "88d1b3740ff9a0019dd2564cf7a4b9484b6517bd82e2f687fdb03defd6d268aa"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "88d1b3740ff9a0019dd2564cf7a4b9484b6517bd82e2f687fdb03defd6d268aa",
+          "bytes": 1277,
+          "public_sha256": "88d1b3740ff9a0019dd2564cf7a4b9484b6517bd82e2f687fdb03defd6d268aa"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "a8929ff905295dc9252aedcf8b351e927db5db3c265500ccca833b2588e5b4a1",
+          "bytes": 1609,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t3p1"
+    },
+    {
+      "case": "h02",
+      "condition": "v01",
+      "trial": 3,
+      "run_id": "t3p3",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 109577,
+        "cached_input_tokens": 93056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1656,
+        "reasoning_output_tokens": 295
+      },
+      "total_tokens": 111233,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 2642,
+      "wall_seconds": 44.766,
+      "prompt_sha256_original": "256e30fd95f74337bf988d3a84e119fae4159baccaaebd44112cecf24dff2407",
+      "skill_sha256_original": "c412dd8f445c76e9adcea087f8cfcd05ac3263349b9ceb83b293e5f881c63ffc",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "cb32e90988911c5f39feee06c28398015d4464ba055ba68953b2ecc9b0c050e7",
+        "study-result.json": "1406604c10b41cd4c407333e880bfeba7c1dd4b6c6423b3ca337fc144d04e120",
+        "grade.json": "1f6871d1923708378fbcb8a113762e783841aea037c28f231c24285c2974cf30",
+        "stdout.jsonl": "8a427a4ae9b6d57ad5cb4e20fdcbcf8f85d947ce330db564b64dffc97a6d95e0",
+        "prompt.txt": "256e30fd95f74337bf988d3a84e119fae4159baccaaebd44112cecf24dff2407"
+      },
+      "public_files": {
+        "trace.jsonl": "20bd33127cdd9e6c35b5e377c0231fd5b8fdb3ded10aea756bba4f4971f31f63",
+        "record.json": "61ad91f2924e32e8fbab4d300919feb300a0456ed6f99a5a3296e8a2b39a6394",
+        "grade.json": "abc8193f98ee59c14c3ded34031ccebee6279d824bc05f96c0593f8b2f2483f2",
+        "answer.txt": "d56937c91ab7b2de0dc3dcc11e3583ea0048a3aab72810b09002654ee073ff40",
+        "artifacts/answer.json": "d45ef4b3c6b4c386a109a3a2f8732a484e557b499ad60b344acca0dc0519ad64"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "d45ef4b3c6b4c386a109a3a2f8732a484e557b499ad60b344acca0dc0519ad64",
+          "bytes": 1176,
+          "public_sha256": "d45ef4b3c6b4c386a109a3a2f8732a484e557b499ad60b344acca0dc0519ad64"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "c4ec539aa9439be7016e01efcc68a8143c2a99b3642185fa9eb32f45aad3f72e",
+          "bytes": 1609,
+          "export_status": "binary_not_exported"
+        },
+        {
+          "path": "__pycache__/test_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "0463311723faae2f69d6a7f7e33f790f08439c97cdb8953dc6ffdbc5fbd4dfe5",
+          "bytes": 1195,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t3p3"
+    },
+    {
+      "case": "h02",
+      "condition": "none",
+      "trial": 3,
+      "run_id": "t3p2",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 205761,
+        "cached_input_tokens": 196480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2222,
+        "reasoning_output_tokens": 365
+      },
+      "total_tokens": 207983,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 9,
+      "tool_output_chars": 3470,
+      "wall_seconds": 61.829,
+      "prompt_sha256_original": "6da1bb90534fac6a6c2adabdbbbca4529248d2b8b68201d6684854c2c681a1a8",
+      "skill_sha256_original": null,
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "37aa8d0a67309b11bcabee1bee72565ef6bb1297861460013985a121c444f568",
+        "study-result.json": "f85c642036bacfcbab1a03140235eef593372e4c7a2fd370618c896189fa9136",
+        "grade.json": "6386a8bdd06c0c9f46dab6d22829604554787084b70fdb0ee6d0cd671661610e",
+        "stdout.jsonl": "1060b6ce77fba3e6f14375d2e788ec4b16b02149d79887e9b8875df4c90e892b",
+        "prompt.txt": "6da1bb90534fac6a6c2adabdbbbca4529248d2b8b68201d6684854c2c681a1a8"
+      },
+      "public_files": {
+        "trace.jsonl": "316a409437edb000f5c6b596b5eecbc8ee297cf447ce24f7473e6d254bb74bf6",
+        "record.json": "af80337862c882974c122cc1e243356af085b3a2bc32cf342100f2aaca9686ff",
+        "grade.json": "f85644aa2055fce5dc4ac2fc8a8513e65e32212ce3c14106f2bb0c4b91d90997",
+        "answer.txt": "f3051b8770a5356a593f82bad4cf06dc2aa4001c5a59c1b68bf2b5cd75e45579",
+        "artifacts/answer.json": "6d33f2da24d10eebb22ae9f738eb75266afc80027361309454e889345c89b4c7"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 10,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "6d33f2da24d10eebb22ae9f738eb75266afc80027361309454e889345c89b4c7",
+          "bytes": 1032,
+          "public_sha256": "6d33f2da24d10eebb22ae9f738eb75266afc80027361309454e889345c89b4c7"
+        }
+      ],
+      "evidence_path": "runs/holdout/h02/t3p2"
+    },
+    {
+      "case": "h01",
+      "condition": "v01",
+      "trial": 2,
+      "run_id": "t2p1",
+      "phase": "holdout",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 20,
+      "checks_total": 20,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 114990,
+        "cached_input_tokens": 92416,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1484,
+        "reasoning_output_tokens": 171
+      },
+      "total_tokens": 116474,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 3,
+      "tool_output_chars": 1054414,
+      "wall_seconds": 40.469,
+      "prompt_sha256_original": "340737a5886068efe8a1198f998c5c07c4e22bcc9e60a65deac1e9eee4290be9",
+      "skill_sha256_original": "d7cfe2958b138dec7274a1b7af920f4a734347bc2b74956758e8e106033aa150",
+      "fixture_manifest_sha256_original": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf",
+      "source_hashes": {
+        "record.json": "02e9289af583dcff7c47bee6bd7940f245dfd5b34382c42bbd6ae4b273d06f97",
+        "study-result.json": "859ae728f602db6f00d3be54932950a50f07b3c6ddae28125a5fc6fe3a76cb66",
+        "grade.json": "ba0b1e2b7b3497ad495ac8b7b9881133968a1e2aa15cded2015b0ba478a34a97",
+        "stdout.jsonl": "202dfbfa5cc98de07f5940322c1d1b08dd704dd7dc15b6222cdf2263b061e076",
+        "prompt.txt": "340737a5886068efe8a1198f998c5c07c4e22bcc9e60a65deac1e9eee4290be9"
+      },
+      "public_files": {
+        "trace.jsonl": "b871bd7d11db0b39c9d736579f79b677510231960fce10cbfaf58f02a5af0823",
+        "record.json": "2f6e10c4849c2a952ebf2231a0c3a0f7dc8fc6f160ccf0c753d4d065be36a91c",
+        "grade.json": "1e98532b02c76cdda80c782ba247a447922ae88e908ff952a512930f142d1c0b",
+        "answer.txt": "88b40fa374570c7166789d57b145d8650ea5dfd6c3231452f70fed2a60f6a5a0",
+        "artifacts/answer.json": "808766d9659152e4042ff2e9d4073950ef6378e406dc0a587afa0a0e05a5bde8"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 3,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "808766d9659152e4042ff2e9d4073950ef6378e406dc0a587afa0a0e05a5bde8",
+          "bytes": 1569,
+          "public_sha256": "808766d9659152e4042ff2e9d4073950ef6378e406dc0a587afa0a0e05a5bde8"
+        }
+      ],
+      "evidence_path": "runs/holdout/h01/t2p1"
+    },
+    {
+      "case": "d02",
+      "condition": "ponytail",
+      "trial": 1,
+      "run_id": "p1",
+      "phase": "ponytail",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 36,
+      "checks_total": 36,
+      "semantic_review_required": false,
+      "usage": {
+        "input_tokens": 116920,
+        "cached_input_tokens": 107904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2976,
+        "reasoning_output_tokens": 532
+      },
+      "total_tokens": 119896,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 3788,
+      "wall_seconds": 69.375,
+      "prompt_sha256_original": "7d3fd5e91e21a455fb14a88c614066e2abb04168b57a98757b6ba59d91476884",
+      "skill_sha256_original": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+      "fixture_manifest_sha256_original": "095c91649002364cf7962f17ee3fce70ee638da4b28c8ee7bd2f132a07d13ac2",
+      "source_hashes": {
+        "record.json": "fd9960e85ccbbcd03dccddbd905aa2a5ac4a6f6822f85bb9643fd4c98ad8a719",
+        "study-result.json": "b428a6005f7b55a074b45f4c13cee610f95bfa3b1df87823d0366c4cd1770348",
+        "grade.json": "50cb0524cc3d1e7b8e59c3557c88f119fc6c358b36cbb1a695c91061afc7b35c",
+        "stdout.jsonl": "746491626baf9f83d1ed330d154f443a4432bf1c72a13a7b30730f5cbff3568f",
+        "prompt.txt": "7d3fd5e91e21a455fb14a88c614066e2abb04168b57a98757b6ba59d91476884"
+      },
+      "public_files": {
+        "trace.jsonl": "1dcfcca4e5c71ff4d79a515543a37458a3e97ae0feb347cb1dd0eaf1d22061fb",
+        "record.json": "688d6497b5367d6e5e0eee150dee252e584924d6b5ccd7a714e8c8240037464c",
+        "grade.json": "76029ecd37b87764013afd0abfadc2e9170ae4b1da5d3d8577533610522a5d97",
+        "answer.txt": "6b3e219fafe43debeb7bedb3cb0f5cc65d39f84c60f30feaef8f4427d0ac8dbd",
+        "artifacts/answer.md": "f5c1340ff4806edc530084a762f96882efec04207f0a999fa3f462ac428b167c",
+        "artifacts/report.py": "2fcbe02e5095543007c28346c569633985fb3f3f011ae5a36ebd47396247dd6c",
+        "artifacts/test_report.py": "514755bfccd50a9bf132662db119cc83ee44840a7b47f1b0b7ae6eb352278371"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 4,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.md",
+          "status": "new",
+          "original_sha256": "f5c1340ff4806edc530084a762f96882efec04207f0a999fa3f462ac428b167c",
+          "bytes": 540,
+          "public_sha256": "f5c1340ff4806edc530084a762f96882efec04207f0a999fa3f462ac428b167c"
+        },
+        {
+          "path": "report.py",
+          "status": "changed",
+          "original_sha256": "2fcbe02e5095543007c28346c569633985fb3f3f011ae5a36ebd47396247dd6c",
+          "bytes": 1375,
+          "public_sha256": "2fcbe02e5095543007c28346c569633985fb3f3f011ae5a36ebd47396247dd6c"
+        },
+        {
+          "path": "test_report.py",
+          "status": "changed",
+          "original_sha256": "514755bfccd50a9bf132662db119cc83ee44840a7b47f1b0b7ae6eb352278371",
+          "bytes": 1488,
+          "public_sha256": "514755bfccd50a9bf132662db119cc83ee44840a7b47f1b0b7ae6eb352278371"
+        },
+        {
+          "path": "__pycache__/report.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "3a7e6ac6cbd6d1dd0cb5867a447ab7f751287eaf10a5e5eec14e5c9a66cb7f31",
+          "bytes": 1987,
+          "export_status": "binary_not_exported"
+        },
+        {
+          "path": "__pycache__/test_report.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "8534bdb80e37fee15d87e8f5b76566a7e14a3af1a7cb3316e87007e558296ee1",
+          "bytes": 2879,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/ponytail/d02/p1"
+    },
+    {
+      "case": "d04",
+      "condition": "ponytail",
+      "trial": 1,
+      "run_id": "p1",
+      "phase": "ponytail",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 3,
+      "checks_total": 3,
+      "semantic_review_required": false,
+      "usage": {
+        "input_tokens": 35389,
+        "cached_input_tokens": 28288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 330,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 35719,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 1,
+      "tool_output_chars": 53,
+      "wall_seconds": 13.281,
+      "prompt_sha256_original": "23c67a092d84326cb870e1121450c624a21e6e011c45c6b0d188d02d80ae3ddf",
+      "skill_sha256_original": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+      "fixture_manifest_sha256_original": "c1948cdf871e5a2e3532eb1a9ad4f0d8179f530485e1481c6a75f890581219cd",
+      "source_hashes": {
+        "record.json": "47fc901b968ee194dfc4a0a3d1f7651d0b6e5f8f1dde739f19b31ff8b3093ba2",
+        "study-result.json": "23af45d2ff9b9e7ddca27a0ec125f102837a41c06fea03cb9639aa44897be982",
+        "grade.json": "a4429cdf0a604e9d57007cae6aa54d45b09acbf6f286fe69b9a5ace418a81d3a",
+        "stdout.jsonl": "c5f258ec9fc9df32460efa9f9e9f4580d538280d47e855afef4d8bd1d798180b",
+        "prompt.txt": "23c67a092d84326cb870e1121450c624a21e6e011c45c6b0d188d02d80ae3ddf"
+      },
+      "public_files": {
+        "trace.jsonl": "f48b37ab4c53ba2fb2f921efd5aaf7ce4381da80b3a4b496343f9ef71bb191fb",
+        "record.json": "758db96c729d876b2b54175fe47cbf07f03b0bb8bafc779af23697bcb6a7b6b6",
+        "grade.json": "a35029dd88d03c07c4d6cad3d13faeb190bbec7a6c1545ecd682c03af20d4ac0",
+        "answer.txt": "f83e5fe9fa0d7440301e8fc3320c45f6cae95839092531d76449c46240db1c06",
+        "artifacts/ui-labels.json": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 1,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "ui-labels.json",
+          "status": "changed",
+          "original_sha256": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1",
+          "bytes": 143,
+          "public_sha256": "d3ebfaea2c308a714f0abfd893c26055b003f0ec9c10b14d4336c197002913b1"
+        }
+      ],
+      "evidence_path": "runs/ponytail/d04/p1"
+    },
+    {
+      "case": "h02",
+      "condition": "ponytail",
+      "trial": 1,
+      "run_id": "p1",
+      "phase": "ponytail",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 111280,
+        "cached_input_tokens": 102784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1486,
+        "reasoning_output_tokens": 202
+      },
+      "total_tokens": 112766,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 2229,
+      "wall_seconds": 41.797,
+      "prompt_sha256_original": "e44b41cf972140fd723f6cb8bf22fb4fc3727c90eb1e747eea9777f2bd9a5e28",
+      "skill_sha256_original": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "9cb08e9fb99c9f52a8163514fdcb59c29cb8931ee5ac3904673d24d26251bc8a",
+        "study-result.json": "27323bbe2b40d9f70a1013f7d8d3105275b8d45d56836605dea8c88cfa057db9",
+        "grade.json": "4d3334231132e1512c59504c951ed10aa39cfe49395c2297b50cdc00da02186a",
+        "stdout.jsonl": "a69f9166b674996df2faac789731bb5650522064ab3600705e607b856d99f9a5",
+        "prompt.txt": "e44b41cf972140fd723f6cb8bf22fb4fc3727c90eb1e747eea9777f2bd9a5e28"
+      },
+      "public_files": {
+        "trace.jsonl": "8d712cf4366a88e31972aa64cdd8fc535dd1124e99d936b5b151ab6282f2f421",
+        "record.json": "83edaf88164f7f6353d28b4fba37bf8a0319316c9d951ad477ea6175ba01112b",
+        "grade.json": "3acbdd3fd2f3e19d1b0319aff05c1f324cb70211b07efa7815b361634b8e20bc",
+        "answer.txt": "78579bd19392930f931b1eb1382078a9562b961e85dc382f8f23786edc977c7d",
+        "artifacts/answer.json": "3671bc134cf28888cd76b7dbd517a5eaa3a2b153c706e2b38b2f623fb22ac63d"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 5,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "3671bc134cf28888cd76b7dbd517a5eaa3a2b153c706e2b38b2f623fb22ac63d",
+          "bytes": 1002,
+          "public_sha256": "3671bc134cf28888cd76b7dbd517a5eaa3a2b153c706e2b38b2f623fb22ac63d"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "3c39a5e28f146cf761b576d1fc735282d09dd503078b2b23b5e8c3c49e6e8690",
+          "bytes": 1608,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/ponytail/h02/p1"
+    },
+    {
+      "case": "h02",
+      "condition": "ponytail",
+      "trial": 2,
+      "run_id": "p2",
+      "phase": "ponytail",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 131272,
+        "cached_input_tokens": 122368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1602,
+        "reasoning_output_tokens": 176
+      },
+      "total_tokens": 132874,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 5,
+      "tool_output_chars": 1912,
+      "wall_seconds": 61.797,
+      "prompt_sha256_original": "e44b41cf972140fd723f6cb8bf22fb4fc3727c90eb1e747eea9777f2bd9a5e28",
+      "skill_sha256_original": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "a44811f8703cbdb98b791150d7fa100df19c19f4776b68bdbe08ee619d9c1c1f",
+        "study-result.json": "e54d8a082dba48ec5a45e8339a4ca5ff77bd4f8b4a76939c2b3e78819a7173c8",
+        "grade.json": "032cb0e28efb373e54d7b8060f8e8dad487a8007ecae077bdae94d32d77cf785",
+        "stdout.jsonl": "51dba7a989d56cac1caf11ae2254a53c38d2bc32018ea3c079b1ecf82b9ab0fb",
+        "prompt.txt": "e44b41cf972140fd723f6cb8bf22fb4fc3727c90eb1e747eea9777f2bd9a5e28"
+      },
+      "public_files": {
+        "trace.jsonl": "4491efdd158c1d5c24e6d91874088ebbe6aec930113afb68beba24110717d72c",
+        "record.json": "3dcca05aec2187d49543a573528e3174333d398625e6e8235515da74d12e1bde",
+        "grade.json": "89c6a276c5a6c6671e78a70162cf57f3f6ec8626c18649ab415c70452f302f09",
+        "answer.txt": "37d0c112100c849609dbae70e4f5ccaaacf115fbba90d60e94cb68ce92707fe6",
+        "artifacts/answer.json": "554d6d0d485bf6c8993a784e16faa3d4bab4913ae254a59d7c0355c5e727ca44"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 6,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "554d6d0d485bf6c8993a784e16faa3d4bab4913ae254a59d7c0355c5e727ca44",
+          "bytes": 1079,
+          "public_sha256": "554d6d0d485bf6c8993a784e16faa3d4bab4913ae254a59d7c0355c5e727ca44"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "678613f6d2dc72e02e4891ea4b69c5f843faf8af10b5e841faa40c3c4f224746",
+          "bytes": 1608,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/ponytail/h02/p2"
+    },
+    {
+      "case": "h02",
+      "condition": "ponytail",
+      "trial": 3,
+      "run_id": "p3",
+      "phase": "ponytail",
+      "export_status": "exported",
+      "run_status": "completed",
+      "model": null,
+      "harness_version": "0.145.0",
+      "deterministic_success": true,
+      "checks_passed": 7,
+      "checks_total": 7,
+      "semantic_review_required": true,
+      "usage": {
+        "input_tokens": 91566,
+        "cached_input_tokens": 83200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1174,
+        "reasoning_output_tokens": 202
+      },
+      "total_tokens": 92740,
+      "usage_status": "reported",
+      "completion_count": 1,
+      "tool_call_item_count": 4,
+      "tool_output_chars": 2245,
+      "wall_seconds": 34.156,
+      "prompt_sha256_original": "e44b41cf972140fd723f6cb8bf22fb4fc3727c90eb1e747eea9777f2bd9a5e28",
+      "skill_sha256_original": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+      "fixture_manifest_sha256_original": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3",
+      "source_hashes": {
+        "record.json": "ced56d1eea34e5a3f79dec99b4919170b797cb4ffe3c9ff89efe6498da0060fa",
+        "study-result.json": "5385305c72ed2b9c2dbd5bea4ea66a4aa561bc6d2a9dde31bd34febc9841e22b",
+        "grade.json": "6386a8bdd06c0c9f46dab6d22829604554787084b70fdb0ee6d0cd671661610e",
+        "stdout.jsonl": "79f159f08e7253a39d00d28994002085c0e4ca4ebb6172ff0d7342a3dd6c994b",
+        "prompt.txt": "e44b41cf972140fd723f6cb8bf22fb4fc3727c90eb1e747eea9777f2bd9a5e28"
+      },
+      "public_files": {
+        "trace.jsonl": "fe49ecb3d9dd90669ef75cdb163b968c799f1ecfb3de1c116e3c8f5c8f67c47c",
+        "record.json": "b7ac2577caa555cc7dea874cae9d37318d570f36604e41670ce875099f35cdde",
+        "grade.json": "f85644aa2055fce5dc4ac2fc8a8513e65e32212ce3c14106f2bb0c4b91d90997",
+        "answer.txt": "f962c0e91c1fa72c20a0f253c10f9b7d902e42e797407ff9134e7ae6f180ca5d",
+        "artifacts/answer.json": "4bdff713e70a07dbf0157ed1e8fd5d74bd940426a3424a10ae69aa313a49b654"
+      },
+      "prompt_export": "omitted; reconstruct from licensed frozen inputs and common prompt",
+      "trace_omitted_counts": {
+        "item.started": 4,
+        "thread.started": 1,
+        "turn.started": 1
+      },
+      "malformed_raw_lines_omitted": 0,
+      "artifacts": [
+        {
+          "path": "answer.json",
+          "status": "new",
+          "original_sha256": "4bdff713e70a07dbf0157ed1e8fd5d74bd940426a3424a10ae69aa313a49b654",
+          "bytes": 1119,
+          "public_sha256": "4bdff713e70a07dbf0157ed1e8fd5d74bd940426a3424a10ae69aa313a49b654"
+        },
+        {
+          "path": "__pycache__/task_queue.cpython-311.pyc",
+          "status": "new",
+          "original_sha256": "9d11a9b7918991b1ede5202aef6b95de00c50794c46baece916a3a44cd3db20c",
+          "bytes": 1608,
+          "export_status": "binary_not_exported"
+        }
+      ],
+      "evidence_path": "runs/ponytail/h02/p3"
+    }
+  ]
+}

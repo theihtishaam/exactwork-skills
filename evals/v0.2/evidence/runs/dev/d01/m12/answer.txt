@@ -1,0 +1,1 @@
+Created and validated [answer.json](<STUDY_ROOT>\runs\dev\d01\m12\answer.json) with all three distinct failures, partial job state, and complete capture status.

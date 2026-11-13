@@ -1,0 +1,91 @@
+{
+  "original_record": {
+    "schema_version": 1,
+    "harness": "codex-cli",
+    "harness_version": "0.145.0",
+    "version_evidence": "version/help inspected before study; no per-trial model inference",
+    "model": null,
+    "model_selection": "CLI inherited default; exact model not reported by this collector",
+    "run_dir": "runs/dev/d03/m02",
+    "telemetry_dir": "runs/dev/d03/m02-telemetry",
+    "command": [
+      "node",
+      "<CODEX_CLI>",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "-c",
+      "windows.sandbox=\"unelevated\"",
+      "--json",
+      "--sandbox",
+      "workspace-write",
+      "--skip-git-repo-check",
+      "--cd",
+      "<STUDY_ROOT>\\runs\\dev\\d03\\m02",
+      "--output-last-message",
+      "<STUDY_ROOT>\\runs\\dev\\d03\\m02-telemetry\\answer.txt",
+      "-"
+    ],
+    "windows_sandbox": "unelevated",
+    "sandbox_configuration_reason": "Codex 0.145.0 on Windows downgrades workspace-write to read-only when its Windows sandbox is disabled. Set native restricted-token sandbox per invocation while ignoring user config; retain workspace-write and managed requirements.",
+    "prompt_sha256": "9c9b0e9969110db2aefe9677212966b6e152f515cf29191624bfd41e543049d2",
+    "skill_sha256": null,
+    "skill_text_present_in_prompt": null,
+    "fixture_before": {
+      "files": {
+        "packet.md": "f791a5ecdd33b0234a1d4675f8a700bfc75dbdb10434390c965b1e2ae5b2181d"
+      },
+      "manifest_sha256": "5ea544ed1031a301259f8fa6c979c5aef6b7a9e1647f8d89db86e2a89bfc0481"
+    },
+    "timeout_seconds": 300,
+    "timed_out": false,
+    "cleanup": null,
+    "process_exit_code": 0,
+    "launch_error_type": null,
+    "cost_usd": null,
+    "usage_semantics": "Latest cumulative thread usage from a fresh one-turn process. Do not sum cache/reasoning subsets into input/output. All-zero/missing is unavailable.",
+    "operation_count_semantics": "Unique completed command_execution, mcp_tool_call, collab_tool_call, and web_search items. File-change items are separate. These are exported activity counts, not every internal raw API/tool call.",
+    "tool_output_chars_semantics": "Unicode code points in exported aggregated_output strings of unique completed command_execution items only. Not tokens, bytes, full untruncated output, or all tool types. Total is null when any command lacks an output string; observed partial sum and missing count are retained.",
+    "isolation_limit": "Fresh process/fixture and ignored user config do not prove absence of every inherited instruction or global skill.",
+    "wall_seconds": 28.234,
+    "completion_count": 1,
+    "failure_event_count": 0,
+    "malformed_event_count": 0,
+    "event_counts": {
+      "item.completed": 6,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "usage": {
+      "input_tokens": 74186,
+      "cached_input_tokens": 65792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 889,
+      "reasoning_output_tokens": 96
+    },
+    "usage_status": "reported",
+    "tool_call_items": {
+      "collab_tool_call": 0,
+      "command_execution": 2,
+      "mcp_tool_call": 0,
+      "web_search": 0
+    },
+    "tool_call_item_count": 2,
+    "tool_output_chars": 1929,
+    "tool_output_chars_observed": 1929,
+    "command_output_items_available": 2,
+    "command_output_items_missing": 0,
+    "failed_or_declined_operation_items": {},
+    "file_change_items": 1,
+    "final_message_sha256": "5a9741930a19de48374d0270fd0dc3005bdca473b2bfab0d18295dc89bbb2b66",
+    "run_status": "completed",
+    "exports": {
+      "stdout.jsonl": "c5870fe14d084b67ce056d734d98c82912b829886a5d6a20909bcf9cee5e5e65",
+      "stderr.txt": "270f5712981b20a72c81f598cf978d9ea2ce42806bba49ef818540a05b43c7d6"
+    },
+    "answer_sha256": "5a9741930a19de48374d0270fd0dc3005bdca473b2bfab0d18295dc89bbb2b66"
+  },
+  "redacted": true
+}

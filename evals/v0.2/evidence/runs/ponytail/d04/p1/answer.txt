@@ -1,0 +1,3 @@
+Updated `ui-labels.json`: “Pay noww” → “Pay now”.
+
+Skipped tests as requested. No other files changed.

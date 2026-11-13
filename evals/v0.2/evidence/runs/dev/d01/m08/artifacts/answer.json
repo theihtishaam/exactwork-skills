@@ -1,0 +1,30 @@
+{
+  "job_state": "partial",
+  "capture_complete": true,
+  "failures": [
+    {
+      "stage": "upload",
+      "code": "UPSTREAM_TIMEOUT",
+      "first_line": 5212,
+      "causal_line": 5216,
+      "explanation": "Artifact upload request r17 timed out after the peer reset the connection before response headers. The same failure recurred at line 21905, and line 21906 says the retry budget was exhausted.",
+      "next_check": "Inspect upstream artifact-store and transport logs for request r17 around the two attempt timestamps to determine why the peer reset the connection."
+    },
+    {
+      "stage": "render",
+      "code": "FONT_NOT_FOUND",
+      "first_line": 11991,
+      "causal_line": 11992,
+      "explanation": "Rendering resume-français.pdf failed because the required NotoSans font file was absent from assets/fonts.",
+      "next_check": "Check the captured build inputs or asset manifest for the expected NotoSans font path and packaging status."
+    },
+    {
+      "stage": "publish",
+      "code": "DESTINATION_DENIED",
+      "first_line": 17511,
+      "causal_line": 17512,
+      "explanation": "Publishing reports/latest.json was denied because creation of a temporary file in reports raised PermissionError.",
+      "next_check": "Check the reports directory permissions, ownership, and temporary-file creation policy for the publishing identity."
+    }
+  ]
+}

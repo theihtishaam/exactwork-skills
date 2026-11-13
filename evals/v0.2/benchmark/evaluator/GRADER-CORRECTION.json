@@ -1,0 +1,9 @@
+{
+  "correction": "d03 source section citation representation",
+  "public_contract": "source_sections is a list; identifiers were not required to be bare letters",
+  "old_sha256": "80bf4f514ecc9ba45fe4ba4903317bd2b44125faee4ae297e16535254cae79c9",
+  "corrected_sha256": "95e6dbb3c743f6b753559156c2e6b2ef3b83402cd6fd2acc11b43f038b539b5b",
+  "scope": "Only d03 section-ID/full-heading interpretation changed. Original grader, frozen manifest, and previous grades retained.",
+  "accepted": "Declared bare section IDs or exact full headings, after whitespace normalization. All arms receive the same interpretation.",
+  "date": "2026-11-12"
+}

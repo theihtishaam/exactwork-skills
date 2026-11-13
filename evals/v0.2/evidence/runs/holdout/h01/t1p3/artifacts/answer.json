@@ -1,0 +1,30 @@
+{
+  "job_state": "unknown",
+  "capture_complete": false,
+  "failures": [
+    {
+      "stage": "decode",
+      "code": "INVALID_ENCODING",
+      "first_line": 6061,
+      "causal_line": 6062,
+      "explanation": "Record 507 in archive.csv could not be decoded as its declared UTF-8 encoding because byte 0x96 at offset 188 is invalid. Lines 19981-19982 show a failed retry of the same observed condition, not a distinct failure.",
+      "next_check": "Inspect the source encoding declaration and raw bytes around offset 188 of record 507 in archive.csv."
+    },
+    {
+      "stage": "reconcile",
+      "code": "ROW_COUNT_MISMATCH",
+      "first_line": 11003,
+      "causal_line": 11004,
+      "explanation": "Reconciliation expected 3700 rows but found 3699, rejected publication, and reported that one record was lost between decoded input and aggregated output.",
+      "next_check": "Trace row counts and record identifiers from decoded input through aggregation to locate the missing record."
+    },
+    {
+      "stage": "commit",
+      "code": "RENAME_FAILED",
+      "first_line": 15445,
+      "causal_line": 15446,
+      "explanation": "The temporary output remained uncommitted because another process held the destination open and replacement was not performed.",
+      "next_check": "Identify which process holds the destination open and verify the temporary output and destination state before any retry."
+    }
+  ]
+}

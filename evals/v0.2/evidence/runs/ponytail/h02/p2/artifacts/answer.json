@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "file": "task_queue.py",
+      "line": 9,
+      "trigger": "q = TaskQueue(1); q.put('old'); q.put('new')",
+      "observed": "The second put raises OverflowError after appending 'new'; len(q) is 2 and subsequent gets return both 'old' and 'new'.",
+      "expected": "The second put raises OverflowError without changing the queue; len(q) remains 1 and only 'old' can be retrieved.",
+      "explanation": "put mutates _items before checking capacity, so the operation reported as rejected still changes queued items."
+    },
+    {
+      "file": "task_queue.py",
+      "line": 2,
+      "trigger": "a = TaskQueue(2); b = TaskQueue(2); a.put('shared'); len(b); b.get()",
+      "observed": "len(b) is 1 and b.get() returns 'shared', even though the item was put only into a.",
+      "expected": "len(b) is 0 and b.get() raises IndexError because separate TaskQueue instances are independent.",
+      "explanation": "The mutable default items list is created once and reused by every instance constructed without an explicit items argument."
+    }
+  ]
+}

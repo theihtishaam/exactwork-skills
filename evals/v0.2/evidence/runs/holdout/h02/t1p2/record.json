@@ -1,0 +1,93 @@
+{
+  "original_record": {
+    "schema_version": 1,
+    "harness": "codex-cli",
+    "harness_version": "0.145.0",
+    "version_evidence": "version/help inspected before study; no per-trial model inference",
+    "model": null,
+    "model_selection": "CLI inherited default; exact model not reported by this collector",
+    "run_dir": "runs/holdout/h02/t1p2",
+    "telemetry_dir": "runs/holdout/h02/t1p2-telemetry",
+    "command": [
+      "node",
+      "<CODEX_CLI>",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "-c",
+      "windows.sandbox=\"unelevated\"",
+      "--json",
+      "--sandbox",
+      "workspace-write",
+      "--skip-git-repo-check",
+      "--cd",
+      "<STUDY_ROOT>\\runs\\holdout\\h02\\t1p2",
+      "--output-last-message",
+      "<STUDY_ROOT>\\runs\\holdout\\h02\\t1p2-telemetry\\answer.txt",
+      "-"
+    ],
+    "windows_sandbox": "unelevated",
+    "sandbox_configuration_reason": "Codex 0.145.0 on Windows downgrades workspace-write to read-only when its Windows sandbox is disabled. Set native restricted-token sandbox per invocation while ignoring user config; retain workspace-write and managed requirements.",
+    "prompt_sha256": "256e30fd95f74337bf988d3a84e119fae4159baccaaebd44112cecf24dff2407",
+    "skill_sha256": "c412dd8f445c76e9adcea087f8cfcd05ac3263349b9ceb83b293e5f881c63ffc",
+    "skill_text_present_in_prompt": true,
+    "fixture_before": {
+      "files": {
+        "CONTRACT.md": "50b90dc176931976f084a8510704f137fbf66b15ecda0046a1ad58bf16a3034f",
+        "task_queue.py": "d337d7102b3356453e85b397f0290b3babb64c8e8732f17961e83277b9abfe21",
+        "test_queue.py": "66b7771267b21a11c97d1c5518f436615831f8d3da8b09c7945c1693b6bffb52"
+      },
+      "manifest_sha256": "0a557fc4f785af8422145b16dbd9dbe5d057cd6b838277d843461c5ddb6e18e3"
+    },
+    "timeout_seconds": 300,
+    "timed_out": false,
+    "cleanup": null,
+    "process_exit_code": 0,
+    "launch_error_type": null,
+    "cost_usd": null,
+    "usage_semantics": "Latest cumulative thread usage from a fresh one-turn process. Do not sum cache/reasoning subsets into input/output. All-zero/missing is unavailable.",
+    "operation_count_semantics": "Unique completed command_execution, mcp_tool_call, collab_tool_call, and web_search items. File-change items are separate. These are exported activity counts, not every internal raw API/tool call.",
+    "tool_output_chars_semantics": "Unicode code points in exported aggregated_output strings of unique completed command_execution items only. Not tokens, bytes, full untruncated output, or all tool types. Total is null when any command lacks an output string; observed partial sum and missing count are retained.",
+    "isolation_limit": "Fresh process/fixture and ignored user config do not prove absence of every inherited instruction or global skill.",
+    "wall_seconds": 55.031,
+    "completion_count": 1,
+    "failure_event_count": 0,
+    "malformed_event_count": 0,
+    "event_counts": {
+      "item.completed": 8,
+      "item.started": 5,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "usage": {
+      "input_tokens": 109831,
+      "cached_input_tokens": 94592,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1607,
+      "reasoning_output_tokens": 191
+    },
+    "usage_status": "reported",
+    "tool_call_items": {
+      "collab_tool_call": 0,
+      "command_execution": 4,
+      "mcp_tool_call": 0,
+      "web_search": 0
+    },
+    "tool_call_item_count": 4,
+    "tool_output_chars": 3259,
+    "tool_output_chars_observed": 3259,
+    "command_output_items_available": 4,
+    "command_output_items_missing": 0,
+    "failed_or_declined_operation_items": {},
+    "file_change_items": 1,
+    "final_message_sha256": "a3b29d533a002e5691a4496213bf6dd9231286f8418e4680b502635ed299610a",
+    "run_status": "completed",
+    "exports": {
+      "stdout.jsonl": "4ff11cb650c95b68b72ad3fcec3da780bc75a8b6e32ac71d9b83e7dce5ad6366",
+      "stderr.txt": "fb55ac9c0e7b1426475d772267684a6cb7ed5aa414db3f6618f9241354dbfd1a"
+    },
+    "answer_sha256": "a3b29d533a002e5691a4496213bf6dd9231286f8418e4680b502635ed299610a"
+  },
+  "redacted": true
+}

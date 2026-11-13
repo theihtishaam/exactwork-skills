@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000" role="img" aria-labelledby="title desc">
+<title id="title">Measured token use and task outcomes</title><desc id="desc">Two held-out tasks, three trials each per condition. All three conditions pass six of six public-task checks after a documented blind grader audit. Aggregate tokens are817122 for no skill,761789 for version0.1 and704714 for compact0.2. Savings occur in only three of six paired trials; the log task uses more tokens.</desc>
+<rect width="1440" height="1000" fill="#071321"/>
+<text x="64" y="65" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">LOCAL EVIDENCE / 35 SCORED RUNS IN TOTAL</text>
+<text x="64" y="122" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Smaller aggregate usage. Important limits.</text>
+<text x="64" y="166" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Held-out subset: 2 unique tasks × 3 trials × 3 conditions</text>
+<text x="64" y="223" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">REPORTED INPUT + OUTPUT TOKENS</text>
+<text x="64" y="297" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">No skill</text>
+<rect x="310" y="267" width="840.0" height="46" rx="6" fill="#477189"/>
+<text x="1180" y="299" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">817,122</text>
+<text x="64" y="390" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Exactwork 0.1</text>
+<rect x="310" y="360" width="783.1177718871845" height="46" rx="6" fill="#477189"/>
+<text x="1180" y="392" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">761,789</text>
+<text x="64" y="483" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Compact 0.2</text>
+<rect x="310" y="453" width="724.4447707931007" height="46" rx="6" fill="#56DCDD"/>
+<text x="1180" y="485" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">704,714</text>
+<rect x="64" y="568" width="414" height="150" rx="18" fill="#102235"/>
+<rect x="503" y="568" width="414" height="150" rx="18" fill="#102235"/>
+<rect x="942" y="568" width="434" height="150" rx="18" fill="#102235"/>
+<text x="88" y="617" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">13.8% lower</text>
+<text x="88" y="661" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">aggregate vs no skill</text>
+<text x="88" y="694" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">7.5% lower vs 0.1</text>
+<text x="527" y="617" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">6/6 passes</text>
+<text x="527" y="661" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">in every condition</text>
+<text x="527" y="694" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">after blind grader audit</text>
+<text x="966" y="617" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">3/6 pairs</text>
+<text x="966" y="661" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">used fewer tokens</text>
+<text x="966" y="694" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">log task used 5.5% more</text>
+<text x="64" y="786" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Original strict score for compact: 5/6. A valid alternative citation was accepted on audit.</text>
+<text x="64" y="833" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">One local host; exact model unknown; cache uncontrolled; repeated synthetic tasks.</text>
+<text x="64" y="878" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">No general accuracy, dollar-cost, speed, or cross-client superiority claim.</text>
+<text x="64" y="943" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Sources, all individual runs, grading corrections and sensitivity: docs/benchmark-v0.2.md</text>
+</svg>

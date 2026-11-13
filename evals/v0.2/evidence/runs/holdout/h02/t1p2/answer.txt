@@ -1,0 +1,1 @@
+Created [answer.json](<STUDY_ROOT>/runs/holdout/h02/t1p2/answer.json) with two verified correctness findings. JSON validation passed.

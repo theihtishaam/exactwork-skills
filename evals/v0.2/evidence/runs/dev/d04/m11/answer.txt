@@ -1,0 +1,1 @@
+Updated `ui-labels.json`: changed only `"Pay noww"` to `"Pay now"`. All other content and formatting were preserved.

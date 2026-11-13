@@ -1,0 +1,79 @@
+{
+  "phase": "dev",
+  "seed": null,
+  "common_prompt_sha256": "a2025ddef5dc780d70f04741eac3792f03273120be3c77b8fd4d2080e17af827",
+  "jobs": [
+    {
+      "case": "d02",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "m01"
+    },
+    {
+      "case": "d03",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "m02"
+    },
+    {
+      "case": "d04",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "m03"
+    },
+    {
+      "case": "d01",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "m04"
+    },
+    {
+      "case": "d02",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "m05"
+    },
+    {
+      "case": "d03",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "m06"
+    },
+    {
+      "case": "d04",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "m07"
+    },
+    {
+      "case": "d01",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "m08"
+    },
+    {
+      "case": "d02",
+      "condition": "none",
+      "trial": 1,
+      "run_id": "m09"
+    },
+    {
+      "case": "d03",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "m10"
+    },
+    {
+      "case": "d04",
+      "condition": "v01",
+      "trial": 1,
+      "run_id": "m11"
+    },
+    {
+      "case": "d01",
+      "condition": "v02",
+      "trial": 1,
+      "run_id": "m12"
+    }
+  ]
+}

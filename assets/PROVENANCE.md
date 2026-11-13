@@ -1,0 +1,64 @@
+# Visual provenance
+
+## exactwork-cover.png
+
+- Created: 2026-11-12.
+- Method: built-in `image_gen.imagegen` tool; no API or CLI fallback.
+- Use: original AI-generated cover artwork for the EXACTWORK README.
+- Inputs: the first generation used no reference images. A subsequent correction attempt used that generated image only; no third-party image inputs were supplied.
+- Selected output: first generation, copied without modification.
+- Format: PNG, RGB, 1536 × 1024 pixels.
+- SHA-256: `942b54f621fd1e37b4716ca1a669c1448f32b9b071d87a5c4e19f176141ad20e`.
+- Visual meaning: a glass lens and cyan/orange light paths on midnight navy, with the EXACTWORK title and tagline. This is decorative brand artwork, not a technical optics diagram or evidence of measured performance.
+- Verification: final saved PNG was independently opened with view_image. The title, tagline, lens, and beams were visible and the text was correct. An earlier agent report of missing elements was not reproduced in this final inspection.
+
+## Original generation prompt
+
+```text
+Use case: ads-marketing
+Asset type: original GitHub README cover for an open-source agent skill toolkit.
+Create a polished wide landscape image, approximately 3:2, with a premium editorial science and engineering aesthetic.
+Scene: deep midnight navy background with generous negative space and subtle depth.
+Subject: one luminous translucent optical glass prism or precision lens. A few scattered cyan and warm orange light paths enter it and emerge as clean, precisely aligned beams. This is an evocative brand illustration, not a technical optical diagram or a claim of measured performance.
+Style: elegant restrained 3D studio rendering, physically tactile glass, controlled glow, sophisticated art direction, crisp edges, subtle atmospheric depth.
+Composition: a balanced spacious cover with the luminous lens and beam artwork as the central visual anchor, readable understated typography integrated into the composition.
+Text, verbatim: "EXACTWORK"
+Second line, verbatim: "Less noise. Complete work."
+Render EXACTWORK as one word, uppercase E X A C T W O R K, in clean understated white sans-serif typography. Tagline in smaller white or soft gray text, with exact punctuation.
+Constraints: no other text, no numerical benchmarks, no charts, no badges, no robots, no mascots, no competitor logos, no watermark. Original visual identity. Opaque background.
+```
+
+## Correction attempt (not selected)
+
+The following edit used the first generated image as its only reference. The first generation was ultimately selected after independent inspection confirmed its complete composition.
+
+```text
+Edit this image into a complete premium README cover. Keep the existing midnight navy background and cyan/orange light rays, but ADD the missing central optical lens and typography visibly into the actual final raster image.
+At the center place a large luminous translucent vertical precision glass lens, richly detailed with cyan edges and subtle orange reflection. The rays converge into the lens and leave as aligned horizontal beams. This is brand artwork, not a physical optics diagram.
+In the upper third add the large clean white uppercase title exactly: "EXACTWORK".
+Below the title add the smaller line exactly: "Less noise. Complete work."
+Use elegant sans-serif typography, ensure every letter is clearly visible and correctly spelled. Preserve a refined scientific editorial composition with generous spacing. Landscape 1536x1024. No additional text, no benchmarks, no robots, no logos, no watermark. The final saved PNG must visibly contain the lens, title, tagline, background, and beams as one finished opaque raster image.
+```
+
+## workflow.svg and comparison.svg
+
+Original editable SVG diagrams authored programmatically from the package design and source-backed comparison. No AI-generated numbers or benchmark graphics are used. Local PNG renderings were inspected for clipping, legibility, and consistent labels. All graphics include descriptive accessible text or README alt text.
+
+
+## Version 0.2 figures
+
+`workflow.svg`, `comparison.svg`, and `evidence.svg` are editable, programmatically authored figures. Text and values follow the 0.2 study and documentation. PNG previews were inspected for clipping and legibility. The AI-generated cover is decorative; it is not a generated chart or evidence source. The evidence chart uses actual reported usage and includes its small-sample and grading limitations.
+
+## Additional publication explainers (2026-11-13)
+
+`skill-map.svg`, `learning-loop.svg`, `context-example.svg`, `compatibility.svg`, and `quickstart.svg` are original editable SVG figures authored programmatically in the same navy/cyan/amber style as the released diagrams. They introduce no new benchmark claims or third-party logos. Each has accessible SVG title/description and was rendered to a PNG inspection preview.
+
+The context example uses an explicitly synthetic 11-line log. Its initial selected excerpts and coverage counters were generated by the released `context_slice.py` using `--query "request=42" --context 1 --max-lines 3`; this is an illustration of behavior, not a performance measurement. It explicitly marks incomplete selection and an uninspected later failure. Compatibility labels describe documented paths and preserve the distinction from native end-to-end verification. Quickstart commands use a placeholder project path and the actual installer arguments.
+
+The original AI-generated cover remains unchanged. These additional diagrams are code-authored, not AI-generated numerical charts.
+
+## Task-quality and observed-work chart (2026-11-13)
+
+`quality-and-work.svg` is an original programmatically authored figure generated directly from the published `evals/v0.2/final-results.json`. Development task passes are 4/4, 3/4, and 4/4 for no skill, Exactwork 0.1, and compact 0.2. Held-out public-task passes after the documented blind grader audit are 6/6 for each. Original strict compact held-out score (5/6) remains visible. The lower panel shows visible held-out tool-call items: 29, 24, and 27, on a zero-based full 0–30 scale.
+
+Correctness bars use a full 0–100% scale and label both numerator and denominator. The figure distinguishes development from held-out trials, notes that the six held-out repetitions represent only two unique synthetic tasks, and explicitly disclaims an intelligence score, general accuracy gain, or agent-speed interpretation. The SVG has accessible title/description text; its PNG preview was inspected for legibility and clipping. No frozen results or skill instructions were changed.

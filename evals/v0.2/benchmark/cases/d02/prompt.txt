@@ -1,0 +1,1 @@
+Repair report.py so summarize obeys CONTRACT.md for the supplied transaction format. Preserve its public API and source records. Add a focused regression test and run it. Do not add dependencies, change the contract, or edit unrelated files. Save a concise completion note in answer.md.

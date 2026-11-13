@@ -1,0 +1,74 @@
+{
+  "case": "d03",
+  "passed": 12,
+  "total": 13,
+  "deterministic_success": false,
+  "semantic_review_required": true,
+  "checks": [
+    {
+      "check": "preserve packet.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only requested output",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "valid JSON object",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "observed_success baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "observed_success candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "standardized_success baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "standardized_success candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "total_tokens_per_run baseline",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "total_tokens_per_run candidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "causal_improvement_established",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "total_token_reduction_established",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sources identify data sections",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "recommendation exists",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

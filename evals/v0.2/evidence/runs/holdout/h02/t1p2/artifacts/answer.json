@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "file": "task_queue.py",
+      "line": 2,
+      "trigger": "Create q1 = TaskQueue(2) and q2 = TaskQueue(2), then call q1.put(\"a\").",
+      "observed": "q2 also has length 1 and q2.get() returns \"a\".",
+      "expected": "q2 remains empty because separate TaskQueue instances must be independent.",
+      "explanation": "The mutable default items list is created once and reused by every construction that omits items, so those instances share the same backing queue. Allocate a fresh list per instance instead."
+    },
+    {
+      "file": "task_queue.py",
+      "line": 9,
+      "trigger": "Create TaskQueue(1), put(\"kept\"), then call put(\"rejected\") and catch OverflowError.",
+      "observed": "After OverflowError, the queue length is 2; successive get() calls return \"kept\" and then \"rejected\".",
+      "expected": "The queue remains length 1 and contains only \"kept\" because a full put must not change queued items.",
+      "explanation": "put appends before checking capacity and never rolls the append back when raising. Check capacity before mutating the list (or undo the append before raising)."
+    }
+  ]
+}

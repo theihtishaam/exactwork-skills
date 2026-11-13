@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "file": "task_queue.py",
+      "line": 9,
+      "trigger": "q = TaskQueue(1); q.put('kept'); q.put('rejected')",
+      "observed": "The second put raises OverflowError only after appending; len(q) is 2 and subsequent gets return both 'kept' and 'rejected'.",
+      "expected": "OverflowError is raised without changing the queue; len(q) remains 1 and only 'kept' can be retrieved.",
+      "explanation": "TaskQueue.put mutates _items before checking capacity, violating the failed-put atomicity guarantee. Check fullness before appending (or undo the append before raising)."
+    },
+    {
+      "file": "task_queue.py",
+      "line": 2,
+      "trigger": "a = TaskQueue(2); b = TaskQueue(2); a.put(None); len(b); b.get()",
+      "observed": "len(b) becomes 1 and b.get() returns None even though no item was put into b.",
+      "expected": "b remains empty (len(b) == 0) and b.get() raises IndexError.",
+      "explanation": "The mutable default items=[] is shared by every constructor call that omits items, so nominally separate queues share storage. Use a fresh list per instance, such as a None default followed by allocation in __init__."
+    }
+  ]
+}

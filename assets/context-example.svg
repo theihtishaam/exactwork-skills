@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1100" viewBox="0 0 1440 1100" role="img" aria-labelledby="title desc">
+<title id="title">Bounded context with visible omissions</title><desc id="desc">Illustrative synthetic eleven-line log and actual selector output. A literal request42 query with context1 and max-lines3 selects lines1,2,4, omits two requested context lines, and leaves process status unknown. Expand lines4through5 to see the invalid date; later request99 is outside this query. Excerpts do not establish whole-file diagnosis.</desc>
+<rect width="1440" height="1100" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">CONTEXT EXTRACTION / ILLUSTRATIVE EXAMPLE</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Keep source lines. Show what was omitted.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">A synthetic 11-line log; the bounded response below comes from the actual helper.</text>
+<rect x="64" y="215" width="638" height="540" rx="18" fill="#102235"/>
+<rect x="726" y="215" width="650" height="540" rx="18" fill="#102235"/>
+<text x="88" y="258" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">SOURCE / sample.log</text>
+<text x="750" y="258" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">BOUNDED RESPONSE / selected excerpts</text>
+<text x="88" y="307" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">01</text>
+<text x="131" y="307" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">INFO load rows=3</text>
+<text x="88" y="344" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">02</text>
+<text x="131" y="344" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">INFO request=42 source=sample.csv</text>
+<text x="88" y="381" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">03</text>
+<text x="131" y="381" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">INFO stage=validate</text>
+<text x="88" y="418" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">04</text>
+<text x="131" y="418" fill="#F5B56C" font-family="Consolas, monospace" font-size="17" font-weight="400">ERROR request=42 code=BAD_FIELD</text>
+<text x="88" y="455" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">05</text>
+<text x="131" y="455" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">Detail: row=2 date=not-a-date</text>
+<text x="88" y="492" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">06</text>
+<text x="131" y="492" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">INFO retry attempts=0</text>
+<text x="88" y="529" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">07</text>
+<text x="131" y="529" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">INFO heartbeat=1</text>
+<text x="88" y="566" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">08</text>
+<text x="131" y="566" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">INFO heartbeat=2</text>
+<text x="88" y="603" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">09</text>
+<text x="131" y="603" fill="#F5B56C" font-family="Consolas, monospace" font-size="17" font-weight="400">ERROR request=99 code=DESTINATION_DENIED</text>
+<text x="88" y="640" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">10</text>
+<text x="131" y="640" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">Detail: reports output was not written</text>
+<text x="88" y="677" fill="#A6B8C9" font-family="Consolas, monospace" font-size="18" font-weight="400">11</text>
+<text x="131" y="677" fill="#F3F7FC" font-family="Consolas, monospace" font-size="17" font-weight="400">INFO capture=partial job_status=unknown</text>
+<text x="750" y="313" fill="#F3F7FC" font-family="Consolas, monospace" font-size="18" font-weight="400">01  INFO load rows=3</text>
+<text x="750" y="354" fill="#F3F7FC" font-family="Consolas, monospace" font-size="18" font-weight="400">02  INFO request=42 source=sample.csv</text>
+<text x="750" y="395" fill="#F5B56C" font-family="Consolas, monospace" font-size="18" font-weight="400">04  ERROR request=42 code=BAD_FIELD</text>
+<path d="M750 444 L1350 444" stroke="#2A4054" stroke-width="2" fill="none"/>
+<text x="750" y="485" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">source lines</text>
+<text x="1222" y="485" fill="#F3F7FC" font-family="Consolas, monospace" font-size="21" font-weight="700">11</text>
+<text x="750" y="524" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">matched lines</text>
+<text x="1222" y="524" fill="#F3F7FC" font-family="Consolas, monospace" font-size="21" font-weight="700">2</text>
+<text x="750" y="563" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">selected lines</text>
+<text x="1222" y="563" fill="#F3F7FC" font-family="Consolas, monospace" font-size="21" font-weight="700">3</text>
+<text x="750" y="602" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">omitted requested lines</text>
+<text x="1222" y="602" fill="#F3F7FC" font-family="Consolas, monospace" font-size="21" font-weight="700">2</text>
+<text x="750" y="641" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">complete_for_selection</text>
+<text x="1222" y="641" fill="#F5B56C" font-family="Consolas, monospace" font-size="21" font-weight="700">false</text>
+<text x="750" y="680" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">source_process_status</text>
+<text x="1222" y="680" fill="#F5B56C" font-family="Consolas, monospace" font-size="21" font-weight="700">unknown</text>
+<rect x="64" y="782" width="1312" height="106" rx="18" fill="#153239"/>
+<text x="88" y="823" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">EXPAND THE RELEVANT RANGE</text>
+<text x="88" y="862" fill="#F3F7FC" font-family="Consolas, monospace" font-size="23" font-weight="700">--range 4:5</text>
+<text x="343" y="862" fill="#F3F7FC" font-family="Consolas, monospace" font-size="23" font-weight="400">→  05  Detail: row=2 date=not-a-date</text>
+<text x="64" y="936" fill="#A6B8C9" font-family="Consolas, monospace" font-size="20" font-weight="400">Initial arguments: --query &quot;request=42&quot; --context 1 --max-lines 3</text>
+<text x="64" y="982" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">The request=99 failure is outside this query. Expand your search for a complete failure inventory.</text>
+<text x="64" y="1025" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">An extraction succeeds when it reads text. That does not mean the source job succeeded.</text>
+</svg>

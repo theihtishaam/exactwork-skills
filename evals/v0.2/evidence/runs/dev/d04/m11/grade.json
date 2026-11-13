@@ -1,0 +1,24 @@
+{
+  "case": "d04",
+  "passed": 3,
+  "total": 3,
+  "deterministic_success": true,
+  "semantic_review_required": false,
+  "checks": [
+    {
+      "check": "exact requested edit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "other file unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no extra artifacts",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "case": "d01",
+  "passed": 20,
+  "total": 20,
+  "deterministic_success": true,
+  "semantic_review_required": true,
+  "checks": [
+    {
+      "check": "preserve run-contract.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserve run.log",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only requested output",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "valid JSON object",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "job state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "capture completeness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "findings list",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact distinct failure inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "UPSTREAM_TIMEOUT stage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "UPSTREAM_TIMEOUT first evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "UPSTREAM_TIMEOUT cause evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "UPSTREAM_TIMEOUT explanation and next check",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "FONT_NOT_FOUND stage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "FONT_NOT_FOUND first evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "FONT_NOT_FOUND cause evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "FONT_NOT_FOUND explanation and next check",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "DESTINATION_DENIED stage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "DESTINATION_DENIED first evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "DESTINATION_DENIED cause evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "DESTINATION_DENIED explanation and next check",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

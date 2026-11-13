@@ -1,0 +1,170 @@
+{
+  "sample-096b853333": {
+    "phase": "dev",
+    "case": "d01",
+    "condition": "v01",
+    "trial": 1,
+    "run_id": "m04"
+  },
+  "sample-5063ac4692": {
+    "phase": "dev",
+    "case": "d01",
+    "condition": "none",
+    "trial": 1,
+    "run_id": "m08"
+  },
+  "sample-e8149b18f2": {
+    "phase": "dev",
+    "case": "d01",
+    "condition": "v02",
+    "trial": 1,
+    "run_id": "m12"
+  },
+  "sample-4368f716d0": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "v01",
+    "trial": 1,
+    "run_id": "t1p2"
+  },
+  "sample-a73e857759": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "none",
+    "trial": 1,
+    "run_id": "t1p1"
+  },
+  "sample-1e03366839": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "v02",
+    "trial": 2,
+    "run_id": "t2p2"
+  },
+  "sample-f447c89a8b": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "v02",
+    "trial": 1,
+    "run_id": "t1p3"
+  },
+  "sample-2d7ecbeeac": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "none",
+    "trial": 2,
+    "run_id": "t2p3"
+  },
+  "sample-5702455491": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "v02",
+    "trial": 2,
+    "run_id": "t2p2"
+  },
+  "sample-1a2475ac41": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "v01",
+    "trial": 3,
+    "run_id": "t3p3"
+  },
+  "sample-e3a81d8e42": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "v02",
+    "trial": 1,
+    "run_id": "t1p3"
+  },
+  "sample-d070d30afe": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "v01",
+    "trial": 1,
+    "run_id": "t1p2"
+  },
+  "sample-956f5bf71b": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "v02",
+    "trial": 3,
+    "run_id": "t3p1"
+  },
+  "sample-5d9947275d": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "none",
+    "trial": 1,
+    "run_id": "t1p1"
+  },
+  "sample-7084b425cd": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "v01",
+    "trial": 2,
+    "run_id": "t2p1"
+  },
+  "sample-347fb0b962": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "none",
+    "trial": 2,
+    "run_id": "t2p3"
+  },
+  "sample-bd921f0062": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "none",
+    "trial": 3,
+    "run_id": "t3p2"
+  },
+  "sample-72e1d3bf8b": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "v02",
+    "trial": 3,
+    "run_id": "t3p1"
+  },
+  "sample-3175b0ec09": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "v01",
+    "trial": 3,
+    "run_id": "t3p3"
+  },
+  "sample-5677d05ad9": {
+    "phase": "holdout",
+    "case": "h02",
+    "condition": "none",
+    "trial": 3,
+    "run_id": "t3p2"
+  },
+  "sample-34a83c0bcb": {
+    "phase": "holdout",
+    "case": "h01",
+    "condition": "v01",
+    "trial": 2,
+    "run_id": "t2p1"
+  },
+  "sample-1aba48208e": {
+    "phase": "ponytail",
+    "case": "h02",
+    "condition": "ponytail",
+    "trial": 1,
+    "run_id": "p1"
+  },
+  "sample-6dc780cc88": {
+    "phase": "ponytail",
+    "case": "h02",
+    "condition": "ponytail",
+    "trial": 2,
+    "run_id": "p2"
+  },
+  "sample-0ad38f4442": {
+    "phase": "ponytail",
+    "case": "h02",
+    "condition": "ponytail",
+    "trial": 3,
+    "run_id": "p3"
+  }
+}

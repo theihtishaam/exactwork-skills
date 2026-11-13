@@ -1,0 +1,71 @@
+{
+  "conditions_known": false,
+  "case": "d03",
+  "scope": "Blind regrade changes only citation interpretation; original result retained.",
+  "records": {
+    "A": {
+      "answer_sha256": "a653eb7b919b1425954c897d15e02f82a1816a92f5bbf41a848a8265ad46b917",
+      "original": {
+        "success": false,
+        "passed": 12,
+        "total": 13,
+        "failures": [
+          {
+            "check": "sources identify data sections",
+            "passed": false,
+            "detail": null
+          }
+        ]
+      },
+      "corrected": {
+        "success": true,
+        "passed": 13,
+        "total": 13,
+        "failures": []
+      }
+    },
+    "B": {
+      "answer_sha256": "6ee50075cf3153d141b01364297149148667238b49ba8c5a29b76219368b35a1",
+      "original": {
+        "success": false,
+        "passed": 12,
+        "total": 13,
+        "failures": [
+          {
+            "check": "sources identify data sections",
+            "passed": false,
+            "detail": null
+          }
+        ]
+      },
+      "corrected": {
+        "success": true,
+        "passed": 13,
+        "total": 13,
+        "failures": []
+      }
+    },
+    "C": {
+      "answer_sha256": "d09a4aada8677bed6ab6f32a5246ef8a63b33922c308c2d8517d2ac72264cfd5",
+      "original": {
+        "success": false,
+        "passed": 12,
+        "total": 13,
+        "failures": [
+          {
+            "check": "sources identify data sections",
+            "passed": false,
+            "detail": null
+          }
+        ]
+      },
+      "corrected": {
+        "success": true,
+        "passed": 13,
+        "total": 13,
+        "failures": []
+      }
+    }
+  },
+  "citation_regressions": "Bare IDs, normalized full headings, false titles, missing section, and non-list input checked."
+}

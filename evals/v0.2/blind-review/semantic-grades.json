@@ -1,0 +1,639 @@
+{
+  "review_type": "condition-blind semantic assessment",
+  "conditions_known": false,
+  "assessor_note": "Reviewer authored the synthetic benchmark and knows its oracle, but did not read condition maps, run directories, schedules, candidate content, or model-arm identities. This is one blinded reviewer, not independent human consensus.",
+  "scope": "Original public prompts, input contracts/evidence, frozen private rubric, and24 anonymized final answers. Input-preservation/tool-scope checks are handled separately by the deterministic grader.",
+  "semantic_success_definition": "Grounded required findings and causes, no unsupported failure claims, relevant next investigation, and correct uncertainty under the public task. Exact-line and wording criteria are audited separately.",
+  "summary": {
+    "samples": 24,
+    "semantic_passes": 23,
+    "semantic_failures": 1,
+    "diagnostic_samples": 12,
+    "review_samples": 12,
+    "review_samples_with_both_defects": 12,
+    "strict_citation_only_misses": 1,
+    "weaker_outcome_focused_next_checks": 1
+  },
+  "records": {
+    "sample-096b853333": {
+      "case": "d01",
+      "answer_sha256": "527323b44b00fc0bc955b9459a13c8baf85616c57ff930dcd2175a1f566710ed",
+      "semantic_success": false,
+      "supported_findings": [
+        {
+          "code": "UPSTREAM_TIMEOUT",
+          "cause": null,
+          "note": "Timeout recognized, but available transport cause missed."
+        },
+        {
+          "code": "FONT_NOT_FOUND",
+          "cause": "required NotoSans font absent from assets/fonts"
+        },
+        {
+          "code": "DESTINATION_DENIED",
+          "cause": "PermissionError while creating temporary file in reports"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [
+        "The explanation says no separate causal record is present. Line5216 contains ConnectionResetError before response headers, and5217 explicitly links it to the timeout."
+      ],
+      "missed_requirements": [
+        "Identify available upload causal evidence and ground the upload explanation in that record."
+      ],
+      "notes": [
+        "All three distinct failure codes identified; repeated upload failure correctly grouped; partial job and complete capture distinguished. Unicode document name matches source bytes (ç), independently checked with escaped code points.",
+        "This is a real semantic omission, not merely an alternate line-number citation. General availability/latency next checks are plausible but do not repair the false claim that the cause is absent."
+      ]
+    },
+    "sample-0ad38f4442": {
+      "case": "h02",
+      "answer_sha256": "4bdff713e70a07dbf0157ed1e8fd5d74bd940426a3424a10ae69aa313a49b654",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-1a2475ac41": {
+      "case": "h01",
+      "answer_sha256": "f063ac9acd6100cd1f07fac8880a6f1c0aaebeb2922674dca64db567eb964fd7",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "Next checks directly investigate encoding, missing-record processing, and destination locking while preserving uncertainty."
+      ]
+    },
+    "sample-1aba48208e": {
+      "case": "h02",
+      "answer_sha256": "3671bc134cf28888cd76b7dbd517a5eaa3a2b153c706e2b38b2f623fb22ac63d",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-1e03366839": {
+      "case": "h01",
+      "answer_sha256": "a6cbe08a9913b7d62587a97c1b5f660e27d39f47fc9cb4e306c0e04372a853dd",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "ROW_COUNT_MISMATCH cites11003 rather than frozen accepted11004. Line11003 itself gives actual/expected counts and rejected publication; explanation and record-identity next check are supported. Line11004 adds the decoded-input→aggregate boundary, useful but not required by the public prompt to establish the immediate rejection cause.",
+        "Next checks directly investigate encoding, missing-record processing, and destination locking while preserving uncertainty."
+      ],
+      "strict_citation_miss": true,
+      "citation_semantically_valid": true
+    },
+    "sample-2d7ecbeeac": {
+      "case": "h01",
+      "answer_sha256": "23dc6aa7a6cd82e24efe1b16760abfc192d27e7079933824539f089904d031a7",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "Next checks directly investigate encoding, missing-record processing, and destination locking while preserving uncertainty."
+      ]
+    },
+    "sample-3175b0ec09": {
+      "case": "h02",
+      "answer_sha256": "d45ef4b3c6b4c386a109a3a2f8732a484e557b499ad60b344acca0dc0519ad64",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-347fb0b962": {
+      "case": "h02",
+      "answer_sha256": "a315c81ba6850dc91f135b1f7866d80d2ac8e5dd834940f34ed2530cf12de945",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-34a83c0bcb": {
+      "case": "h01",
+      "answer_sha256": "808766d9659152e4042ff2e9d4073950ef6378e406dc0a587afa0a0e05a5bde8",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "Next checks directly investigate encoding, missing-record processing, and destination locking while preserving uncertainty."
+      ]
+    },
+    "sample-4368f716d0": {
+      "case": "h02",
+      "answer_sha256": "cbc13b90261f42780552f78a37cc89ee5dea1cdc4f81f5ac43ff7f077795dbbc",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-5063ac4692": {
+      "case": "d01",
+      "answer_sha256": "ba72ce317b70ccba16e3b29123839ee24751cd89d64c44ab3dbc4a17f18613d3",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "UPSTREAM_TIMEOUT",
+          "cause": "peer reset before response headers"
+        },
+        {
+          "code": "FONT_NOT_FOUND",
+          "cause": "required NotoSans font absent from assets/fonts"
+        },
+        {
+          "code": "DESTINATION_DENIED",
+          "cause": "PermissionError while creating temporary file in reports"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "All three distinct failure codes identified; repeated upload failure correctly grouped; partial job and complete capture distinguished. Unicode document name matches source bytes (ç), independently checked with escaped code points.",
+        "All causal explanations match supplied evidence. Next checks target the observed transport, missing asset, and directory-access causes without claiming repair."
+      ]
+    },
+    "sample-5677d05ad9": {
+      "case": "h02",
+      "answer_sha256": "6d33f2da24d10eebb22ae9f738eb75266afc80027361309454e889345c89b4c7",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-5702455491": {
+      "case": "h02",
+      "answer_sha256": "f03eb8bae4750b1b15b27fcb7f23458afc9ecc97791b65970175f3a6e96d27e0",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-5d9947275d": {
+      "case": "h02",
+      "answer_sha256": "f73f44f1e16fe0cfcc63b368b67d5f88f88d2a825b3a3223ea8f226b0af4a471",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-6dc780cc88": {
+      "case": "h02",
+      "answer_sha256": "554d6d0d485bf6c8993a784e16faa3d4bab4913ae254a59d7c0355c5e727ca44",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-7084b425cd": {
+      "case": "h02",
+      "answer_sha256": "e1bc6558dd5231d49d25e7b08897da3a3dc6424f6b428c9cfe5fb7ba4f7470ec",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-72e1d3bf8b": {
+      "case": "h02",
+      "answer_sha256": "88d1b3740ff9a0019dd2564cf7a4b9484b6517bd82e2f687fdb03defd6d268aa",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    },
+    "sample-956f5bf71b": {
+      "case": "h01",
+      "answer_sha256": "eddd43f1a828f9f286e12302817aa300870d81abbd2210aac390a67e3c2ae10f",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "Next checks directly investigate encoding, missing-record processing, and destination locking while preserving uncertainty."
+      ]
+    },
+    "sample-a73e857759": {
+      "case": "h01",
+      "answer_sha256": "2973b612c91b8790450da06996e5fbc51763619c7d756385a52d8d6f1d541e26",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "Next checks directly investigate encoding, missing-record processing, and destination locking while preserving uncertainty."
+      ]
+    },
+    "sample-bd921f0062": {
+      "case": "h01",
+      "answer_sha256": "c89762feb3024e92b0d3060a9498b40b6db361a3eb04bc22deb1beee75061161",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "The decode next check seeks missing later records for recovery/final disposition. That is relevant to incomplete capture but less directly useful for investigating invalid source encoding than inspecting the bytes/declaration. It does not contradict the source or claim repair."
+      ],
+      "next_check_specificity": "Decode follow-up is outcome-focused, not a direct root-cause probe.",
+      "literal_frozen_cause_probe_rule_satisfied": false,
+      "rubric_interpretation_note": "The private rubric asks next checks to test a relevant cause; the public h01 task requests next_check without requiring a cause-only probe. Retain this weakness as a separate specificity observation, not a fabricated correctness failure. A literal private-rule sensitivity score would mark this sample incomplete."
+    },
+    "sample-d070d30afe": {
+      "case": "h01",
+      "answer_sha256": "430e8ee5309472a02f0cd87cf1ed7fd57ec033aaf2e7d91cae89a1c66714f206",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "Next checks directly investigate encoding, missing-record processing, and destination locking while preserving uncertainty."
+      ]
+    },
+    "sample-e3a81d8e42": {
+      "case": "h01",
+      "answer_sha256": "fcccf2bd7bf1465050837e5d33c4f8d121fde653a1f69ea6d4cf7e2e991bc4e3",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "INVALID_ENCODING",
+          "cause": "declared UTF-8 input contains invalid byte0x96 at offset188"
+        },
+        {
+          "code": "ROW_COUNT_MISMATCH",
+          "cause": "actual3699 rows versus expected3700 caused rejection and nonpublication"
+        },
+        {
+          "code": "RENAME_FAILED",
+          "cause": "another process holds destination open; replacement not performed"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Distinct failures and retry grouping are correct. Overall job state remains unknown and capture is correctly marked incomplete. No expected test payload is falsely reported as a failure.",
+        "Next checks directly investigate encoding, missing-record processing, and destination locking while preserving uncertainty."
+      ]
+    },
+    "sample-e8149b18f2": {
+      "case": "d01",
+      "answer_sha256": "f5bab33a035dc54c7202afd8164b1adb0d9ca557a594ecad06954b263dd736d1",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "code": "UPSTREAM_TIMEOUT",
+          "cause": "peer reset before response headers"
+        },
+        {
+          "code": "FONT_NOT_FOUND",
+          "cause": "required NotoSans font absent from assets/fonts"
+        },
+        {
+          "code": "DESTINATION_DENIED",
+          "cause": "PermissionError while creating temporary file in reports"
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "All three distinct failure codes identified; repeated upload failure correctly grouped; partial job and complete capture distinguished. Unicode document name matches source bytes (ç), independently checked with escaped code points.",
+        "All causal explanations match supplied evidence. Next checks target the observed transport, missing asset, and directory-access causes without claiming repair."
+      ]
+    },
+    "sample-f447c89a8b": {
+      "case": "h02",
+      "answer_sha256": "fe36fca6e92985482c1770b04937c8e6ba2a0e325768be5a72aacbd3642dfcfe",
+      "semantic_success": true,
+      "supported_findings": [
+        {
+          "defect": "shared default list breaks instance independence",
+          "location": "task_queue.py:2",
+          "verified": "Fresh module: create two default queues, put None into the first; second queue has length1 and returns None."
+        },
+        {
+          "defect": "rejected full put changes queue state",
+          "location": "task_queue.py:9",
+          "verified": "Separate fresh module: capacity1, put kept, attempt rejected; OverflowError occurs but length2 and both items remain retrievable."
+        }
+      ],
+      "false_positives": [],
+      "unsupported_claims": [],
+      "missed_requirements": [],
+      "notes": [
+        "Both known independent defects have realistic triggers and correct observed/expected consequences. No extra unsupported thread-safety, type-validation, performance, or style finding. Trigger examples are understood as independent probes starting from fresh module state."
+      ]
+    }
+  },
+  "causal_line_audit": {
+    "affected_sample": "sample-1e03366839",
+    "case": "h01",
+    "code": "ROW_COUNT_MISMATCH",
+    "original_accepted_lines": [
+      11004
+    ],
+    "alternative_line": 11003,
+    "public_contract": "Return first_line and causal_line with line evidence. It does not require a different continuation line or a particular sole citation.",
+    "line11003_evidence": "warning; reconcile; ROW_COUNT_MISMATCH; rejected; expected3700; actual3699; aggregate output not published",
+    "line11004_evidence": "ValidationError: one record was lost between decoded input and aggregated output",
+    "assessment": "11003 independently supports why reconciliation rejected the output.11004 makes the lost-record processing boundary explicit but does not introduce a different immediate cause. The alternative answer correctly reports the mismatch and proposes identifying the missing record. This is not a semantic diagnosis defect.",
+    "proposed_arm_neutral_correction": "For h01 ROW_COUNT_MISMATCH only, allow causal_line11003 or11004 while retaining semantic checks that the explanation identifies count mismatch/rejection and a relevant next investigation. Apply to every arm and preserve frozen results as the original strict grade. Do not accept arbitrary error lines generally.",
+    "other_samples": "All other diagnostic citations were inspected. sample-096b853333 has null upload cause and falsely denies available causal evidence; no citation-normalization exception should rescue it. Other diagnostics cite actual causal continuation lines.",
+    "changes_applied": false
+  },
+  "next_check_rubric_caveat": {
+    "affected_sample": "sample-bd921f0062",
+    "assessment": "One decode next_check seeks final disposition in truncated-away records instead of directly probing encoding. This is a concrete usefulness difference. The public prompt does not explicitly require cause-only probing, so public-task semantic success is retained with this limitation. Under a literal reading of the stricter private sentence, this would be an additional miss.",
+    "recommendation": "Report both the qualitative limitation and any literal-rubric sensitivity; do not present all passing answers as equally useful or silently convert the private rule into a new public requirement."
+  }
+}

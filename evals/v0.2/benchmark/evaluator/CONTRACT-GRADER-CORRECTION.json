@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-12",
+  "conditions_known": false,
+  "base": "grade_corrected.py",
+  "base_sha256": "95e6dbb3c743f6b753559156c2e6b2ef3b83402cd6fd2acc11b43f038b539b5b",
+  "original_grade_sha256": "80bf4f514ecc9ba45fe4ba4903317bd2b44125faee4ae297e16535254cae79c9",
+  "frozen_manifest_sha256": "7f6b372cf6f8250e33b2a89cbf7feffb92959f7511dc7c0dffdc0cde93035e1e",
+  "new_sha256": "86fbdab33d7d01f71d94733d3738a8724944b6d39c720fd4cf50008495665b51",
+  "change": "For h01 ROW_COUNT_MISMATCH only, allow causal_line11003 in addition to frozen11004. Existing d03 heading-citation correction retained unchanged.",
+  "reason": "Public prompt asks causal line evidence, not one sole continuation line.11003 explicitly records expected3700,actual3699,and rejected publication.11004 adds a lost-record processing boundary but not a different immediate rejection cause.",
+  "arm_neutrality": "Every h01 answer receives identical accepted evidence lines; no arm map or candidate was inspected.",
+  "preserved": [
+    "grade.py",
+    "grade_corrected.py",
+    "FROZEN-MANIFEST.json",
+    "all prior grades"
+  ],
+  "no_other_criteria_changed": true
+}

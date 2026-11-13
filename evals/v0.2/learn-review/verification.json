@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-11-12T11:16:56.902376+00:00",
+  "runner": "work/v02/learn-review/test_independent_review.py",
+  "candidate_tests": 32,
+  "independent_tests": 6,
+  "total_tests": 38,
+  "passed": 38,
+  "failures": 0,
+  "errors": 0,
+  "observed_suite_seconds": 5.707,
+  "script_sha256": "b01fc19d420013af86bf55063a2c09af88c4e409de624538cf61fb2d3fbc7fe7",
+  "reviewed_scope": "learn_candidate only; main experiment candidate unchanged",
+  "initial_reproduced_failures": [
+    "pending-cleanup retry blocked by completed marker",
+    "falsey pending JSON bypasses validation",
+    "finite duration aggregate overflow breaks structured CLI result"
+  ],
+  "final_status": "all reproduced defects fixed and independently verified"
+}

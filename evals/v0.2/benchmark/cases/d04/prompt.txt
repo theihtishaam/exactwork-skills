@@ -1,0 +1,1 @@
+In ui-labels.json change only the English checkout button label from "Pay noww" to "Pay now". Preserve every other value and formatting. Do not change code, add tests, research, or create any other file. Complete the edit directly.

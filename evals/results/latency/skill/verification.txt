@@ -1,0 +1,8 @@
+test_maximum (test_latency.ExistingChecks.test_maximum) ... ok
+test_mean (test_latency.ExistingChecks.test_mean) ... ok
+test_mean_zero_and_missing_values (test_latency.ExistingChecks.test_mean_zero_and_missing_values) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

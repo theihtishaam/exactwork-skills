@@ -1,0 +1,1 @@
+Created and validated [answer.json](<STUDY_ROOT>/runs/holdout/h01/t2p3/answer.json). It records three distinct failures, incomplete capture, and unknown job state.

@@ -1,0 +1,21 @@
+{
+  "repository": "DietrichGebert/ponytail",
+  "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+  "version": "5.3.3",
+  "checked": "2026-11-12",
+  "note": "Alternative entry modes, not necessarily loaded together; bytes are not model tokens. Original source is linked, not redistributed.",
+  "files": [
+    {
+      "path": "skills/ponytail/SKILL.md",
+      "utf8_bytes": 3496,
+      "sha256": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/skills/ponytail/SKILL.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "utf8_bytes": 2721,
+      "sha256": "b98b15e1d683ee205e124b52b8d330128593f4a87b545cf8185e2712cd1bb25f",
+      "url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/AGENTS.md"
+    }
+  ]
+}

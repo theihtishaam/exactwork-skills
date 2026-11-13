@@ -1,0 +1,92 @@
+{
+  "original_record": {
+    "schema_version": 1,
+    "harness": "codex-cli",
+    "harness_version": "0.145.0",
+    "version_evidence": "version/help inspected before study; no per-trial model inference",
+    "model": null,
+    "model_selection": "CLI inherited default; exact model not reported by this collector",
+    "run_dir": "runs/dev/d04/m03",
+    "telemetry_dir": "runs/dev/d04/m03-telemetry",
+    "command": [
+      "node",
+      "<CODEX_CLI>",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "-c",
+      "windows.sandbox=\"unelevated\"",
+      "--json",
+      "--sandbox",
+      "workspace-write",
+      "--skip-git-repo-check",
+      "--cd",
+      "<STUDY_ROOT>\\runs\\dev\\d04\\m03",
+      "--output-last-message",
+      "<STUDY_ROOT>\\runs\\dev\\d04\\m03-telemetry\\answer.txt",
+      "-"
+    ],
+    "windows_sandbox": "unelevated",
+    "sandbox_configuration_reason": "Codex 0.145.0 on Windows downgrades workspace-write to read-only when its Windows sandbox is disabled. Set native restricted-token sandbox per invocation while ignoring user config; retain workspace-write and managed requirements.",
+    "prompt_sha256": "f4c16948484cebed261de9c21335c3eaa51db45a5dec9b9f4dd853feedc301a8",
+    "skill_sha256": "a221bb2f3acf414b1445720ba7299dba40792a8396fecd5433ce6742984a7741",
+    "skill_text_present_in_prompt": true,
+    "fixture_before": {
+      "files": {
+        "README.md": "a0b13a8ca043d7ab141ab9c8b1a1ba36f174d4affd4ab54696ab798e43868131",
+        "ui-labels.json": "ecaff0c0c647417781ad8745fd96d047a035dbd4d36c0097d52edbf26652500c"
+      },
+      "manifest_sha256": "c1948cdf871e5a2e3532eb1a9ad4f0d8179f530485e1481c6a75f890581219cd"
+    },
+    "timeout_seconds": 300,
+    "timed_out": false,
+    "cleanup": null,
+    "process_exit_code": 0,
+    "launch_error_type": null,
+    "cost_usd": null,
+    "usage_semantics": "Latest cumulative thread usage from a fresh one-turn process. Do not sum cache/reasoning subsets into input/output. All-zero/missing is unavailable.",
+    "operation_count_semantics": "Unique completed command_execution, mcp_tool_call, collab_tool_call, and web_search items. File-change items are separate. These are exported activity counts, not every internal raw API/tool call.",
+    "tool_output_chars_semantics": "Unicode code points in exported aggregated_output strings of unique completed command_execution items only. Not tokens, bytes, full untruncated output, or all tool types. Total is null when any command lacks an output string; observed partial sum and missing count are retained.",
+    "isolation_limit": "Fresh process/fixture and ignored user config do not prove absence of every inherited instruction or global skill.",
+    "wall_seconds": 27.437,
+    "completion_count": 1,
+    "failure_event_count": 0,
+    "malformed_event_count": 0,
+    "event_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "usage": {
+      "input_tokens": 34688,
+      "cached_input_tokens": 21248,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 569,
+      "reasoning_output_tokens": 85
+    },
+    "usage_status": "reported",
+    "tool_call_items": {
+      "collab_tool_call": 0,
+      "command_execution": 1,
+      "mcp_tool_call": 0,
+      "web_search": 0
+    },
+    "tool_call_item_count": 1,
+    "tool_output_chars": 68,
+    "tool_output_chars_observed": 68,
+    "command_output_items_available": 1,
+    "command_output_items_missing": 0,
+    "failed_or_declined_operation_items": {},
+    "file_change_items": 0,
+    "final_message_sha256": "c4bd547f17a53fe534e455e780743a241eaf0bbbe6f011afe890c3d6e59f3767",
+    "run_status": "completed",
+    "exports": {
+      "stdout.jsonl": "870c2b996744872201786a3ab9feb442f3d401b335f6ffc5b8b7dc1cbe97d598",
+      "stderr.txt": "fff690764d650b30f6c5c02c62e17afafa4ded45731a1f18700a28725c03d1af"
+    },
+    "answer_sha256": "c4bd547f17a53fe534e455e780743a241eaf0bbbe6f011afe890c3d6e59f3767"
+  },
+  "redacted": true
+}

@@ -1,0 +1,17 @@
+{
+  "audit_passed": true,
+  "runs": 35,
+  "verified_public_files": 219,
+  "semantic_receipts": 27,
+  "corrected_grade_receipts": 12,
+  "task_passes": 34,
+  "percentages": {
+    "holdout_reduction_vs_none": 13.756574905583252,
+    "holdout_reduction_vs_v01": 7.492232101014851,
+    "coding_reduction_vs_ponytail": 10.0968633285762,
+    "h01_reduction_vs_none": -5.545525650366434,
+    "h02_reduction_vs_none": 29.993871030252773,
+    "h02_reduction_vs_ponytail": 8.185176428866958
+  },
+  "limits": "Internal consistency, not independent model execution or authentication of omitted private originals; semantic judgments retained."
+}

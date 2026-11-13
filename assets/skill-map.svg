@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1050" viewBox="0 0 1440 1050" role="img" aria-labelledby="title desc">
+<title id="title">Choose the Exactwork skill that matches the task</title><desc id="desc">Six independent skills cover execution, research, review, handoff, context selection and project learning. Start with the relevant procedure; avoid loading all skills for every task.</desc>
+<rect width="1440" height="1050" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">SIX SKILLS / ONE RELEVANT CHOICE</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Choose by the job you need to finish.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Each skill is independent. Load a companion when its procedure adds useful work.</text>
+<rect x="64" y="213" width="644" height="226" rx="18" fill="#102235"/>
+<text x="88" y="252" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">01</text>
+<text x="134" y="252" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">EXACTWORK</text>
+<text x="88" y="296" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Complete the task</text>
+<text x="88" y="335" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Define success and preserve scope.</text>
+<text x="88" y="364" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Inspect, execute, and verify.</text>
+<text x="88" y="408" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">“Fix this export bug and check it.”</text>
+<rect x="732" y="213" width="644" height="226" rx="18" fill="#102235"/>
+<text x="756" y="252" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">02</text>
+<text x="802" y="252" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">RESEARCH</text>
+<text x="756" y="296" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Resolve an evidence question</text>
+<text x="756" y="335" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Read original sources and compare claims.</text>
+<text x="756" y="364" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Separate observations from assumptions.</text>
+<text x="756" y="408" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">“Which claim does the evidence support?”</text>
+<rect x="64" y="463" width="644" height="226" rx="18" fill="#102235"/>
+<text x="88" y="502" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">03</text>
+<text x="134" y="502" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">REVIEW</text>
+<text x="88" y="546" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Find concrete defects</text>
+<text x="88" y="585" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Review against actual requirements.</text>
+<text x="88" y="614" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Give reproducible triggers and impact.</text>
+<text x="88" y="658" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">“Find correctness defects; do not edit.”</text>
+<rect x="732" y="463" width="644" height="226" rx="18" fill="#102235"/>
+<text x="756" y="502" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">04</text>
+<text x="802" y="502" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">HANDOFF</text>
+<text x="756" y="546" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Continue without losing decisions</text>
+<text x="756" y="585" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Preserve corrections and current scope.</text>
+<text x="756" y="614" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Separate verified work from open work.</text>
+<text x="756" y="658" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">“Prepare a reliable continuation note.”</text>
+<rect x="64" y="713" width="644" height="226" rx="18" fill="#102235"/>
+<text x="88" y="752" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">05</text>
+<text x="134" y="752" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">CONTEXT</text>
+<text x="88" y="796" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Read a large source selectively</text>
+<text x="88" y="835" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Extract exact lines with source identity.</text>
+<text x="88" y="864" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Inspect omissions and expand as needed.</text>
+<text x="88" y="908" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">“Inspect relevant excerpts from this log.”</text>
+<rect x="732" y="713" width="644" height="226" rx="18" fill="#153239"/>
+<text x="756" y="752" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">06</text>
+<text x="802" y="752" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">LEARN</text>
+<text x="756" y="796" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Improve a project procedure</text>
+<text x="756" y="835" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Evaluate one scoped candidate change.</text>
+<text x="756" y="864" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Version eligible updates; keep rollback.</text>
+<text x="756" y="908" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">“Learn from this verified project failure.”</text>
+<text x="64" y="1000" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Small tasks can stay small. More loaded instructions are not automatically better.</text>
+</svg>

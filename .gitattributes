@@ -1,0 +1,3 @@
+# Preserve exact reviewed files and evidence hashes across platforms.
+* -text
+*.png binary

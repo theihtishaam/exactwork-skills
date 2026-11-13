@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-12",
+  "phase": "candidate frozen after development, before holdout access",
+  "files": {
+    "skills/exactwork/LICENSE": "548df8cb003c6c00598eada5e901ebe2585b80bdaecffd28e945aff9dbededef",
+    "skills/exactwork/SKILL.md": "a221bb2f3acf414b1445720ba7299dba40792a8396fecd5433ce6742984a7741",
+    "skills/exactwork-context/LICENSE": "548df8cb003c6c00598eada5e901ebe2585b80bdaecffd28e945aff9dbededef",
+    "skills/exactwork-context/SKILL.md": "b4116ff92edadb42ba2ca8595543840450541736d9025fc1f0e5e51421d5cf07",
+    "skills/exactwork-context/scripts/context_slice.py": "ef71289f3f6eb8f53fe58f6d31562cfd184e408c3f8dfa5d71de77ecb9f0b923",
+    "skills/exactwork-handoff/LICENSE": "548df8cb003c6c00598eada5e901ebe2585b80bdaecffd28e945aff9dbededef",
+    "skills/exactwork-handoff/SKILL.md": "7700b3e9f3498e1f28e2eacfd9314d6a1b46cdf76f504238be425cda8010e673",
+    "skills/exactwork-research/LICENSE": "548df8cb003c6c00598eada5e901ebe2585b80bdaecffd28e945aff9dbededef",
+    "skills/exactwork-research/SKILL.md": "5d398635591c4c56dbfa32cf9fd480017fc1fbf4647b21658b085cd767a65162",
+    "skills/exactwork-review/LICENSE": "548df8cb003c6c00598eada5e901ebe2585b80bdaecffd28e945aff9dbededef",
+    "skills/exactwork-review/SKILL.md": "f28822b182a56c114399f51e311d4b71275385cf9d2d9422c56cf45db6fadea1"
+  },
+  "notes": [
+    "No instruction revisions were made in response to dev task outputs.",
+    "Context helper mechanical fixes were independently identified and completed before candidate log trial m12.",
+    "Self-learning module is separately developed and will not be claimed as tested by this benchmark."
+  ]
+}

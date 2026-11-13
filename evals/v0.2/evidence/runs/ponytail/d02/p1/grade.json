@@ -1,0 +1,305 @@
+{
+  "case": "d02",
+  "passed": 36,
+  "total": 36,
+  "deterministic_success": true,
+  "semantic_review_required": false,
+  "checks": [
+    {
+      "check": "preserve CONTRACT.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserve example.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no unrelated files",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "regression artifact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "candidate regression suite passes",
+      "passed": true,
+      "detail": "test_contract_regression (test_report.ExistingTests.test_contract_regression) ... ok\ntest_simple (test_report.ExistingTests.test_simple) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "check": "regression detects original defect",
+      "passed": true,
+      "detail": "test_contract_regression (test_report.ExistingTests.test_contract_regression) ... FAIL\ntest_simple (test_report.ExistingTests.test_simple) ... ok\n\n======================================================================\nFAIL: test_contract_regression (test_report.ExistingTests.test_contract_regression)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<LOCAL_HOME>\\AppData\\Local\\Temp\\exactwork-regression-oracle-dx8kseuy\\test_report.py\", line 20, in test_contract_regression\n    self.assertEqual(summarize(rows), {\nAssertionError: {'USD[17 chars]s': 28, 'debits_cents': 28, 'net_cents': 0}} != {'USD[17 chars]s': 29, 'debits_cents': 29, 'net_cents': 0}, '[61 chars]300}}\n+ {'EUR': {'credits_cents': 300, 'debits_cents': 0, 'net_cents': 300},\n- {'USD': {'credits_cents': 28, 'debits_cents': 28, 'net_cents': 0}}\n? ^                          ^                   ^\n\n+  'USD': {'credits_cents': 29, 'debits_cents': 29, 'net_cents': 0}}\n? ^                          ^                   ^\n\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "check": "exact cents",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          }
+        },
+        "expected": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          }
+        }
+      }
+    },
+    {
+      "check": "exact cents input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "currency-scoped id",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          },
+          "EUR": {
+            "credits_cents": 300,
+            "debits_cents": 0,
+            "net_cents": 300
+          }
+        },
+        "expected": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          },
+          "EUR": {
+            "credits_cents": 300,
+            "debits_cents": 0,
+            "net_cents": 300
+          }
+        }
+      }
+    },
+    {
+      "check": "currency-scoped id input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "retry deduplication",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          }
+        },
+        "expected": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          }
+        }
+      }
+    },
+    {
+      "check": "retry deduplication input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "legitimate opposing entries",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 29,
+            "net_cents": 0
+          }
+        },
+        "expected": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 29,
+            "net_cents": 0
+          }
+        }
+      }
+    },
+    {
+      "check": "legitimate opposing entries input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserve currency case",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          },
+          "usd": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          }
+        },
+        "expected": {
+          "USD": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          },
+          "usd": {
+            "credits_cents": 29,
+            "debits_cents": 0,
+            "net_cents": 29
+          }
+        }
+      }
+    },
+    {
+      "check": "preserve currency case input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "large exact amount",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "USD": {
+            "credits_cents": 9007199254740993,
+            "debits_cents": 0,
+            "net_cents": 9007199254740993
+          }
+        },
+        "expected": {
+          "USD": {
+            "credits_cents": 9007199254740993,
+            "debits_cents": 0,
+            "net_cents": 9007199254740993
+          }
+        }
+      }
+    },
+    {
+      "check": "large exact amount input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pending not parsed",
+      "passed": true,
+      "detail": {
+        "actual": {},
+        "expected": {}
+      }
+    },
+    {
+      "check": "pending not parsed input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "empty input",
+      "passed": true,
+      "detail": {
+        "actual": {},
+        "expected": {}
+      }
+    },
+    {
+      "check": "empty input input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "conflicting retry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "conflicting retry input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid amount 0.001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid amount 0.001 input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid amount NaN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid amount NaN input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid amount Infinity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid amount Infinity input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid amount -1.00",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid amount -1.00 input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid direction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid direction input preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "invalid status input preserved",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

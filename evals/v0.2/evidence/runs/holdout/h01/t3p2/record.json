@@ -1,0 +1,92 @@
+{
+  "original_record": {
+    "schema_version": 1,
+    "harness": "codex-cli",
+    "harness_version": "0.145.0",
+    "version_evidence": "version/help inspected before study; no per-trial model inference",
+    "model": null,
+    "model_selection": "CLI inherited default; exact model not reported by this collector",
+    "run_dir": "runs/holdout/h01/t3p2",
+    "telemetry_dir": "runs/holdout/h01/t3p2-telemetry",
+    "command": [
+      "node",
+      "<CODEX_CLI>",
+      "exec",
+      "--ignore-user-config",
+      "--ephemeral",
+      "-c",
+      "windows.sandbox=\"unelevated\"",
+      "--json",
+      "--sandbox",
+      "workspace-write",
+      "--skip-git-repo-check",
+      "--cd",
+      "<STUDY_ROOT>\\runs\\holdout\\h01\\t3p2",
+      "--output-last-message",
+      "<STUDY_ROOT>\\runs\\holdout\\h01\\t3p2-telemetry\\answer.txt",
+      "-"
+    ],
+    "windows_sandbox": "unelevated",
+    "sandbox_configuration_reason": "Codex 0.145.0 on Windows downgrades workspace-write to read-only when its Windows sandbox is disabled. Set native restricted-token sandbox per invocation while ignoring user config; retain workspace-write and managed requirements.",
+    "prompt_sha256": "932768e14bc5077ece52a333846e6647242a625408cfdf6a16d4faddf3193551",
+    "skill_sha256": null,
+    "skill_text_present_in_prompt": null,
+    "fixture_before": {
+      "files": {
+        "run-contract.md": "5bfd257715997a415f7b7f997b65fc8f7fb54e5eac7f6a44aa2605b298ad6bdd",
+        "run.log": "0bca344fd2776925c87c26c1830b88019eb117c1350dcc195929d76562abe337"
+      },
+      "manifest_sha256": "93d00708d3d6462eef22035fdf2095d01f9297235ccd3a286eefc668098cbfbf"
+    },
+    "timeout_seconds": 300,
+    "timed_out": false,
+    "cleanup": null,
+    "process_exit_code": 0,
+    "launch_error_type": null,
+    "cost_usd": null,
+    "usage_semantics": "Latest cumulative thread usage from a fresh one-turn process. Do not sum cache/reasoning subsets into input/output. All-zero/missing is unavailable.",
+    "operation_count_semantics": "Unique completed command_execution, mcp_tool_call, collab_tool_call, and web_search items. File-change items are separate. These are exported activity counts, not every internal raw API/tool call.",
+    "tool_output_chars_semantics": "Unicode code points in exported aggregated_output strings of unique completed command_execution items only. Not tokens, bytes, full untruncated output, or all tool types. Total is null when any command lacks an output string; observed partial sum and missing count are retained.",
+    "isolation_limit": "Fresh process/fixture and ignored user config do not prove absence of every inherited instruction or global skill.",
+    "wall_seconds": 37.219,
+    "completion_count": 1,
+    "failure_event_count": 0,
+    "malformed_event_count": 0,
+    "event_counts": {
+      "item.completed": 6,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "usage": {
+      "input_tokens": 110517,
+      "cached_input_tokens": 89472,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1298,
+      "reasoning_output_tokens": 154
+    },
+    "usage_status": "reported",
+    "tool_call_items": {
+      "collab_tool_call": 0,
+      "command_execution": 3,
+      "mcp_tool_call": 0,
+      "web_search": 0
+    },
+    "tool_call_item_count": 3,
+    "tool_output_chars": 1052627,
+    "tool_output_chars_observed": 1052627,
+    "command_output_items_available": 3,
+    "command_output_items_missing": 0,
+    "failed_or_declined_operation_items": {},
+    "file_change_items": 0,
+    "final_message_sha256": "9310126fc1f9b375a093ab0071dbf5c0a40a7f19134ed2b7e50a35f202c0de51",
+    "run_status": "completed",
+    "exports": {
+      "stdout.jsonl": "0d3c571707a18ff2ac44759f2ac55cbb0ef874f4208dac7d5dd7d2387bb9dc16",
+      "stderr.txt": "26a52cc9a590e58de5374623214390bc06a15ebb44e9079a0a4b88e3b1e425af"
+    },
+    "answer_sha256": "9310126fc1f9b375a093ab0071dbf5c0a40a7f19134ed2b7e50a35f202c0de51"
+  },
+  "redacted": true
+}

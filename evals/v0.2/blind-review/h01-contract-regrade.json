@@ -1,0 +1,155 @@
+{
+  "conditions_known": false,
+  "case": "h01",
+  "correction_receipt": "evaluator/CONTRACT-GRADER-CORRECTION.json",
+  "records": {
+    "sample-1a2475ac41": {
+      "answer_sha256": "f063ac9acd6100cd1f07fac8880a6f1c0aaebeb2922674dca64db567eb964fd7",
+      "original_strict": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    },
+    "sample-1e03366839": {
+      "answer_sha256": "a6cbe08a9913b7d62587a97c1b5f660e27d39f47fc9cb4e306c0e04372a853dd",
+      "original_strict": {
+        "success": false,
+        "passed": 19,
+        "total": 20,
+        "failures": [
+          {
+            "check": "ROW_COUNT_MISMATCH cause evidence line",
+            "passed": false,
+            "detail": null
+          }
+        ]
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    },
+    "sample-2d7ecbeeac": {
+      "answer_sha256": "23dc6aa7a6cd82e24efe1b16760abfc192d27e7079933824539f089904d031a7",
+      "original_strict": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    },
+    "sample-34a83c0bcb": {
+      "answer_sha256": "808766d9659152e4042ff2e9d4073950ef6378e406dc0a587afa0a0e05a5bde8",
+      "original_strict": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    },
+    "sample-956f5bf71b": {
+      "answer_sha256": "eddd43f1a828f9f286e12302817aa300870d81abbd2210aac390a67e3c2ae10f",
+      "original_strict": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    },
+    "sample-a73e857759": {
+      "answer_sha256": "2973b612c91b8790450da06996e5fbc51763619c7d756385a52d8d6f1d541e26",
+      "original_strict": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    },
+    "sample-bd921f0062": {
+      "answer_sha256": "c89762feb3024e92b0d3060a9498b40b6db361a3eb04bc22deb1beee75061161",
+      "original_strict": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    },
+    "sample-d070d30afe": {
+      "answer_sha256": "430e8ee5309472a02f0cd87cf1ed7fd57ec033aaf2e7d91cae89a1c66714f206",
+      "original_strict": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    },
+    "sample-e3a81d8e42": {
+      "answer_sha256": "fcccf2bd7bf1465050837e5d33c4f8d121fde653a1f69ea6d4cf7e2e991bc4e3",
+      "original_strict": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      },
+      "contract_aligned": {
+        "success": true,
+        "passed": 20,
+        "total": 20,
+        "failures": []
+      }
+    }
+  },
+  "summary": {
+    "samples": 9,
+    "original_strict_successes": 8,
+    "contract_aligned_successes": 9
+  },
+  "scope_note": "Regrade uses anonymous answer copies plus unchanged canonical inputs. Actual run input-preservation checks remain in original root-side grades.",
+  "boundary_tests": "11003/11004 accepted;11002/11005/null rejected. No arbitrary error-line acceptance."
+}

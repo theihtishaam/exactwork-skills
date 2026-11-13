@@ -1,0 +1,30 @@
+{
+  "job_state": "unknown",
+  "capture_complete": false,
+  "failures": [
+    {
+      "stage": "decode",
+      "code": "INVALID_ENCODING",
+      "first_line": 6061,
+      "causal_line": 6062,
+      "explanation": "archive.csv was declared UTF-8 but contains invalid byte 0x96 at offset 188. A later retry reports the same invalid byte and failed, so this is one persistent observed decode failure rather than two distinct failures.",
+      "next_check": "Inspect the unavailable records after the capture boundary for any later decode recovery or terminal summary."
+    },
+    {
+      "stage": "reconcile",
+      "code": "ROW_COUNT_MISMATCH",
+      "first_line": 11003,
+      "causal_line": 11004,
+      "explanation": "Reconciliation expected 3700 rows but observed 3699; the operation was rejected and aggregate output was not published because one record was lost.",
+      "next_check": "Trace the missing record between decoded input and aggregation, and check unavailable later records for the final disposition."
+    },
+    {
+      "stage": "commit",
+      "code": "RENAME_FAILED",
+      "first_line": 15445,
+      "causal_line": 15446,
+      "explanation": "The temporary output remained uncommitted because another process held the destination open, preventing replacement.",
+      "next_check": "Identify which process held the destination and inspect unavailable later records for any subsequent commit outcome."
+    }
+  ]
+}

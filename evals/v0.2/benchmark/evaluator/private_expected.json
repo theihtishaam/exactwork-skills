@@ -1,0 +1,94 @@
+{
+  "d01": {
+    "job_state": "partial",
+    "capture_complete": true,
+    "findings": [
+      {
+        "stage": "upload",
+        "code": "UPSTREAM_TIMEOUT",
+        "first_line": 5212,
+        "causal_lines": [
+          5216,
+          5218
+        ]
+      },
+      {
+        "stage": "render",
+        "code": "FONT_NOT_FOUND",
+        "first_line": 11991,
+        "causal_lines": [
+          11992
+        ]
+      },
+      {
+        "stage": "publish",
+        "code": "DESTINATION_DENIED",
+        "first_line": 17511,
+        "causal_lines": [
+          17512
+        ]
+      }
+    ]
+  },
+  "h01": {
+    "job_state": "unknown",
+    "capture_complete": false,
+    "findings": [
+      {
+        "stage": "decode",
+        "code": "INVALID_ENCODING",
+        "first_line": 6061,
+        "causal_lines": [
+          6062
+        ]
+      },
+      {
+        "stage": "reconcile",
+        "code": "ROW_COUNT_MISMATCH",
+        "first_line": 11003,
+        "causal_lines": [
+          11004
+        ]
+      },
+      {
+        "stage": "commit",
+        "code": "RENAME_FAILED",
+        "first_line": 15445,
+        "causal_lines": [
+          15446
+        ]
+      }
+    ]
+  },
+  "d03": {
+    "observed_success": {
+      "baseline": 0.8333333333333334,
+      "candidate": 0.44166666666666665
+    },
+    "standardized_success": {
+      "baseline": 0.6,
+      "candidate": 0.625
+    },
+    "total_tokens_per_run": {
+      "baseline": 1000,
+      "candidate": 2120
+    },
+    "causal_improvement_established": false,
+    "total_token_reduction_established": false
+  },
+  "h02": {
+    "known_defects": 2,
+    "known_locations": {
+      "instance_aliasing": [
+        2,
+        6
+      ],
+      "overflow_mutates": [
+        9,
+        10,
+        11
+      ]
+    },
+    "grading": "Two independent behavioral defects. Judge each actual trigger and consequence, not keyword count. Exclude complaints about unsupported threads/types/performance."
+  }
+}

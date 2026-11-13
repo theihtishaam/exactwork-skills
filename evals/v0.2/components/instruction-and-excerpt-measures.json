@@ -1,0 +1,20 @@
+{
+  "tokenizer": "o200k_base",
+  "instructions": {
+    "baseline-v01": {
+      "exactwork": 554,
+      "exactwork-handoff": 296,
+      "exactwork-research": 462,
+      "exactwork-review": 415
+    },
+    "candidate": {
+      "exactwork": 391,
+      "exactwork-context": 321,
+      "exactwork-handoff": 296,
+      "exactwork-research": 334,
+      "exactwork-review": 290
+    }
+  },
+  "source_tokens": 695861,
+  "selection_tokens": 1552
+}

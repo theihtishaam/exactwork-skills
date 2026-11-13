@@ -1,0 +1,186 @@
+{
+  "date_utc": "2026-11-12T10:56:50.022545+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "source_file": "<WORKSPACE>\\work\\v02\\context-review\\resource-800-2000.txt",
+  "source_bytes": 1600000,
+  "source_sha256": "049ccdaaeeb6818864de16a1f219cecb07cd1458ad12970e4208c17ad70e0438",
+  "case": {
+    "lines": 800,
+    "bytes_per_line_including_lf": 2000,
+    "context": 0,
+    "max_lines": 800,
+    "max_bytes": 400000
+  },
+  "method": "Fresh Python subprocess per sample; timed select plus final JSON encoding; imports, fixture creation, process launch and output-file writes excluded.",
+  "caveats": [
+    "Three pairs on one machine; concurrent local study may add scheduling/load noise.",
+    "Wall time and process CPU time measure this synthetic helper case, not model tokens or end-to-end agent quality.",
+    "All six observations retained; no warm-up samples or timing assertions."
+  ],
+  "pairs": [
+    {
+      "pair": 1,
+      "order": [
+        "original",
+        "fixed"
+      ],
+      "samples": [
+        {
+          "sample_id": "pair-1-original",
+          "variant": "original",
+          "wall_seconds": 18.472024300001067,
+          "process_cpu_seconds": 17.796875,
+          "output_bytes": 400000,
+          "output_sha256": "53db5f473bf97198b65fc786697df544ba2ef32bb902b7a3dc31ccbd3fb2412b",
+          "output_file": "<WORKSPACE>\\work\\v02\\context-review\\pair-1-original.output.json",
+          "script_sha256": "cfe0df2ea199c1ea4f22a4a2177624cbcb82bc2f884a01c59ed64d0197f0ebaa",
+          "selected_line_count": 800,
+          "omitted_matched_lines": 0,
+          "truncated_line_count": 800
+        },
+        {
+          "sample_id": "pair-1-fixed",
+          "variant": "fixed",
+          "wall_seconds": 0.10418530000242754,
+          "process_cpu_seconds": 0.09375,
+          "output_bytes": 400000,
+          "output_sha256": "53db5f473bf97198b65fc786697df544ba2ef32bb902b7a3dc31ccbd3fb2412b",
+          "output_file": "<WORKSPACE>\\work\\v02\\context-review\\pair-1-fixed.output.json",
+          "script_sha256": "ef71289f3f6eb8f53fe58f6d31562cfd184e408c3f8dfa5d71de77ecb9f0b923",
+          "selected_line_count": 800,
+          "omitted_matched_lines": 0,
+          "truncated_line_count": 800
+        }
+      ],
+      "complete_output_bytes_equal": true,
+      "wall_ratio_original_over_fixed": 177.29971790234,
+      "cpu_ratio_original_over_fixed": 189.83333333333334
+    },
+    {
+      "pair": 2,
+      "order": [
+        "fixed",
+        "original"
+      ],
+      "samples": [
+        {
+          "sample_id": "pair-2-fixed",
+          "variant": "fixed",
+          "wall_seconds": 0.17386899999837624,
+          "process_cpu_seconds": 0.140625,
+          "output_bytes": 400000,
+          "output_sha256": "53db5f473bf97198b65fc786697df544ba2ef32bb902b7a3dc31ccbd3fb2412b",
+          "output_file": "<WORKSPACE>\\work\\v02\\context-review\\pair-2-fixed.output.json",
+          "script_sha256": "ef71289f3f6eb8f53fe58f6d31562cfd184e408c3f8dfa5d71de77ecb9f0b923",
+          "selected_line_count": 800,
+          "omitted_matched_lines": 0,
+          "truncated_line_count": 800
+        },
+        {
+          "sample_id": "pair-2-original",
+          "variant": "original",
+          "wall_seconds": 17.169410100003006,
+          "process_cpu_seconds": 16.875,
+          "output_bytes": 400000,
+          "output_sha256": "53db5f473bf97198b65fc786697df544ba2ef32bb902b7a3dc31ccbd3fb2412b",
+          "output_file": "<WORKSPACE>\\work\\v02\\context-review\\pair-2-original.output.json",
+          "script_sha256": "cfe0df2ea199c1ea4f22a4a2177624cbcb82bc2f884a01c59ed64d0197f0ebaa",
+          "selected_line_count": 800,
+          "omitted_matched_lines": 0,
+          "truncated_line_count": 800
+        }
+      ],
+      "complete_output_bytes_equal": true,
+      "wall_ratio_original_over_fixed": 98.74911628963962,
+      "cpu_ratio_original_over_fixed": 120.0
+    },
+    {
+      "pair": 3,
+      "order": [
+        "original",
+        "fixed"
+      ],
+      "samples": [
+        {
+          "sample_id": "pair-3-original",
+          "variant": "original",
+          "wall_seconds": 19.577326099999482,
+          "process_cpu_seconds": 18.265625,
+          "output_bytes": 400000,
+          "output_sha256": "53db5f473bf97198b65fc786697df544ba2ef32bb902b7a3dc31ccbd3fb2412b",
+          "output_file": "<WORKSPACE>\\work\\v02\\context-review\\pair-3-original.output.json",
+          "script_sha256": "cfe0df2ea199c1ea4f22a4a2177624cbcb82bc2f884a01c59ed64d0197f0ebaa",
+          "selected_line_count": 800,
+          "omitted_matched_lines": 0,
+          "truncated_line_count": 800
+        },
+        {
+          "sample_id": "pair-3-fixed",
+          "variant": "fixed",
+          "wall_seconds": 0.07413230000020121,
+          "process_cpu_seconds": 0.078125,
+          "output_bytes": 400000,
+          "output_sha256": "53db5f473bf97198b65fc786697df544ba2ef32bb902b7a3dc31ccbd3fb2412b",
+          "output_file": "<WORKSPACE>\\work\\v02\\context-review\\pair-3-fixed.output.json",
+          "script_sha256": "ef71289f3f6eb8f53fe58f6d31562cfd184e408c3f8dfa5d71de77ecb9f0b923",
+          "selected_line_count": 800,
+          "omitted_matched_lines": 0,
+          "truncated_line_count": 800
+        }
+      ],
+      "complete_output_bytes_equal": true,
+      "wall_ratio_original_over_fixed": 264.0863172995623,
+      "cpu_ratio_original_over_fixed": 233.8
+    }
+  ],
+  "summary": {
+    "original": {
+      "wall_seconds": {
+        "median": 18.472024300001067,
+        "min": 17.169410100003006,
+        "max": 19.577326099999482,
+        "samples": [
+          18.472024300001067,
+          17.169410100003006,
+          19.577326099999482
+        ]
+      },
+      "process_cpu_seconds": {
+        "median": 17.796875,
+        "min": 16.875,
+        "max": 18.265625,
+        "samples": [
+          17.796875,
+          16.875,
+          18.265625
+        ]
+      }
+    },
+    "fixed": {
+      "wall_seconds": {
+        "median": 0.10418530000242754,
+        "min": 0.07413230000020121,
+        "max": 0.17386899999837624,
+        "samples": [
+          0.10418530000242754,
+          0.17386899999837624,
+          0.07413230000020121
+        ]
+      },
+      "process_cpu_seconds": {
+        "median": 0.09375,
+        "min": 0.078125,
+        "max": 0.140625,
+        "samples": [
+          0.09375,
+          0.140625,
+          0.078125
+        ]
+      }
+    }
+  },
+  "final_helper_sha256": "ef71289f3f6eb8f53fe58f6d31562cfd184e408c3f8dfa5d71de77ecb9f0b923",
+  "helper_hash_unchanged": true,
+  "mirror_identical": true
+}

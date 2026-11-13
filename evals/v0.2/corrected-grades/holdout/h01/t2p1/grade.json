@@ -1,0 +1,109 @@
+{
+  "case": "h01",
+  "passed": 20,
+  "total": 20,
+  "deterministic_success": true,
+  "semantic_review_required": true,
+  "checks": [
+    {
+      "check": "preserve run-contract.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserve run.log",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only requested output",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "valid JSON object",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "job state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "capture completeness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "findings list",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact distinct failure inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "INVALID_ENCODING stage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "INVALID_ENCODING first evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "INVALID_ENCODING cause evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "INVALID_ENCODING explanation and next check",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ROW_COUNT_MISMATCH stage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ROW_COUNT_MISMATCH first evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ROW_COUNT_MISMATCH cause evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ROW_COUNT_MISMATCH explanation and next check",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "RENAME_FAILED stage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "RENAME_FAILED first evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "RENAME_FAILED cause evidence line",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "RENAME_FAILED explanation and next check",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

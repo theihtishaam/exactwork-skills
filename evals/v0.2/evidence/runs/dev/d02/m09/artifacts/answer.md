@@ -1,0 +1,1 @@
+Repaired `summarize` to use exact decimal cents, validate transaction values, scope retries by currency and ID, reject conflicting posted retries, and preserve input records. Added a focused cross-currency/cent-precision regression test. `python -m unittest -v` passes (2 tests).

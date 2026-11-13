@@ -1,0 +1,3 @@
+Repaired `report.py`, added a focused regression test, and saved the completion note in `answer.md`.
+
+Verification: `python -m unittest -v` — 2 tests passed.

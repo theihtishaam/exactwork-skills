@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "file": "task_queue.py",
+      "line": 9,
+      "trigger": "q = TaskQueue(1); q.put('old'); then call q.put('new')",
+      "observed": "The second put raises OverflowError, but 'new' remains queued and len(q) becomes 2.",
+      "expected": "The second put raises OverflowError without changing the queue; it should still contain only 'old' and have length 1.",
+      "explanation": "put appends before checking capacity and does not roll back the append when the capacity check fails, violating the contract's no-change guarantee for a full put."
+    },
+    {
+      "file": "task_queue.py",
+      "line": 2,
+      "trigger": "Create a = TaskQueue(2) and b = TaskQueue(2), then call a.put('x') and inspect len(b) or b.get().",
+      "observed": "b sees the item inserted into a because both default-constructed queues reference the same default list.",
+      "expected": "b remains empty because separate TaskQueue instances must be independent.",
+      "explanation": "The mutable default argument items=[] is created once and assigned directly to every instance that omits items, causing queue state to be shared across instances."
+    }
+  ]
+}

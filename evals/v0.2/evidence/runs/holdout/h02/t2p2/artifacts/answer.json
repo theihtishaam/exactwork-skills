@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "file": "task_queue.py",
+      "line": 9,
+      "trigger": "Create TaskQueue(1), put('kept'), then put('rejected') and catch OverflowError.",
+      "observed": "The rejected item remains queued: len(q) is 2, and successive get() calls return 'kept' and then 'rejected'.",
+      "expected": "OverflowError is raised without changing the queue: len(q) remains 1 and only 'kept' can be retrieved.",
+      "explanation": "put appends before checking capacity, so the exceptional path leaves the queue mutated and over capacity. Check fullness before appending (or roll back the append before raising)."
+    },
+    {
+      "file": "task_queue.py",
+      "line": 2,
+      "trigger": "Create left = TaskQueue(3) and right = TaskQueue(3), then call left.put('left-only').",
+      "observed": "right is also changed: len(right) is 1 and right.get() returns 'left-only'.",
+      "expected": "right remains empty because separate TaskQueue instances are independent.",
+      "explanation": "The mutable default items=[] is created once and shared by every instance that omits items. Use a fresh list for each construction, such as a None sentinel followed by list creation."
+    }
+  ]
+}

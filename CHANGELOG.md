@@ -1,0 +1,13 @@
+# Changelog
+
+## 0.2.0
+
+- Added optional bounded context extraction with source hashes, line references, omission reporting, and independent implementation review.
+- Added optional project learning with paired evidence validation, local procedure versions, exact backups, and checked rollback.
+- Conducted a controlled instruction study with actual CLI usage and repeated held-out trials; retained unsuccessful outcomes and a grader correction.
+- Released the compact core, research, and review procedures after blind task-contract auditing; kept the handoff unchanged. Frozen 0.1 and candidate snapshots, original grades, and corrections remain in the evaluation archive.
+- Expanded installer support to six independently selectable skills and added helper tests and reproducibility tools.
+
+## 0.1.0
+
+Initial researched instructions, portable installer, structural validation, visual README, and exploratory evaluations. No broad performance improvement was established.

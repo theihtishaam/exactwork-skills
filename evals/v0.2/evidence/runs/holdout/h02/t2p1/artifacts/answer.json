@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "file": "task_queue.py",
+      "line": 9,
+      "trigger": "Create TaskQueue(1), put('kept'), then put('rejected') when the queue is full.",
+      "observed": "The second put raises OverflowError only after appending 'rejected'; len(queue) becomes 2 and the rejected item remains queued.",
+      "expected": "OverflowError is raised without changing the queued items, so the queue remains length 1 and contains only 'kept'.",
+      "explanation": "put mutates _items before checking capacity. The capacity check must occur before the append (or the append must be rolled back) so a failed put is atomic and cannot leave the queue over capacity."
+    },
+    {
+      "file": "task_queue.py",
+      "line": 2,
+      "trigger": "Create left = TaskQueue(2) and right = TaskQueue(2), then call left.put('shared').",
+      "observed": "right also has length 1, and right.get() returns 'shared'.",
+      "expected": "right remains empty because separate TaskQueue instances are independent.",
+      "explanation": "The mutable default items=[] is allocated once and reused by every construction that omits items, causing those instances to share the same backing list. Each instance needs a newly allocated list by default."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "case": "h02",
+  "passed": 7,
+  "total": 7,
+  "deterministic_success": true,
+  "semantic_review_required": true,
+  "checks": [
+    {
+      "check": "preserve CONTRACT.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserve task_queue.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserve test_queue.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "only requested output",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "valid JSON object",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "structured findings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "review requires independent semantic grading",
+      "passed": true,
+      "detail": "Private rubric: reproduce triggers; two known independent defects; reward only supported consequences, allow additional valid findings."
+    }
+  ]
+}

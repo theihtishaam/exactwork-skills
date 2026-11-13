@@ -1,0 +1,1 @@
+Created and validated [answer.json](<STUDY_ROOT>\runs\holdout\h01\t3p1\answer.json) with three distinct failures and incomplete-capture uncertainty preserved.

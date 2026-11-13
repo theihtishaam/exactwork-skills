@@ -1,0 +1,30 @@
+{
+  "kind": "static_instruction_footprint",
+  "note": "Bytes, characters, and words are not model tokens or task savings.",
+  "skills": {
+    "exactwork": {
+      "utf8_bytes": 3049,
+      "characters": 3049,
+      "whitespace_words": 444,
+      "sha256": "d7cfe2958b138dec7274a1b7af920f4a734347bc2b74956758e8e106033aa150"
+    },
+    "exactwork-handoff": {
+      "utf8_bytes": 1575,
+      "characters": 1575,
+      "whitespace_words": 218,
+      "sha256": "7700b3e9f3498e1f28e2eacfd9314d6a1b46cdf76f504238be425cda8010e673"
+    },
+    "exactwork-research": {
+      "utf8_bytes": 2553,
+      "characters": 2553,
+      "whitespace_words": 358,
+      "sha256": "db058d7de01c2e4edee20702f9262ef7313518415a79501a594fe9783685c99e"
+    },
+    "exactwork-review": {
+      "utf8_bytes": 2306,
+      "characters": 2306,
+      "whitespace_words": 333,
+      "sha256": "c412dd8f445c76e9adcea087f8cfcd05ac3263349b9ceb83b293e5f881c63ffc"
+    }
+  }
+}

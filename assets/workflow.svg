@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1060" viewBox="0 0 1440 1060" role="img" aria-labelledby="title desc">
+<title id="title">Exactwork work and learning workflow</title><desc id="desc">Target, evidence, action and check. Optional research, review, handoff and context. Verified failures may lead to scoped candidate procedures, independent checks, promotion and rollback. Learning does not change model weights.</desc>
+<rect width="1440" height="1060" fill="#071321"/>
+<text x="64" y="64" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">EXACTWORK / WORKFLOW</text>
+<text x="64" y="122" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="39" font-weight="700">Complete the task. Learn from verified outcomes.</text>
+<text x="64" y="166" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Select the procedure that fits. Ordinary work does not trigger every companion.</text>
+<rect x="64" y="211" width="312" height="218" rx="18" fill="#102235"/>
+<text x="88" y="253" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">01</text>
+<text x="88" y="300" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">TARGET</text>
+<text x="88" y="350" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Deliverable and constraints</text>
+<text x="88" y="383" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">Depth, format, scope</text>
+<rect x="396" y="211" width="312" height="218" rx="18" fill="#102235"/>
+<text x="420" y="253" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">02</text>
+<text x="420" y="300" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">EVIDENCE</text>
+<text x="420" y="350" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Inspect relevant sources</text>
+<text x="420" y="383" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">Expand incomplete context</text>
+<rect x="728" y="211" width="312" height="218" rx="18" fill="#102235"/>
+<text x="752" y="253" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">03</text>
+<text x="752" y="300" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">ACTION</text>
+<text x="752" y="350" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Complete affected work</text>
+<text x="752" y="383" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">Keep requested boundaries</text>
+<rect x="1060" y="211" width="312" height="218" rx="18" fill="#102235"/>
+<text x="1084" y="253" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">04</text>
+<text x="1084" y="300" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">CHECK</text>
+<text x="1084" y="350" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Verify actual outcomes</text>
+<text x="1084" y="383" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">Preserve uncertainty</text>
+<text x="64" y="480" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">OPTIONAL COMPANIONS</text>
+<rect x="64" y="511" width="312" height="153" rx="18" fill="#102235"/>
+<text x="88" y="555" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">RESEARCH</text>
+<text x="88" y="600" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Compare original evidence</text>
+<text x="88" y="631" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Resolve conflicting claims</text>
+<rect x="396" y="511" width="312" height="153" rx="18" fill="#102235"/>
+<text x="420" y="555" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">REVIEW</text>
+<text x="420" y="600" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Reproduce concrete defects</text>
+<text x="420" y="631" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Check contract coverage</text>
+<rect x="728" y="511" width="312" height="153" rx="18" fill="#102235"/>
+<text x="752" y="555" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">HANDOFF</text>
+<text x="752" y="600" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Preserve current decisions</text>
+<text x="752" y="631" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Separate done from untested</text>
+<rect x="1060" y="511" width="312" height="153" rx="18" fill="#102235"/>
+<text x="1084" y="555" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">CONTEXT</text>
+<text x="1084" y="600" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Read exact bounded excerpts</text>
+<text x="1084" y="631" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">Inspect omissions and expand</text>
+<text x="64" y="719" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">PROJECT LEARNING / ONLY WHEN REQUESTED</text>
+<rect x="64" y="749" width="312" height="120" rx="18" fill="#153239"/>
+<text x="86" y="795" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">Verified failure</text>
+<text x="86" y="837" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">or explicit correction</text>
+<rect x="396" y="749" width="312" height="120" rx="18" fill="#153239"/>
+<text x="418" y="795" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">Scoped candidate</text>
+<text x="418" y="837" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">small procedure change</text>
+<rect x="728" y="749" width="312" height="120" rx="18" fill="#153239"/>
+<text x="750" y="795" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">Independent checks</text>
+<text x="750" y="837" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">quality and scope first</text>
+<rect x="1060" y="749" width="312" height="120" rx="18" fill="#153239"/>
+<text x="1082" y="795" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">Version + rollback</text>
+<text x="1082" y="837" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">local project procedure</text>
+<text x="64" y="927" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">The checker validates supplied evidence and hashes; it cannot prove truthful grading.</text>
+<text x="64" y="974" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">No model-weight training, background learner, or automatic global memory.</text>
+</svg>

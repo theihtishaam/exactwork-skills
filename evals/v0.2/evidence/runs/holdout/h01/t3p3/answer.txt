@@ -1,0 +1,1 @@
+Created [answer.json](<STUDY_ROOT>\runs\holdout\h01\t3p3\answer.json) and validated its JSON syntax. It reports three distinct failures, incomplete capture, and unknown job state.

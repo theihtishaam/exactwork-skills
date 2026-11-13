@@ -1,0 +1,16 @@
+{
+  "tests_passed": 11,
+  "checks": [
+    "unmodified release",
+    "duplicate run",
+    "missing run",
+    "actual usage drift",
+    "phase aggregation drift",
+    "coding aggregation drift",
+    "claim percentage drift",
+    "semantic label drift",
+    "anonymized answer mismatch",
+    "unapproved grade change",
+    "public evidence byte tamper"
+  ]
+}

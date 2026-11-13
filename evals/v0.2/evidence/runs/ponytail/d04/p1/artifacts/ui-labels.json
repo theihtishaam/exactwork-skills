@@ -1,0 +1,10 @@
+{
+  "en": {
+    "checkout": "Pay now",
+    "cancel": "Cancel"
+  },
+  "de": {
+    "checkout": "Jetzt bezahlen",
+    "cancel": "Abbrechen"
+  }
+}

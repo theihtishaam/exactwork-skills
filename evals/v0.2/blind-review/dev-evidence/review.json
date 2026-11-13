@@ -1,0 +1,54 @@
+{
+  "review_type": "blind_semantic_and_rubric_audit",
+  "case": "d03",
+  "conditions_known": false,
+  "inputs_read": [
+    "cases/d03/prompt.txt",
+    "cases/d03/input/packet.md",
+    "evaluator/SEMANTIC-RUBRIC.md",
+    "evaluator/grade.py d03 branch",
+    "A.json",
+    "B.json",
+    "C.json"
+  ],
+  "grader_defect": {
+    "confirmed": true,
+    "location": "evaluator/grade.py: sources identify data sections",
+    "public_contract": "The prompt requires source_sections to be a list. It does not prescribe bare section-letter values.",
+    "incorrect_check": "{'A','B'}.issubset(set(answer.get('source_sections',[]))) accepts only exact bare letters for these sections.",
+    "evidence": "All three answers cite the actual complete packet headings, including A — Baseline run and B — Candidate run. These identify the data sections unambiguously and satisfy the prompt.",
+    "proposed_arm_neutral_correction": "Resolve a citation against the packet's declared section identifier or complete heading after whitespace normalization. Accept both A and A — Baseline run for section A, and analogously for the other declared sections. Require the resulting identified section set to include A and B. Do not use loose substring or keyword matching.",
+    "reporting": "Preserve the original grader and original failures, record this contract-alignment correction, version/hash the corrected grader, and apply it identically to all arms. This correction is not a skill improvement."
+  },
+  "answers": {
+    "A": {
+      "source_sections_valid": true,
+      "arithmetic_correct": true,
+      "causal_caution_supported": true,
+      "token_claim_correct": true,
+      "recommendation_relevant": true,
+      "semantic_success": true,
+      "notes": "Explicitly calls standardized success descriptive, withholds the headline, recommends randomized same-task/same-model evaluation and uncertainty. Reports the correct total-token increase."
+    },
+    "B": {
+      "source_sections_valid": true,
+      "arithmetic_correct": true,
+      "causal_caution_supported": true,
+      "token_claim_correct": true,
+      "recommendation_relevant": true,
+      "semantic_success": true,
+      "notes": "Withholds overall efficacy and token-reduction claims, sets causal_improvement_established to false, and recommends randomized concurrent same-task/same-model evaluation with uncertainty. The 112% total-token increase is correct. It does not explicitly label the standardized calculation descriptive, but it does not treat that value as causal proof."
+    },
+    "C": {
+      "source_sections_valid": true,
+      "arithmetic_correct": true,
+      "causal_caution_supported": true,
+      "token_claim_correct": true,
+      "recommendation_relevant": true,
+      "semantic_success": true,
+      "notes": "Calls the results descriptive, withholds claims, and recommends randomized concurrent same-task/same-model evaluation with raw outcomes and uncertainty. The standardized difference of 0.025 and token increase of 1120 are correct."
+    }
+  },
+  "qualitative_comparison": "All three satisfy the decision task. A and C state the descriptive-versus-causal distinction more explicitly; B remains substantively correct through its false causal flag and matched-comparison recommendation. No meaningful task-success ranking is supported.",
+  "additional_rubric_note": "The private rubric mentions matching settings and repeat trials, while the public prompt asks broadly for needed evidence. These are useful recommendations, but absence of those exact words should not fail an otherwise correct call for controlled comparable evaluation and uncertainty."
+}

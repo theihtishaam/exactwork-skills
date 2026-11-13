@@ -1,0 +1,1 @@
+Repaired `summarize` to use exact decimal cents, validate contract values, scope retries by `(currency, id)`, reject conflicting posted rows, retain gross totals, and leave inputs unchanged. Added a focused contract regression test. Verification: `python -m unittest -v` — 2 tests passed.

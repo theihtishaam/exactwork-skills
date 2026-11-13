@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="965" viewBox="0 0 1440 965" role="img" aria-labelledby="title desc">
+<title id="title">Ponytail and Exactwork comparison</title><desc id="desc">Design differences and a limited five-run coding comparison. Both had five public-task passes. Exactwork compact aggregate444117tokens versus Ponytail core493995. This is not a complete plugin comparison or universal ranking.</desc>
+<rect width="1440" height="965" fill="#071321"/>
+<text x="64" y="64" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">DESIGN + LIMITED LOCAL COMPARISON</text>
+<text x="64" y="120" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Different procedures. Inspectable evidence.</text>
+<text x="64" y="165" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Ponytail 5.3.3 core and Exactwork 0.2  |  Checked 12 Nov 2026</text>
+<rect x="340" y="210" width="500" height="590" rx="18" fill="#102235"/>
+<rect x="860" y="210" width="516" height="590" rx="18" fill="#102235"/>
+<text x="366" y="258" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">PONYTAIL</text>
+<text x="886" y="258" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">EXACTWORK</text>
+<text x="64" y="315" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Primary focus</text>
+<text x="366" y="315" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Focused coding workflows</text>
+<text x="366" y="344" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">and readable answers</text>
+<text x="886" y="315" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Scoped execution, research,</text>
+<text x="886" y="344" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">review and handoff</text>
+<path d="M64 375 L1376 375" stroke="#2A4054" stroke-width="2"/>
+<text x="64" y="411" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Context</text>
+<text x="366" y="411" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Compact core; optional</text>
+<text x="366" y="440" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">runtime codebase context</text>
+<text x="886" y="411" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Compact core; optional</text>
+<text x="886" y="440" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">traceable excerpt helper</text>
+<path d="M64 471 L1376 471" stroke="#2A4054" stroke-width="2"/>
+<text x="64" y="507" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Runtime</text>
+<text x="366" y="507" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Adapters, session modes,</text>
+<text x="366" y="536" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">hooks and telemetry</text>
+<text x="886" y="507" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Plain skills; optional Python</text>
+<text x="886" y="536" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">context and learning tools</text>
+<path d="M64 567 L1376 567" stroke="#2A4054" stroke-width="2"/>
+<text x="64" y="603" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Learning scope</text>
+<text x="366" y="603" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">No equivalent reviewed</text>
+<text x="366" y="632" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">in this comparison</text>
+<text x="886" y="603" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Checked local procedure</text>
+<text x="886" y="632" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">versions and rollback</text>
+<path d="M64 663 L1376 663" stroke="#2A4054" stroke-width="2"/>
+<text x="64" y="699" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">5-run coding subset</text>
+<text x="366" y="699" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">5/5 public-task passes</text>
+<text x="366" y="728" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">493,995 reported tokens</text>
+<text x="886" y="699" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">5/5 public-task passes</text>
+<text x="886" y="728" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">444,117 reported tokens</text>
+<text x="64" y="850" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Ponytail core only; its supplementary runs were not interleaved with the main study.</text>
+<text x="64" y="893" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Small synthetic sample, uncontrolled cache, unknown model. No general performance ranking.</text>
+</svg>

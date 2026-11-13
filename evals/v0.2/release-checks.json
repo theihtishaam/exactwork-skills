@@ -1,0 +1,19 @@
+{
+  "errors": [],
+  "standalone_skills": 6,
+  "actual_bundle_copy_and_idempotence_targets": [
+    "codex",
+    "shared",
+    "claude",
+    "opencode",
+    "harness",
+    "gemini",
+    "copilot",
+    "cursor",
+    "cline"
+  ],
+  "frozen_candidate_hashes_match": true,
+  "reviewed_learner_sha256": "b01fc19d420013af86bf55063a2c09af88c4e409de624538cf61fb2d3fbc7fe7",
+  "documentation_files_checked": 17,
+  "svg_xml_files": 3
+}

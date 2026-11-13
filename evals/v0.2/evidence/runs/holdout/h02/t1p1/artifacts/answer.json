@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "file": "task_queue.py",
+      "line": 9,
+      "trigger": "q = TaskQueue(1); q.put('a'); q.put('b')",
+      "observed": "The second put raises OverflowError, but 'b' remains queued; len(q) is 2 and successive gets return 'a' then 'b'.",
+      "expected": "The second put raises OverflowError without changing the queue; len(q) remains 1 and the only queued item is 'a'.",
+      "explanation": "put appends before checking capacity, so the exceptional path leaves the rejected item in _items."
+    },
+    {
+      "file": "task_queue.py",
+      "line": 2,
+      "trigger": "a = TaskQueue(2); b = TaskQueue(2); a.put('x'); then inspect len(b) or call b.get()",
+      "observed": "b also contains 'x': len(b) is 1 and b.get() returns 'x'.",
+      "expected": "b remains empty: len(b) is 0 and b.get() raises IndexError.",
+      "explanation": "The mutable default items list is created once and reused, so separately constructed queues share storage instead of being independent."
+    }
+  ]
+}

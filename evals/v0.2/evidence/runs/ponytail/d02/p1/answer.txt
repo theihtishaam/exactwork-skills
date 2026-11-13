@@ -1,0 +1,5 @@
+Repaired `report.py` to satisfy `CONTRACT.md`, added the focused regression test, and saved the completion note in `answer.md`.
+
+Tests: `python -m unittest -v` — 2 passed.
+
+Skipped dependencies and unrelated files. No known contract-level risks.
