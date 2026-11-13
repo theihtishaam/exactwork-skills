@@ -10,6 +10,7 @@ Agent Skills for **Claude Code · Codex · OpenCode · DeepSeek Harness**
 
 <a href="https://www.npmjs.com/package/@theihtisham/exactwork-skills"><img src="https://img.shields.io/npm/v/%40theihtisham%2Fexactwork-skills" alt="npm package version" /></a>
 <a href="https://www.npmjs.com/package/@theihtisham/exactwork-skills"><img src="https://img.shields.io/npm/dm/%40theihtisham%2Fexactwork-skills" alt="npm downloads per month, not unique users" /></a>
+<a href="https://github.com/theihtishaam"><img src="https://img.shields.io/github/followers/theihtishaam?label=Follow%20%40theihtishaam&amp;style=social" alt="Follow @theihtishaam on GitHub" /></a>
 
 [MIT license](LICENSE) · Python 3.10+ for optional tools · Six independent skills · Reproducible evaluations
 
