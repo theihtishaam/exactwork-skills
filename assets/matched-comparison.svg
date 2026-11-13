@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img" aria-labelledby="title desc">
+<title id="title">Matched five-run coding comparison</title><desc id="desc">Reported input plus output tokens: no skill 612815, Exactwork0.1 541987, Ponytail core 493995, Exactwork0.2 444117. All conditions passed5of5 on this subset. Three unique synthetic tasks. Ponytail ran later, not interleaved; full runtime and review skill excluded. No general superiority established.</desc>
+<rect width="1440" height="1020" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">SUPPLEMENTARY COMPARISON / FIVE MATCHED RUNS</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Compare the same coding subset.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Reported input + output tokens. Three unique tasks, five runs per condition.</text>
+<text x="64" y="262" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">No skill</text>
+<rect x="350" y="230" width="700.36" height="44" rx="5" fill="#A6B8C9"/>
+<text x="1195" y="262" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">612,815</text>
+<text x="64" y="367" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Exactwork 0.1</text>
+<rect x="350" y="335" width="619.4137142857143" height="44" rx="5" fill="#A6B8C9"/>
+<text x="1195" y="367" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">541,987</text>
+<text x="64" y="472" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Ponytail core</text>
+<rect x="350" y="440" width="564.5657142857143" height="44" rx="5" fill="#F5B56C"/>
+<text x="1195" y="472" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">493,995</text>
+<text x="64" y="577" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700">Exactwork 0.2</text>
+<rect x="350" y="545" width="507.56228571428574" height="44" rx="5" fill="#56DCDD"/>
+<text x="1195" y="577" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">444,117</text>
+<text x="342.0" y="650" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">0</text>
+<text x="456.2857142857143" y="650" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">100k</text>
+<text x="570.5714285714286" y="650" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">200k</text>
+<text x="684.8571428571429" y="650" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">300k</text>
+<text x="799.1428571428571" y="650" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">400k</text>
+<text x="913.4285714285714" y="650" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">500k</text>
+<text x="1027.7142857142858" y="650" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">600k</text>
+<text x="1142.0" y="650" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400">700k</text>
+<rect x="64" y="693" width="1312" height="102" rx="18" fill="#153239"/>
+<text x="90" y="736" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">All four conditions: 5/5 public-task passes.</text>
+<text x="90" y="773" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Exactwork 0.2 used 10.1% fewer aggregate tokens than Ponytail core in this subset.</text>
+<text x="64" y="846" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Ponytail ran later, not interleaved. Its full runtime and review skill were excluded.</text>
+<text x="64" y="889" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Small synthetic sample; inherited model identity and cache state uncontrolled.</text>
+<text x="64" y="931" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">This comparison does not establish general superiority, model intelligence, or speed.</text>
+<text x="64" y="975" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400">Source: final-results.json / summary.matched_coding_subset. Method: docs/benchmark-v0.2.md.</text>
+</svg>

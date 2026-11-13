@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-labelledby="title desc">
+<title id="title">Agent compatibility and model evidence</title><desc id="desc">Four documented client destinations are compared. Installation of six skills into a Codex project with Skills CLI was checked locally. Native activation in every client was not tested. The behavioral study used Codex CLI with inherited model identity undisclosed. No named GPT, Claude, or DeepSeek model uplift was measured.</desc>
+<rect width="1440" height="1040" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">AGENT TOOLS + MODELS / COMPARE THE EVIDENCE</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Portable instructions. Different host applications.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Installation support and measured model improvements are separate questions.</text>
+<rect x="64" y="216" width="1312" height="465" rx="18" fill="#102235"/>
+<text x="90" y="262" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">AGENT TOOL</text>
+<text x="360" y="262" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">PROJECT SKILL DIRECTORY</text>
+<text x="830" y="262" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">AVAILABLE INSTALLATION EVIDENCE</text>
+<path d="M90 293 L1348 293" stroke="#2A4054" stroke-width="2" fill="none"/>
+<text x="90" y="332" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Codex</text>
+<text x="360" y="332" fill="#F3F7FC" font-family="Consolas, monospace" font-size="23" font-weight="400">.agents/skills/</text>
+<text x="830" y="320" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Six skills installed locally</text>
+<text x="830" y="355" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Skills CLI 1.8.1 / Windows</text>
+<path d="M90 392 L1348 392" stroke="#2A4054" stroke-width="2" fill="none"/>
+<text x="90" y="431" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Claude Code</text>
+<text x="360" y="431" fill="#F3F7FC" font-family="Consolas, monospace" font-size="23" font-weight="400">.claude/skills/</text>
+<text x="830" y="419" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Documented destination</text>
+<text x="830" y="454" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Native activation not tested</text>
+<path d="M90 491 L1348 491" stroke="#2A4054" stroke-width="2" fill="none"/>
+<text x="90" y="530" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">OpenCode</text>
+<text x="360" y="530" fill="#F3F7FC" font-family="Consolas, monospace" font-size="23" font-weight="400">.opencode/skills/</text>
+<text x="830" y="518" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Documented destination</text>
+<text x="830" y="553" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Native activation not tested</text>
+<path d="M90 590 L1348 590" stroke="#2A4054" stroke-width="2" fill="none"/>
+<text x="90" y="629" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">DeepSeek Harness</text>
+<text x="360" y="629" fill="#F3F7FC" font-family="Consolas, monospace" font-size="23" font-weight="400">.dsh/skills/</text>
+<text x="830" y="617" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Documented destination</text>
+<text x="830" y="652" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Native activation not tested</text>
+<rect x="64" y="713" width="1312" height="202" rx="18" fill="#153239"/>
+<text x="90" y="758" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">MODEL COMPARISON / WHAT IS ACTUALLY KNOWN</text>
+<text x="90" y="805" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">35 scored runs through Codex CLI; inherited model identity was not exposed.</text>
+<text x="90" y="850" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Named GPT, Claude and DeepSeek model gains: not measured in this release.</text>
+<text x="90" y="888" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">An agent application is not a model. A portable skill does not establish equal gains across models.</text>
+<text x="64" y="972" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Paths: docs/compatibility.md (2026-11-12). Install smoke check: docs/installation-smoke.md.</text>
+</svg>

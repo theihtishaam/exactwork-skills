@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="990" viewBox="0 0 1440 990" role="img" aria-labelledby="title desc">
+<title id="title">Entry instruction sizes for the six skills</title><desc id="desc">Exact UTF-8 byte sizes of the six published SKILL.md files. File size measures the entry instructions only, excludes references and scripts, and is not model token consumption or a quality score.</desc>
+<rect width="1440" height="990" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">INSTRUCTION FOOTPRINT / SIX SMALL ENTRY FILES</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Load the procedure that fits the job.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">UTF-8 bytes in each SKILL.md. Optional references and scripts are excluded.</text>
+<text x="64" y="269" fill="#F3F7FC" font-family="Consolas, monospace" font-size="26" font-weight="400">exactwork</text>
+<rect x="430" y="240" width="641.432" height="39" rx="5" fill="#56DCDD"/>
+<text x="1210" y="270" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">2,167</text>
+<text x="64" y="357" fill="#F3F7FC" font-family="Consolas, monospace" font-size="26" font-weight="400">exactwork-research</text>
+<rect x="430" y="328" width="565.064" height="39" rx="5" fill="#A6B8C9"/>
+<text x="1210" y="358" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">1,909</text>
+<text x="64" y="445" fill="#F3F7FC" font-family="Consolas, monospace" font-size="26" font-weight="400">exactwork-review</text>
+<rect x="430" y="416" width="475.672" height="39" rx="5" fill="#A6B8C9"/>
+<text x="1210" y="446" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">1,607</text>
+<text x="64" y="533" fill="#F3F7FC" font-family="Consolas, monospace" font-size="26" font-weight="400">exactwork-handoff</text>
+<rect x="430" y="504" width="466.2" height="39" rx="5" fill="#A6B8C9"/>
+<text x="1210" y="534" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">1,575</text>
+<text x="64" y="621" fill="#F3F7FC" font-family="Consolas, monospace" font-size="26" font-weight="400">exactwork-context</text>
+<rect x="430" y="592" width="478.632" height="39" rx="5" fill="#A6B8C9"/>
+<text x="1210" y="622" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">1,617</text>
+<text x="64" y="709" fill="#F3F7FC" font-family="Consolas, monospace" font-size="26" font-weight="400">exactwork-learn</text>
+<rect x="430" y="680" width="516.224" height="39" rx="5" fill="#A6B8C9"/>
+<text x="1210" y="710" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">1,744</text>
+<text x="420.0" y="805" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">0</text>
+<text x="568.0" y="805" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">500</text>
+<text x="716.0" y="805" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">1,000</text>
+<text x="864.0" y="805" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">1,500</text>
+<text x="1012.0" y="805" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">2,000</text>
+<text x="1160.0" y="805" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400">2,500</text>
+<text x="64" y="868" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Smaller entry files can reduce instruction overhead. They do not guarantee lower total usage.</text>
+<text x="64" y="914" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Bytes are not tokens. Model tokenization, references, tool output and task work also matter.</text>
+<text x="64" y="957" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Source: the six skills/*/SKILL.md files shipped in this repository.</text>
+</svg>

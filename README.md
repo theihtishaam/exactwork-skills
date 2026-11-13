@@ -1,10 +1,12 @@
 <div align="center">
 
-![Exactwork: Less noise. Complete work.](assets/exactwork-cover.png)
+![Exactwork: understand the task, inspect evidence, complete the work, and verify the result. Six portable skills with optional context and project-learning helpers.](assets/exactwork-banner-v2.png)
 
-# Exactwork — Agent Skills for Claude Code, Codex, OpenCode & DeepSeek Harness
+# Exactwork
 
-**Focused work. Traceable context. Project learning with evidence and rollback.**
+Agent Skills for **Claude Code · Codex · OpenCode · DeepSeek Harness**
+
+**Give your agent a clear way to work.**
 
 [MIT license](LICENSE) · Python 3.10+ for optional tools · Six independent skills · Reproducible evaluations
 
@@ -12,13 +14,38 @@
 
 </div>
 
-Exactwork is a small collection of **Agent Skills for research, code review, task execution, handoffs, context extraction, and project-specific self-improvement**. The aim is to keep an agent focused on your requirements and make its work easier to check.
+An agent can produce a convincing answer and still miss a requirement, lose a correction, or call unfinished work done. Exactwork gives it a short, reusable procedure for keeping the task, evidence, and completion checks in view.
 
-Pick the skill that fits your task. Each starts with a short `SKILL.md`; optional Python helpers handle log excerpts and local procedure updates. Your agent keeps its own tools and normal access. Exactwork requires no separate service or API key.
+Choose from six skills for **execution, research, review, handoffs, context extraction, and project learning**. Each starts with a `SKILL.md`; your agent keeps its existing model, tools, and access. Optional Python helpers handle source-linked excerpts and checked local procedure updates.
 
-The repository includes measured results, unsuccessful outcomes, and the checks used to assess them. Token savings varied by task; a skill is not automatically an improvement. [Read the evidence](docs/benchmark-v0.2.md).
+| When you need… | Exactwork asks the agent to… |
+|---|---|
+| A task finished to your requirements | Keep the deliverables and constraints visible, complete the affected work, and check the result. |
+| A conclusion you can inspect | Read relevant sources, retain references, and identify missing evidence. |
+| Continuity across sessions | Carry forward corrections, verified progress, and unfinished work. |
+| A useful lesson from a failure | Evaluate one scoped procedure change before keeping it, with rollback available. |
+
+**Start with one skill.** Add companions when the task calls for them. A simple edit should stay simple.
+
+> **Evidence at a glance:** the compact core used **13.8% fewer aggregate tokens** than no skill in a small held-out study. Savings occurred in **3 of 6 paired trials**, across two unique synthetic tasks. These are measured results for that study, not a promise for every project. [See the results and limitations](#what-the-tests-show).
 
 ## Start here
+
+With Node.js **22.20+**, run this from your project directory and choose your skills and agent:
+
+```sh
+npx skills add theihtishaam/exactwork-skills
+```
+
+To select just the core for Codex:
+
+```sh
+npx skills add theihtishaam/exactwork-skills --skill exactwork -a codex
+```
+
+This uses the existing [Skills CLI](https://github.com/vercel-labs/skills), which reads this GitHub repository directly. Exactwork does not need a separate npm package. The Python route below supports previewing changes and the documented client destinations, including DeepSeek Harness.
+
+### Install with the bundled Python tool
 
 ![Get the repository, install a skill, and invoke it in a fresh session.](assets/quickstart.svg)
 
@@ -51,6 +78,10 @@ python tools/install.py --project "/path/to/project" --client harness --all --ap
 
 ## Use it with your agent
 
+![Comparison of agent tools, documented installation directories, locally verified installation, and the limits of named-model performance evidence.](assets/agent-model-coverage.svg)
+
+The new direct-install route was checked in an isolated Windows project: all six skill folders were copied for Codex. This verifies installation, not native activation or model performance. [Installation receipt](docs/installation-smoke.md).
+
 ![Documented client paths for Claude Code, Codex, OpenCode, DeepSeek Harness, and others.](assets/compatibility.svg)
 
 Start a fresh session in the target project and invoke a skill explicitly:
@@ -68,6 +99,8 @@ The study used explicit instruction injection through Codex CLI; **native activa
 
 ## Choose a skill
 
+Choose by the work in front of you. You can install several skills without asking the agent to load every procedure for every task.
+
 ![Six independently selectable skills: execute, research, review, hand off, extract context, and learn a project procedure.](assets/skill-map.svg)
 
 | Skill | Example task |
@@ -79,15 +112,36 @@ The study used explicit instruction injection through Codex CLI; **native activa
 | [**exactwork-context**](skills/exactwork-context/SKILL.md) | Extract relevant log lines with source references and explicit omissions. |
 | [**exactwork-learn**](skills/exactwork-learn/SKILL.md) | Test a project procedure change, apply it if eligible, and retain rollback. |
 
+<details>
+<summary><strong>Compare instruction sizes</strong></summary>
+
+![Bar chart of the exact UTF-8 byte sizes of all six SKILL.md entry files. File sizes are not model token usage or quality scores.](assets/instruction-footprint.svg)
+
+</details>
+
 A label correction usually needs only a direct edit. Load extra procedures when they help; keep domain-specific skills for their expertise.
 
 ## What happens during a task
+
+![Your request and a selected skill guide your existing agent. Optional helpers support source extraction and project learning; the host controls tools and permissions.](assets/inside-a-task.svg)
+
+A skill is a procedure the agent reads. It does not provide a new model, grant permissions, or run a separate service. The host decides how skills are discovered and when their instructions are loaded.
 
 ![Task cycle: define the target, inspect evidence, complete the action, and verify.](assets/workflow.svg)
 
 The core keeps the requested deliverables, depth, and format in view. It asks the agent to read relevant evidence, expand incomplete context, finish affected contracts, and distinguish **prepared**, **executed**, and **verified** work.
 
 These are instructions, not runtime guarantees. Correct work may take more tokens; a short response still has to satisfy the request. [Design and tradeoffs](docs/design.md).
+
+### Try it on a real task
+
+Give the agent a concrete result and the constraints that matter:
+
+> Use exactwork to fix the empty-input export failure. Preserve the current output format. Reproduce the failure, make the necessary change, and check empty and normal inputs. Tell me what you verified and anything still unresolved.
+
+![Illustrative export-bug walkthrough: define the expected result, reproduce and inspect the cause, make the scoped change, and check empty and normal inputs.](assets/worked-example.svg)
+
+The example shows the intended working pattern. It is not an extra benchmark result; actual checks depend on your project and its requirements.
 
 ## Read a large log
 
@@ -131,6 +185,8 @@ The study includes **35 scored agent runs**: 12 development, 18 held-out, and fi
 
 The compact version used **13.8% fewer aggregate tokens than no skill** and **7.5% fewer than 0.1**. It used more tokens on the log-task aggregate and saved tokens in only 3/6 paired trials. The original strict grader scored the compact condition 5/6; a blind audit accepted a valid alternative citation. Original scores, the correction, and a stricter sensitivity analysis remain available.
 
+![Token totals by held-out task: log investigation used 5.5 percent more tokens with compact Exactwork, while the coding task used 30.0 percent fewer. Three repetitions per condition; results are task-dependent.](assets/tokens-by-task.svg)
+
 ![Task correctness and work outcomes from the recorded development and held-out runs; these are not intelligence scores.](assets/quality-and-work.svg)
 
 **Intelligence was not directly measured.** The quality chart shows task correctness, a limited measure of completed work. Equal held-out pass counts do not establish smarter reasoning or general accuracy gains. There is no measured long-term learning improvement yet.
@@ -143,7 +199,32 @@ The exact inherited model was not exposed, cache state was uncontrolled, and con
 
 [Ponytail](https://github.com/DietrichGebert/ponytail), other skill collections, official documentation, and studies with mixed findings informed the design. Exactwork adds independently selectable evidence, handoff, context, and local learning procedures.
 
+![Bar chart comparing reported tokens on the matched five-run coding subset for no skill, Exactwork 0.1, Ponytail core, and Exactwork 0.2. All passed five of five; scheduling and sample limitations are shown.](assets/matched-comparison.svg)
+
 The comparison used pinned Ponytail **core instructions only**, excluding its runtime and review skill. Its runs came after the main study. Both passed the five-run coding subset; that does **not** establish general superiority. [Comparison](docs/comparison.md) · [Research](docs/research.md) · [Upgrade research](docs/upgrade-research.md).
+
+## Common questions
+
+<details>
+<summary><strong>Does this replace my agent or existing domain skills?</strong></summary>
+
+No. Exactwork supplies working procedures. Your agent still supplies the model, tools, and execution environment. Keep specialized skills for framework, design, research, or other domain knowledge.
+
+</details>
+
+<details>
+<summary><strong>Does self-learning happen automatically?</strong></summary>
+
+No. Invoke the learning skill for a scoped project problem. A candidate procedure needs evaluation before promotion, and future sessions need to load the saved procedure. There is no model training or background learner. [Read the learning guide](docs/learning.md).
+
+</details>
+
+<details>
+<summary><strong>Will this always reduce tokens or improve accuracy?</strong></summary>
+
+No. More careful investigation can require more tokens. The published study includes mixed outcomes, original grades, corrections, and a limited comparison. Use your own representative tasks to decide whether a procedure helps.
+
+</details>
 
 ## Run the checks
 
@@ -157,7 +238,7 @@ python -B evals/v0.2/audit_results.py
 python -B tools/validate.py
 ```
 
-The [full verification commands](docs/verification.md) also cover the exporter and auditor mutation checks. Windows/Linux CI is configured; check the actual workflow results for its status.
+The [full verification commands](docs/verification.md) also cover the exporter and auditor mutation checks. The [GitHub Actions workflow](https://github.com/theihtishaam/exactwork-skills/actions/workflows/check.yml) runs the checks on Windows and Linux with Python 3.10 and 3.12. Open the latest run to see its current status.
 
 Browse the [skills](skills), [tools](tools), [docs](docs), [evaluation records](evals/v0.2), and [editable graphics](assets). Original grades, corrections, observable traces, and audit tools are included.
 

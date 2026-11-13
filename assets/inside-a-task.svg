@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+<title id="title">Where Exactwork fits in an agent task</title><desc id="desc">You define the request and constraints. A chosen skill provides a procedure to your existing agent. The agent uses its permitted tools and checks the work. Optional context and learning helpers support the process. The skill does not provide a model or extra access.</desc>
+<rect width="1440" height="760" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">HOW IT FITS / YOUR EXISTING AGENT</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">A procedure your agent can follow.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Keep the model and tools you already use. Add the skill that fits the job.</text>
+<rect x="64" y="220" width="410" height="190" rx="18" fill="#102235"/>
+<text x="89" y="266" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">YOUR REQUEST</text>
+<text x="89" y="322" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Goal and deliverables</text>
+<text x="89" y="359" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Constraints and success checks</text>
+<path d="M481 315 L505 315" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M495 309 L505 315" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M495 321 L505 315" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<rect x="514" y="220" width="410" height="190" rx="18" fill="#153239"/>
+<text x="539" y="266" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">SELECTED SKILL</text>
+<text x="539" y="322" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Short SKILL.md instructions</text>
+<text x="539" y="359" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Read references when relevant</text>
+<path d="M931 315 L955 315" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M945 309 L955 315" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<path d="M945 321 L955 315" stroke="#56DCDD" stroke-width="3" fill="none"/>
+<rect x="964" y="220" width="410" height="190" rx="18" fill="#102235"/>
+<text x="989" y="266" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">YOUR AGENT</text>
+<text x="989" y="322" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Uses its permitted tools</text>
+<text x="989" y="359" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Produces and checks the work</text>
+<rect x="64" y="458" width="1312" height="170" rx="18" fill="#102235"/>
+<text x="91" y="501" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700">OPTIONAL HELPERS</text>
+<text x="91" y="548" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Context selector</text>
+<text x="91" y="589" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Exact source lines, hashes and omissions.</text>
+<text x="745" y="548" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Project learning</text>
+<text x="745" y="589" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Evidence checks, versions and rollback.</text>
+<text x="64" y="694" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="400">No separate model service. No added permissions. The host controls execution.</text>
+</svg>

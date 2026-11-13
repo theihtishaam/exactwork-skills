@@ -62,3 +62,32 @@ The original AI-generated cover remains unchanged. These additional diagrams are
 `quality-and-work.svg` is an original programmatically authored figure generated directly from the published `evals/v0.2/final-results.json`. Development task passes are 4/4, 3/4, and 4/4 for no skill, Exactwork 0.1, and compact 0.2. Held-out public-task passes after the documented blind grader audit are 6/6 for each. Original strict compact held-out score (5/6) remains visible. The lower panel shows visible held-out tool-call items: 29, 24, and 27, on a zero-based full 0–30 scale.
 
 Correctness bars use a full 0–100% scale and label both numerator and denominator. The figure distinguishes development from held-out trials, notes that the six held-out repetitions represent only two unique synthetic tasks, and explicitly disclaims an intelligence score, general accuracy gain, or agent-speed interpretation. The SVG has accessible title/description text; its PNG preview was inspected for legibility and clipping. No frozen results or skill instructions were changed.
+
+
+## Explanatory banner and comparison refresh (2026-11-13)
+
+The README now uses `exactwork-banner-v2.png`, generated with the built-in image-generation tool. The original cover is retained as a separate asset. The new banner explains the task cycle, the six skills and optional helpers; it contains no generated benchmark values or promises of model improvement. Its text was visually checked.
+
+`inside-a-task.svg` and `worked-example.svg` are code-authored explanatory diagrams; the export example is explicitly illustrative. `tokens-by-task.svg` and `matched-comparison.svg` read values from the unchanged published results JSON. Their scales start at zero, and study limits appear in the figures. `instruction-footprint.svg` reads exact UTF-8 byte sizes of the published entry files, not token estimates. `agent-model-coverage.svg` separates documented destinations, observed installation, and the absence of named-model uplift measurements. All six new SVG previews were visually checked.
+
+Banner prompt (built-in tool):
+
+```text
+Create a polished explanatory GitHub README banner for the open source project EXACTWORK. Wide landscape 3:2 canvas, high resolution. Premium editorial software infographic, sharp typography, dark midnight navy background, warm ivory lettering, teal and restrained amber accents, subtle fine grid, exceptionally readable at 900px wide. No robot, brain, mascot, stock photo, charts, fake UI buttons, or performance numbers. Clear hierarchy, spacious rounded rectangular cards, straight connectors with arrows. Use these exact readable texts only:
+Top small eyebrow: "PORTABLE AGENT SKILLS"
+Huge main brand: "EXACTWORK"
+Large subtitle: "Give your agent a clear way to work."
+Short line: "Focused tasks. Traceable context. Checked results."
+Central explanatory horizontal flow, four equal numbered cards with understated line-art icons:
+"01" "Understand" "Define the task"
+"02" "Inspect" "Read the evidence"
+"03" "Complete" "Do the work"
+"04" "Verify" "Check the result"
+Below, visually separated section label: "SIX SKILLS. USE WHAT YOU NEED."
+Six compact chips in a 3-column 2-row grid with exact labels:
+"Execute" "Research" "Review"
+"Hand off" "Extract context" "Learn a procedure"
+Bottom subtle separated strip with text: "Claude Code / Codex / OpenCode / DeepSeek Harness"
+And small but readable footnote: "Optional helpers for source-linked excerpts and project learning with rollback."
+Communicate the flow with geometric document, magnifier, tool and check icons. Sophisticated and practical, not a neon sci-fi poster. All text accurately spelled, generous padding, readable contrast, no overlap. Do not imply the product is an autonomous service or claim guaranteed accuracy or savings. No additional text.
+```

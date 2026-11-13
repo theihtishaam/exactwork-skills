@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="930" viewBox="0 0 1440 930" role="img" aria-labelledby="title desc">
+<title id="title">Token use varies by task</title><desc id="desc">Three repetitions per task and condition. Log task: no skill 373328 tokens, compact Exactwork 394031, 5.5 percent more. Coding task: no skill 443794, compact Exactwork 310683, 30.0 percent fewer. Input plus output usage, not cost or speed. Both use a zero to 500000 axis.</desc>
+<rect width="1440" height="930" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">LOOK PAST THE AVERAGE / HELD-OUT TASKS</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Savings depend on the task.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Reported input + output tokens across three repetitions per task and condition.</text>
+<rect x="64" y="215" width="1312" height="241" rx="18" fill="#102235"/>
+<text x="90" y="260" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Log investigation</text>
+<text x="920" y="260" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">5.5% more tokens</text>
+<text x="90" y="325" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">No skill</text>
+<rect x="328" y="300" width="589.85824" height="32" rx="5" fill="#A6B8C9"/>
+<text x="1145" y="326" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">373,328</text>
+<text x="90" y="385" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Exactwork 0.2</text>
+<rect x="328" y="360" width="622.56898" height="32" rx="5" fill="#56DCDD"/>
+<text x="1145" y="386" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">394,031</text>
+<text x="316.0" y="437" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">0</text>
+<text x="474.0" y="437" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">100k</text>
+<text x="632.0" y="437" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">200k</text>
+<text x="790.0" y="437" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">300k</text>
+<text x="948.0" y="437" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">400k</text>
+<text x="1106.0" y="437" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">500k</text>
+<rect x="64" y="480" width="1312" height="241" rx="18" fill="#102235"/>
+<text x="90" y="525" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700">Coding task</text>
+<text x="920" y="525" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">30.0% fewer tokens</text>
+<text x="90" y="590" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">No skill</text>
+<rect x="328" y="565" width="701.19452" height="32" rx="5" fill="#A6B8C9"/>
+<text x="1145" y="591" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">443,794</text>
+<text x="90" y="650" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Exactwork 0.2</text>
+<rect x="328" y="625" width="490.87914" height="32" rx="5" fill="#56DCDD"/>
+<text x="1145" y="651" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">310,683</text>
+<text x="316.0" y="702" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">0</text>
+<text x="474.0" y="702" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">100k</text>
+<text x="632.0" y="702" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">200k</text>
+<text x="790.0" y="702" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">300k</text>
+<text x="948.0" y="702" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">400k</text>
+<text x="1106.0" y="702" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400">500k</text>
+<text x="64" y="795" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Overall: 13.8% fewer tokens. Only 3 of 6 paired trials used fewer tokens.</text>
+<text x="64" y="842" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Two unique synthetic tasks. Uncontrolled cache state. No general efficiency guarantee.</text>
+<text x="64" y="885" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400">Source: evals/v0.2/final-results.json. Cached input is already included in input tokens.</text>
+</svg>
