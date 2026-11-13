@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img" aria-labelledby="title desc">
+<title id="title">Measured reduction in Exactwork entry instructions</title><desc id="desc">Static o200k_base token counts of SKILL.md text. Core:554 to391, research462 to334, review415 to290. Handoff unchanged at296. Optional context skill adds321. These are instruction counts, not runtime usage, fewer hallucinations, quality scores or comparison with other projects.</desc>
+<rect width="1440" height="1020" fill="#071321"/>
+<text x="64" y="62" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">SMALLER ENTRY INSTRUCTIONS / EXACTWORK 0.2 VS 0.1</text>
+<text x="64" y="119" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Less instruction overhead in three procedures.</text>
+<text x="64" y="163" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Measured SKILL.md text with o200k_base. Lower entry-token counts are smaller.</text>
+<rect x="64" y="215" width="1312" height="188" rx="18" fill="#102235"/>
+<text x="90" y="258" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Core execution</text>
+<text x="1040" y="258" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">29.4% smaller</text>
+<text x="90" y="309" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Exactwork 0.2</text>
+<rect x="300" y="283" width="547.4" height="31" rx="5" fill="#56DCDD"/>
+<text x="1190" y="309" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">391 tokens</text>
+<text x="90" y="359" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Exactwork 0.1</text>
+<rect x="300" y="333" width="775.6" height="31" rx="5" fill="#A6B8C9"/>
+<text x="1190" y="359" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">554 tokens</text>
+<text x="300" y="389" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400">0</text>
+<text x="1110" y="389" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400">600</text>
+<rect x="64" y="426" width="1312" height="188" rx="18" fill="#102235"/>
+<text x="90" y="469" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Research</text>
+<text x="1040" y="469" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">27.7% smaller</text>
+<text x="90" y="520" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Exactwork 0.2</text>
+<rect x="300" y="494" width="467.6" height="31" rx="5" fill="#56DCDD"/>
+<text x="1190" y="520" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">334 tokens</text>
+<text x="90" y="570" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Exactwork 0.1</text>
+<rect x="300" y="544" width="646.8" height="31" rx="5" fill="#A6B8C9"/>
+<text x="1190" y="570" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">462 tokens</text>
+<text x="300" y="600" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400">0</text>
+<text x="1110" y="600" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400">600</text>
+<rect x="64" y="637" width="1312" height="188" rx="18" fill="#102235"/>
+<text x="90" y="680" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Review</text>
+<text x="1040" y="680" fill="#56DCDD" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">30.1% smaller</text>
+<text x="90" y="731" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Exactwork 0.2</text>
+<rect x="300" y="705" width="406.0" height="31" rx="5" fill="#56DCDD"/>
+<text x="1190" y="731" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">290 tokens</text>
+<text x="90" y="781" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Exactwork 0.1</text>
+<rect x="300" y="755" width="581.0" height="31" rx="5" fill="#A6B8C9"/>
+<text x="1190" y="781" fill="#F3F7FC" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">415 tokens</text>
+<text x="300" y="811" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400">0</text>
+<text x="1110" y="811" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400">600</text>
+<text x="64" y="889" fill="#F5B56C" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400">Handoff is unchanged at 296 tokens. The optional context skill adds 321 tokens.</text>
+<text x="64" y="934" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">Static entry text only: excludes loaded references, tool output and task execution.</text>
+<text x="64" y="979" fill="#A6B8C9" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400">Source: evals/v0.2/components/instruction-and-excerpt-measures.json.</text>
+</svg>

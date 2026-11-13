@@ -101,3 +101,8 @@ Communicate the flow with geometric document, magnifier, tool and check icons. S
 ## Clarifying sampled pass counts (2026-11-13)
 
 `quality-comparison.svg` now shows the measured token totals in ascending order with explicit "5 of 5" sampled-pass counts. The earlier percentage bars could be mistaken for a universal reliability score. Exactwork 0.2 is first because it used the fewest tokens on this specific subset, not because a general intelligence or quality lead was established. All totals and outcomes remain unchanged. The updated editable figure was rendered and visually inspected.
+
+
+## Opening results and instruction overhead (2026-11-13)
+
+The README moves the observed-token comparison below the banner and introductory description. `instruction-reduction.svg` adds a separate chart from the existing frozen component measurements: core 554 to 391, research 462 to 334, review 415 to 290, using o200k_base. The figure notes that handoff remains 296 and optional context adds 321. These are static instruction counts, not runtime usage or quality measures. The new SVG was rendered and visually checked.

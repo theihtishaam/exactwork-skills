@@ -10,13 +10,25 @@ Agent Skills for **Claude Code · Codex · OpenCode · DeepSeek Harness**
 
 [MIT license](LICENSE) · Python 3.10+ for optional tools · Six independent skills · Reproducible evaluations
 
-[Start here](#start-here) · [Skills](#choose-a-skill) · [Self-learning](#learn-a-project-procedure) · [Results](#what-the-tests-show) · [Compatibility](#use-it-with-your-agent) · [Research](docs/research.md)
+[Start here](#start-here) · [Skills](#choose-a-skill) · [Self-learning](#learn-a-project-procedure) · [Results](#measured-improvements) · [Compatibility](#use-it-with-your-agent) · [Research](docs/research.md)
 
 </div>
 
 An agent can produce a convincing answer and still miss a requirement, lose a correction, or call unfinished work done. Exactwork gives it a short, reusable procedure for keeping the task, evidence, and completion checks in view.
 
 Choose from six skills for **execution, research, review, handoffs, context extraction, and project learning**. Each starts with a `SKILL.md`; your agent keeps its existing model, tools, and access. Optional Python helpers handle source-linked excerpts and checked local procedure updates.
+
+## Measured improvements
+
+![Equal sampled pass counts with different token totals: Exactwork 0.2 used 444,117 tokens, Ponytail core 493,995, Exactwork 0.1 541,987, and no skill 612,815. Each passed five of five sampled checks; these are not perfect-reliability scores.](assets/quality-comparison.svg)
+
+**Why consider Exactwork?** On this small coding subset, compact Exactwork completed the same five sampled checks with **10.1% fewer reported tokens than Ponytail core**. The chart orders conditions by observed token usage, lowest first. Passing five sampled checks does not mean an agent is perfectly reliable.
+
+![Measured entry-instruction reductions from Exactwork 0.1 to 0.2: core 554 to 391 tokens, research 462 to 334, and review 415 to 290. Handoff is unchanged; this is static text size, not runtime usage or model quality.](assets/instruction-reduction.svg)
+
+The core entry instructions are **29.4% smaller** in the recorded tokenizer. This measures instruction overhead separately from task-token usage. Hallucination rate, relevance, and broad quality improvements need separate evaluations; they are not established by these charts. [Full task results](#what-the-tests-show) · [Component measurements](docs/component-evidence.md).
+
+## What it helps you do
 
 | When you need… | Exactwork asks the agent to… |
 |---|---|
@@ -198,10 +210,6 @@ The exact inherited model was not exposed, cache state was uncontrolled, and con
 ![Source-backed comparison of Exactwork with Ponytail, Superpowers, GSD Core, BMad Method, Spec Kit, OpenSpec, ECC, Anthropic Skills and Vercel Agent Skills. This compares documented scope, not performance rankings.](assets/ecosystem-comparison.svg)
 
 Exactwork is a useful fit when you want **short task procedures, traceable excerpts, and checked local learning with rollback**. Broader development frameworks and specialist libraries solve different problems and can complement that approach. The [ten-project comparison guide](docs/ecosystem-comparison.md) links to pinned sources, explains each project's focus, and separates inspected features from measured results.
-
-![Equal sampled pass counts with different token totals: Exactwork 0.2 used 444,117 tokens, Ponytail core 493,995, Exactwork 0.1 541,987, and no skill 612,815. Each passed five of five sampled checks; these are not perfect-reliability scores.](assets/quality-comparison.svg)
-
-**Why consider Exactwork?** On this small coding subset, compact Exactwork completed the same five sampled checks with **10.1% fewer reported tokens than Ponytail core**. The chart orders conditions by observed token usage, lowest first. Passing five sampled checks does not mean an agent is perfectly reliable.
 
 Only Ponytail core has matched performance measurements here. The other projects are compared through documentation. General intelligence and named-model quality improvements have not been measured. Unknown results are left unknown.
 
