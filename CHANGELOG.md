@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3
+
+- Corrected the npm author name format so npm preserves the creator's GitHub profile URL.
+
 ## 0.2.2
 
 - Added a live total-download badge, visible creator credit, and a repository star link to the GitHub and npm READMEs.
