@@ -4,16 +4,18 @@
 
 # Exactwork
 
-[![Follow Ihtisham on GitHub](https://img.shields.io/badge/Follow-Ihtisham%20on%20GitHub-181717?logo=github&logoColor=white)](https://github.com/theihtishaam)
-
-
 Agent Skills for **Claude Code · Codex · OpenCode · DeepSeek Harness**
 
 **Give your agent a clear way to work.**
 
+<a href="https://trendshift.io"><img src="https://img.shields.io/badge/Trendshift-Explore%20trending%20projects-6366f1?style=for-the-badge" alt="Explore trending projects on Trendshift" /></a>
+
 <a href="https://www.npmjs.com/package/@theihtisham/exactwork-skills"><img src="https://img.shields.io/npm/v/%40theihtisham%2Fexactwork-skills" alt="npm package version" /></a>
-<a href="https://www.npmjs.com/package/@theihtisham/exactwork-skills"><img src="https://img.shields.io/npm/dm/%40theihtisham%2Fexactwork-skills" alt="npm downloads per month, not unique users" /></a>
+<a href="https://www.npmjs.com/package/@theihtisham/exactwork-skills"><img src="https://img.shields.io/npm/dt/%40theihtisham%2Fexactwork-skills?label=Total%20Downloads&amp;color=brightgreen" alt="Total npm downloads (all time)" /></a>
 <a href="https://github.com/theihtishaam"><img src="https://img.shields.io/github/followers/theihtishaam?label=Follow%20%40theihtishaam&amp;style=social" alt="Follow @theihtishaam on GitHub" /></a>
+<a href="https://github.com/theihtishaam/exactwork-skills"><img src="https://img.shields.io/github/stars/theihtishaam/exactwork-skills?label=Star%20on%20GitHub&amp;style=social" alt="Star exactwork-skills on GitHub" /></a>
+
+Created by [Ihtisham (@theihtishaam)](https://github.com/theihtishaam). [Explore the source and star Exactwork](https://github.com/theihtishaam/exactwork-skills).
 
 [MIT license](LICENSE) · Python 3.10+ for optional tools · Six independent skills · Reproducible evaluations
 

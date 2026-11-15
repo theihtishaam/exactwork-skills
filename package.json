@@ -1,6 +1,6 @@
 {
   "name": "@theihtisham/exactwork-skills",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Portable agent skills with a local installer for Claude Code, Codex, OpenCode, DeepSeek Harness and other supported tools.",
   "type": "module",
   "bin": {
@@ -24,7 +24,10 @@
     "test": "node --test npm-tests/install.test.mjs"
   },
   "license": "MIT",
-  "author": "theihtishaam",
+  "author": {
+    "name": "Ihtisham (@theihtishaam)",
+    "url": "https://github.com/theihtishaam"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theihtishaam/exactwork-skills.git"

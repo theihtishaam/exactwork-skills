@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2
+
+- Added a live total-download badge, visible creator credit, and a repository star link to the GitHub and npm READMEs.
+- Linked npm author metadata to the creator's GitHub profile. Skill instructions and installer behavior are unchanged.
+
 ## 0.2.1
 
 - Added the self-contained npm package and Node.js installer with detected or explicit agents, user/project scope, preview and verification.
