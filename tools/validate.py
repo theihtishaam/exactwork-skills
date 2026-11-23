@@ -100,7 +100,7 @@ def strip_fenced_examples(source: str) -> str:
             else:
                 kept.append(line)
         else:
-            closer = re.fullmatch(r" {0,3}([`~]{3,})[ \\t]*(?:\\r?\\n)?", line)
+            closer = re.fullmatch(r" {0,3}([`~]{3,})[ \t]*(?:\r?\n)?", line)
             if closer and len(closer.group(1)) >= minimum and set(closer.group(1)) == {character}:
                 character, minimum = None, 0
     return "".join(kept)
