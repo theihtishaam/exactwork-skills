@@ -140,6 +140,27 @@ class ValidationTests(unittest.TestCase):
         self.write(body="[Reference](references/note.md)")
         self.assertTrue(any("reparse" in error for error in validate.validate_skill(self.skill)))
 
+    def test_tilde_fenced_examples_are_not_active_links(self):
+        for fence in ("~~~", "~~~~"):
+            with self.subTest(fence=fence):
+                self.write(body=f"{fence}markdown\\n[Example](does-not-exist.md)\\n{fence}\\n")
+                self.assertEqual(validate.validate_skill(self.skill), [])
+
+    def test_fence_requires_matching_marker_and_minimum_width(self):
+        self.write(body=(
+            "~~~~markdown\\n[Hidden one](inside-one.md)\\n"
+            "~~~\\n[Hidden two](inside-two.md)\\n"
+            "```\\n[Hidden three](inside-three.md)\\n"
+            "~~~~\\n[Live](missing.md)\\n"
+        ))
+        errors = validate.validate_skill(self.skill)
+        self.assertTrue(any("missing.md" in error for error in errors))
+        self.assertFalse(any("inside-" in error for error in errors))
+
+    def test_unclosed_fence_is_treated_as_code_to_end_of_file(self):
+        self.write(body="~~~markdown\\n[Not active](does-not-exist.md)\\n")
+        self.assertEqual(validate.validate_skill(self.skill), [])
+
     def test_fenced_link_example_is_not_an_active_reference(self):
         self.write(body="```markdown\n[Example](does-not-exist.md)\n```\n")
         self.assertEqual(validate.validate_skill(self.skill), [])
