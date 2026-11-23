@@ -89,10 +89,27 @@ def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
     return values, "\n".join(lines[end + 1:])
 
 
+def strip_fenced_examples(source: str) -> str:
+    """Exclude Markdown code fences without hiding links in surrounding prose."""
+    kept, character, minimum = [], None, 0
+    for line in source.splitlines(keepends=True):
+        if character is None:
+            opener = re.match(r"^ {0,3}(`{3,}|~{3,})", line)
+            if opener:
+                character, minimum = opener.group(1)[0], len(opener.group(1))
+            else:
+                kept.append(line)
+        else:
+            closer = re.fullmatch(r" {0,3}([`~]{3,})[ \\t]*(?:\\r?\\n)?", line)
+            if closer and len(closer.group(1)) >= minimum and set(closer.group(1)) == {character}:
+                character, minimum = None, 0
+    return "".join(kept)
+
+
 def validate_links(text: str, document: Path, root: Path) -> list[str]:
     errors = []
     # Inline code and fenced examples are not documentation links.
-    prose = re.sub(r"```[^\n]*\n[\s\S]*?```", "", text)
+    prose = strip_fenced_examples(text)
     prose = re.sub(r"`[^`\n]+`", "", prose)
     for match in LINK.finditer(prose):
         raw = match.group(1).strip("<>")
