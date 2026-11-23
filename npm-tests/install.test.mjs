@@ -87,6 +87,28 @@ test('detection uses only known markers and executable names', t => {
   assert.deepEqual(detectAgents({home: f.project, envPath: bin, platform: 'win32'}), ['codex']);
   assert.deepEqual(detectAgents({home: f.project, envPath: ''}), []);
 });
+test('PATH detection refuses dangling command symlinks', t => {
+  const f = fixture(t);
+  const bin = path.join(f.root, 'bin'); fs.mkdirSync(bin);
+  const command = path.join(bin, process.platform === 'win32' ? 'codex.cmd' : 'codex');
+  try { fs.symlinkSync('missing-command-target', command, 'file'); }
+  catch (error) {
+    if (['EPERM', 'EACCES', 'ENOTSUP'].includes(error.code)) return t.skip('Symlink privilege unavailable');
+    throw error;
+  }
+  assert.deepEqual(detectAgents({home: f.project, envPath: bin, platform: process.platform}), []);
+});
+test('PATH detection requires executable files on POSIX', t => {
+  if (process.platform === 'win32') return t.skip('POSIX executable mode semantics');
+  const f = fixture(t);
+  const bin = path.join(f.root, 'bin'); fs.mkdirSync(bin);
+  const candidate = path.join(bin, 'codex');
+  fs.writeFileSync(candidate, 'placeholder file');
+  fs.chmodSync(candidate, 0o644);
+  assert.deepEqual(detectAgents({home: f.project, envPath: bin}), []);
+  fs.chmodSync(candidate, 0o755);
+  assert.deepEqual(detectAgents({home: f.project, envPath: bin}), ['codex']);
+});
 function cli(args) { return spawnSync(process.execPath, [path.join(repo, 'bin/exactwork-skills.mjs'), ...args], {encoding: 'utf8'}); }
 test('CLI verifies an installed selection and refuses incompatible flags', t => {
   const f = fixture(t), args = ['--agent', 'harness', '--project', f.project, '--skill', 'exactwork'];
